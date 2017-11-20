@@ -1,0 +1,58 @@
+PREFIX s: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX an: <http://www.ontotext.com/proton/protonext#Animal>
+
+CONSTRUCT {
+    ?uri a an:Animal;
+	s:name ?name ,
+	       ?nameEng ,
+	       ?nameLatin ;
+        s:order ?order ;
+	s:numberOfChildren ?k ;
+	s:pregnancyTime ?i ;
+	s:activity ?activity ;
+	s:location ?location .
+
+    ?dietURI a s:Diet ;
+	s:overview ?diet .
+
+    ?heightURI a s:height ;
+	s:minValue ?minHeight ;
+	s:maxValue ?maxHeight ;
+	s:unitCode ?heightCode .
+
+    ?weightURI a s:weight ;
+	s:minValue ?minWeight ;
+	s:maxValue ?maxWeight ;
+	s:unitCode ?weightCode .
+}
+WHERE {
+  BIND("http://example.com/animal/" AS ?baseURI)
+  BIND(IRI(CONCAT(?baseURI, ENCODE_FOR_URI(?l))) as ?uri)
+  BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#weight")) as ?weightURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "#diet")) AS ?dietURI)
+  BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#height")) as ?heightURI)
+
+  BIND (replace(STRAFTER(STRBEFORE(?h, "("), "-"),"[^a-zA-Z/]",'') AS ?heightCode)
+  BIND (replace(STRAFTER(STRBEFORE(?h, "("), "-"),"[^0-9,./]",'') AS ?minHeight)
+  BIND (replace(STRBEFORE(STRBEFORE(?h, "("), "-"),"[^0-9,./]",'') AS ?maxHeight)
+
+  BIND (replace(STRAFTER(?e, "-"),"[^a-zA-Z/]",'') AS ?weightCode)
+  BIND (replace(STRAFTER(?e, "-"),"[^0-9,./]",'') AS ?minWeight)
+  BIND (replace(STRBEFORE(?e, "-"),"[^0-9,./]",'') AS ?maxWeight)
+
+  BIND (STRLANG(?b, "cs") AS ?name)
+  BIND (STRLANG(?j, "cs") AS ?order)
+  BIND (STRLANG(?f, "en") AS ?nameEng)
+  BIND (STRLANG(?c, "la") AS ?nameLatin)
+  BIND (STRLANG(?g, "cs") AS ?diet)
+  BIND (STRLANG(?d, "cs") AS ?location)
+  BIND (STRLANG(?a, "cs") AS ?activity)
+
+}
+
+OFFSET 1
+LIMIT 10

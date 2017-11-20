@@ -1,0 +1,29 @@
+PREFIX s: <http://schema.org/>
+PREFIX my: <http://myschema.cz/animals#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+    ?id a s:id ;
+	s:name ?name ,
+	       ?nameEng ;
+        s:type ?class ;
+	s:forView ?viewable .
+
+    my:forView rdfs:subClassOf rdfs:comment  .
+
+    ?price a s:priceSpecification ;
+	s:price ?e ; 
+	s:priceCurrency 'CZK' .
+}
+WHERE {
+  BIND(IRI(CONCAT("http://example.com/id/",?a)) as ?id)
+  BIND(IRI(CONCAT(CONCAT("http://example.com/id/",?a),"/price")) as ?price)
+  BIND(IRI(CONCAT("http://example.com/class/",?d)) as ?class)
+  BIND (STRLANG(?b, "cs") AS ?name)
+  BIND (STRLANG(?c, "en") AS ?nameEng)
+  BIND (STRLANG(IF(?f = "1", "For view", "Not for view"), "en") AS ?viewable)
+}
+
+OFFSET 1
+LIMIT 2

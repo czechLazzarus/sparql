@@ -1,0 +1,115 @@
+PREFIX s: <http://schema.org/>
+PREFIX my: <http://myschema.cz/zvirata#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl>
+
+CONSTRUCT {
+     ?animalURI a sx:Animal ;
+	sx:scientificName ?nameLatin;
+	sx:commonName ?commonNames;
+	sx:originalNameUsage ?name;
+	sx:vernacularName ?otherNames;
+	s:status ?status ;
+	my:skin ?skin ;
+	my:lifestyle ?lifestyle ;
+	my:prey ?prey ;
+	s:typicalAgeRange ?typicalAgeRange ;
+	s:color ?color ;
+	my:predators ?predators ;
+	sx:behavioralNote ?behaviour ;
+	my:distinctiveFeature ?distinctiveFeature ;
+	my:funFacts ?funFacts. 
+
+     my:funFacts rdfs:subClassOf rdfs:comment  .
+     my:distinctiveFeature rdfs:subClassOf rdfs:comment  .
+
+     my:habitat rdfs:subClassOf s:location .
+	
+     ?locationURI a s:location ; 
+	sx:habitat ?habitat ;
+	sx:locationName ?location .
+
+    ?classURI a sx:organism_classification  ;
+	sx:class ?class ;
+	sx:kingdom ?kingdom ;
+	sx:order ?order ;
+	sx:group ?group ;
+	sx:genus ?genus ;
+	sx:family ?family ;
+	sx:phylum ?phylum ;
+	my:numberSpecies ?numberSpecies .
+
+    ?speedURI a s:Speed ;
+	s:maxValue ?speed ;
+	s:unitCode ?speedCode .
+
+    ?dietURI a s:Diet ;
+	s:overview ?diet .
+
+    ?heightURI a s:height ;
+	s:minValue ?minHeight ;
+	s:maxValue ?maxHeight ;
+	s:unitCode ?heightCode .
+
+    ?weightURI a s:weight ;
+	s:minValue ?minWeight ;
+	s:maxValue ?maxWeight ;
+	s:unitCode ?weightCode .
+}
+WHERE {
+  BIND("http://example.com/animal/" AS ?baseURI)
+  BIND(IRI(CONCAT(?baseURI,ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))))) as ?animalURI)
+
+  BIND("List of animal names with alternatives" AS ?skosDefinition)
+  BIND(URI(CONCAT(?baseURI, "#names")) AS ?skosURI) 
+
+  BIND(URI(CONCAT(?baseURI, "animalClassification/")) AS ?classURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/speed")) AS ?speedURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/diet")) AS ?dietURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/location")) AS ?locationURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/height")) AS ?heightURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/weight")) AS ?weightURI)
+
+  BIND (replace(STRBEFORE(?n, "("),"[^0-9.]",'') AS ?speed)
+  BIND (replace(STRBEFORE(?n, "("),"[^a-zA-Z/]",'') AS ?speedCode)
+  
+  BIND (replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^a-zA-Z/]",'') AS ?heightCode)
+  BIND (replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^0-9,./]",'') AS ?minHeight)
+  BIND (replace(STRBEFORE(STRBEFORE(?q, "("), "-"),"[^0-9,./]",'') AS ?maxHeight)
+
+  BIND (replace(STRAFTER(STRBEFORE(?ah, "("), "-"),"[^a-zA-Z/]",'') AS ?weightCode)
+  BIND (replace(STRAFTER(STRBEFORE(?ah, "("), "-"),"[^0-9,./]",'') AS ?minWeight)
+  BIND (replace(STRBEFORE(STRBEFORE(?ah, "("), "-"),"[^0-9,./]",'') AS ?maxWeight)
+
+  BIND (xsd:integer(?a) AS ?numberSpecies)
+  BIND (STRLANG(?b, "en") AS ?group)
+  BIND (STRLANG(?x, "en") AS ?typicalAgeRange)
+  BIND (STRLANG(?c, "la") AS ?genus)
+  BIND (STRLANG(?l, "en") AS ?name)
+  BIND (STRLANG(?k, "la") AS ?nameLatin)
+  BIND (STRLANG(?e, "en") AS ?prey)
+  BIND (STRLANG(?f, "en") AS ?location)
+  BIND (STRLANG(?g, "en") AS ?skin)
+  BIND (STRLANG(?i, "la") AS ?kingdom)
+  BIND (STRLANG(?r, "en") AS ?otherNames)
+  BIND (STRLANG(?s, "la") AS ?class)
+  BIND (STRLANG(?t, "en") AS ?lifestyle)
+  BIND (STRLANG(?v, "en") AS ?color)
+  BIND (STRLANG(?y, "en") AS ?predators)
+  BIND (STRLANG(?aa, "en") AS ?commonNames)
+  BIND (STRLANG(?ab, "en") AS ?order)
+  BIND (STRLANG(?m, "en") AS ?diet)
+  BIND (STRLANG(?ad, "la") AS ?family)
+  BIND (STRLANG(?ae, "en") AS ?habitat)
+  BIND (STRLANG(?af, "en") AS ?status)
+  BIND (STRLANG(?al, "en") AS ?phylum)
+  BIND (STRLANG(?ac, "en") AS ?behaviour)
+  BIND (STRLANG(?ag, "en") AS ?distinctiveFeature)
+  BIND (STRLANG(?z, "en") AS ?funFacts)
+}
+
+OFFSET 1
+LIMIT 3
