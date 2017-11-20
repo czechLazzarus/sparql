@@ -40,18 +40,19 @@ WHERE {
   BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#weight")) as ?weightURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "#diet")) AS ?dietURI)
   BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#height")) as ?heightURI)
+  BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#pregnancyLength")) as ?pregnancyURI)
 
-  BIND (replace(STRAFTER(STRBEFORE(?h, "("), "-"),"[^a-zA-Z/]",'') AS ?heightCode)
-  BIND (replace(STRAFTER(STRBEFORE(?h, "("), "-"),"[^0-9,./]",'') AS ?minHeight)
-  BIND (replace(STRBEFORE(STRBEFORE(?h, "("), "-"),"[^0-9,./]",'') AS ?maxHeight)
+  BIND (if(STRAFTER(?h, "-"), replace(STRAFTER(?h, "-"),"[^a-zA-Z/]",''), replace(?h,"[^a-zA-Z/]",'')) AS ?heightCode)
+  BIND (replace(STRAFTER(?h, "-"),"[^0-9,./]",'') AS ?minHeight)
+  BIND (IF(STRBEFORE(?h, "-"),replace(STRBEFORE(?h, "-"),"[^0-9,./]",''),replace(?h,"[^0-9,./]",'')) AS ?maxHeight)
 
-  BIND (replace(STRAFTER(?e, "-"),"[^a-zA-Z/]",'') AS ?weightCode)
+  BIND (IF(STRAFTER(?e, "-"), replace(STRAFTER(?e, "-"),"[^a-zA-Z/]",''), replace(?e,"[^a-zA-Z/]",'')) AS ?weightCode)
   BIND (replace(STRAFTER(?e, "-"),"[^0-9,./]",'') AS ?minWeight)
-  BIND (replace(STRBEFORE(?e, "-"),"[^0-9,./]",'') AS ?maxWeight)
+  BIND (IF(STRBEFORE(?e, "-"),replace(STRBEFORE(?e, "-"),"[^0-9,./]",''),replace(?e,"[^0-9,./]",'')) AS ?maxWeight)
 
-  BIND (replace(STRAFTER(?i, "-"),"[^a-zA-Z/]",'') AS ?pregnancyCode)
+  BIND (IF(STRAFTER(?i, "-"),replace(STRAFTER(?i, "-"),"[^a-zA-Zá-ú/]",''), replace(?i ,"[^a-zA-Zá-ú/]",'')) AS ?pregnancyCode)
   BIND (replace(STRAFTER(?i, "-"),"[^0-9,./]",'') AS ?minPregnancy)
-  BIND (replace(STRBEFORE(?i, "-"),"[^0-9,./]",'') AS ?maxPregnancy)
+  BIND (IF(STRBEFORE(?i, "-"),replace(STRBEFORE(?i, "-"),"[^0-9,./]",''),replace(?i,"[^0-9,./]",'')) AS ?maxPregnancy)
 
   BIND (STRLANG(?b, "cs") AS ?name)
   BIND (STRLANG(?j, "cs") AS ?order)
