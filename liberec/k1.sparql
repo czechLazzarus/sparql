@@ -3,6 +3,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX my: <http://www.myschema.cz/animal#>
 PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl>
 
 CONSTRUCT {
@@ -13,7 +14,12 @@ CONSTRUCT {
         sx:order ?order ;
 	s:numberOfChildren ?k ;
 	s:pregnancyTime ?i ;
+	s:weight ?weightURI ;
+	s:height ?heightURI ;
+	s:height ?pregnancyURI ;
+	s:diet ?dietURI ;
 	s:activity ?activity ;
+	my:pregnancyTime ?pregnancyURI ;
 	s:location ?location .
 
     ?dietURI a s:Diet ;

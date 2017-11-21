@@ -12,14 +12,15 @@ CONSTRUCT {
 	sx:commonName ?commonNames;
 	sx:originalNameUsage ?name;
 	sx:vernacularName ?otherNames;
+	s:type ?classURI ;
+	s:weight ?weightURI ;
+	s:height ?heightURI ;
+	s:diet ?dietURI ;
+	s:speed ?speedURI ;
+	s:charackteristic ?charakteristicURI ;
+	s:location ?locationURI ;
 	s:status ?status ;
-	my:skin ?skin ;
-	my:lifestyle ?lifestyle ;
-	my:prey ?prey ;
 	s:typicalAgeRange ?typicalAgeRange ;
-	s:color ?color ;
-	my:predators ?predators ;
-	sx:behavioralNote ?behaviour ;
 	my:distinctiveFeature ?distinctiveFeature ;
 	my:funFacts ?funFacts. 
 
@@ -28,11 +29,11 @@ CONSTRUCT {
 
      my:habitat rdfs:subClassOf s:location .
 	
-     ?locationURI a s:location ; 
+     ?locationURI a s:Location ; 
 	sx:habitat ?habitat ;
 	sx:locationName ?location .
 
-    ?classURI a sx:organism_classification  ;
+    ?classURI a my:OrganismClassification  ;
 	sx:class ?class ;
 	sx:kingdom ?kingdom ;
 	sx:order ?order ;
@@ -42,6 +43,14 @@ CONSTRUCT {
 	sx:phylum ?phylum ;
 	my:numberSpecies ?numberSpecies .
 
+    ?characteristicURI a my:Characteristic;
+	sx:behavioralNote ?behaviour ;
+	my:predators ?predators ;
+	my:skin ?skin ;
+	my:lifestyle ?lifestyle ;
+	my:prey ?prey ;
+	s:color ?color .
+
     ?speedURI a s:Speed ;
 	s:maxValue ?speed ;
 	s:unitCode ?speedCode .
@@ -49,12 +58,12 @@ CONSTRUCT {
     ?dietURI a s:Diet ;
 	s:overview ?diet .
 
-    ?heightURI a s:height ;
+    ?heightURI a s:Height ;
 	s:minValue ?minHeight ;
 	s:maxValue ?maxHeight ;
 	s:unitCode ?heightCode .
 
-    ?weightURI a s:weight ;
+    ?weightURI a s:Weight ;
 	s:minValue ?minWeight ;
 	s:maxValue ?maxWeight ;
 	s:unitCode ?weightCode .
@@ -66,7 +75,8 @@ WHERE {
   BIND("List of animal names with alternatives" AS ?skosDefinition)
   BIND(URI(CONCAT(?baseURI, "#names")) AS ?skosURI) 
 
-  BIND(URI(CONCAT(?baseURI, "animalClassification/")) AS ?classURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/animalClassification")) AS ?classURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/characteristic")) AS ?characteristicURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/speed")) AS ?speedURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/diet")) AS ?dietURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/location")) AS ?locationURI)
