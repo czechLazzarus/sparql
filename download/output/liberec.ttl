@@ -1,0 +1,4367 @@
+@prefix s:  <http://schema.org/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sx:  <http://lod.taxonconcept.org/ontology/txn.owl> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix my:  <http://www.myschema.cz/animal#> .
+
+<http://example.com/animal/alpaka.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Vicugna pacos"@la ;
+        sx:originalNameUsage  "Alpaca "@en ;
+        sx:originalNameUsage  "Alpaka"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "365 dní" ;
+        s:weight              <http://example.com/animal/alpaka.html#weight> ;
+        s:height              <http://example.com/animal/alpaka.html#height> ;
+        s:height              <http://example.com/animal/alpaka.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/alpaka.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/alpaka.html#pregnancyLength> ;
+        s:location            "horské oblasti"@cs .
+
+<http://example.com/animal/alpaka.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva) "@cs .
+
+<http://example.com/animal/alpaka.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm v kohoutku " .
+
+<http://example.com/animal/alpaka.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "65" ;
+        s:maxValue  "55" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/alpaka.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "365" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/kockodan-dianin.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Cercopithecus diana "@la ;
+        sx:originalNameUsage  "Diana Monkey"@en ;
+        sx:originalNameUsage  "Kočkodan Dianin"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "150-180 dní" ;
+        s:weight              <http://example.com/animal/kockodan-dianin.html#weight> ;
+        s:height              <http://example.com/animal/kockodan-dianin.html#height> ;
+        s:height              <http://example.com/animal/kockodan-dianin.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kockodan-dianin.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kockodan-dianin.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy"@cs .
+
+<http://example.com/animal/kockodan-dianin.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovocné plody, semena, hmyz) "@cs .
+
+<http://example.com/animal/kockodan-dianin.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "150" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm dlka tla i s ocasem" .
+
+<http://example.com/animal/kockodan-dianin.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "5.5" ;
+        s:maxValue  "3.9" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kockodan-dianin.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "180" ;
+        s:maxValue  "150" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/kocka-cejlonska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Prionailurus rubiginosus"@la ;
+        sx:originalNameUsage  "Rusty-spotted Cat"@en ;
+        sx:originalNameUsage  "Kočka cejlonská"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "70 dní " ;
+        s:weight              <http://example.com/animal/kocka-cejlonska.html#weight> ;
+        s:height              <http://example.com/animal/kocka-cejlonska.html#height> ;
+        s:height              <http://example.com/animal/kocka-cejlonska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kocka-cejlonska.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kocka-cejlonska.html#pregnancyLength> ;
+        s:location            "suchý listnatý les, louky "@cs .
+
+<http://example.com/animal/kocka-cejlonska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (hlodavci, ptáci, plazi, žáby)"@cs .
+
+<http://example.com/animal/kocka-cejlonska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "48" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/kocka-cejlonska.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "1,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kocka-cejlonska.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "70" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/karas-zlaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Carassius auratus"@la ;
+        sx:originalNameUsage  "Gold fish"@en ;
+        sx:originalNameUsage  "Karas zlatý"@cs ;
+        sx:order              "Máloostní (Cypriniformes) "@cs ;
+        s:weight              <http://example.com/animal/karas-zlaty.html#weight> ;
+        s:height              <http://example.com/animal/karas-zlaty.html#height> ;
+        s:height              <http://example.com/animal/karas-zlaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/karas-zlaty.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/karas-zlaty.html#pregnancyLength> ;
+        s:location            "stojaté i tekoucí vody"@cs .
+
+<http://example.com/animal/karas-zlaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (zooplankton, rostliny)"@cs .
+
+<http://example.com/animal/karas-zlaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "40" ;
+        s:maxValue  "15" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/karas-zlaty.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/karas-zlaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/kapr-obecny--nishikigoi.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Cyprinus carpio haematopetrus"@la ;
+        sx:originalNameUsage  "Brocaded carp, KOI carp"@en ;
+        sx:originalNameUsage  "Kapr obecný – Nishikigoi"@cs ;
+        sx:order              "Máloostní (Cypriniformes) "@cs ;
+        s:weight              <http://example.com/animal/kapr-obecny--nishikigoi.html#weight> ;
+        s:height              <http://example.com/animal/kapr-obecny--nishikigoi.html#height> ;
+        s:height              <http://example.com/animal/kapr-obecny--nishikigoi.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kapr-obecny--nishikigoi.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kapr-obecny--nishikigoi.html#pregnancyLength> ;
+        s:location            "sladkovodní jezera a rybníky "@cs .
+
+<http://example.com/animal/kapr-obecny--nishikigoi.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (vodní rostliny a bezobratlí, ryby)"@cs .
+
+<http://example.com/animal/kapr-obecny--nishikigoi.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "90" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/kapr-obecny--nishikigoi.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/kapr-obecny--nishikigoi.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/kachnicka-mandarinska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Aix galericulata"@la ;
+        sx:originalNameUsage  "Mandarin Duck"@en ;
+        sx:originalNameUsage  "Kachnička mandarinská"@cs ;
+        sx:order              "Vrubozobí (Anseriformes) "@cs ;
+        s:numberOfChildren    "9-12" ;
+        s:weight              <http://example.com/animal/kachnicka-mandarinska.html#weight> ;
+        s:height              <http://example.com/animal/kachnicka-mandarinska.html#height> ;
+        s:height              <http://example.com/animal/kachnicka-mandarinska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kachnicka-mandarinska.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kachnicka-mandarinska.html#pregnancyLength> ;
+        s:location            "podél řek a jezer v blízkosti opadavých lesů"@cs .
+
+<http://example.com/animal/kachnicka-mandarinska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (rostliny, semena, vodní bezobratlí)"@cs .
+
+<http://example.com/animal/kachnicka-mandarinska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "51" ;
+        s:maxValue  "41" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/kachnicka-mandarinska.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,5" ;
+        s:maxValue  "0,44" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kachnicka-mandarinska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/jerab-cernokrky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Grus nigricollis"@la ;
+        sx:originalNameUsage  "Black-necked Crane "@en ;
+        sx:originalNameUsage  "Jeřáb černokrký"@cs ;
+        sx:order              "Krátkokřídlí (Gruiformes)"@cs ;
+        s:numberOfChildren    "2" ;
+        s:weight              <http://example.com/animal/jerab-cernokrky.html#weight> ;
+        s:height              <http://example.com/animal/jerab-cernokrky.html#height> ;
+        s:height              <http://example.com/animal/jerab-cernokrky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/jerab-cernokrky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/jerab-cernokrky.html#pregnancyLength> ;
+        s:location            "mokřady, bažinaté louky, břehy jezer"@cs .
+
+<http://example.com/animal/jerab-cernokrky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (kořínky, hlízy, bezobratlí)"@cs .
+
+<http://example.com/animal/jerab-cernokrky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "115" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/jerab-cernokrky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "7" ;
+        s:maxValue  "5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/jerab-cernokrky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/chameleon-jemensky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Chameleo calyptratus"@la ;
+        sx:originalNameUsage  "Veiled chameleon"@en ;
+        sx:originalNameUsage  "Chameleon jemenský"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "12 - 85" ;
+        s:weight              <http://example.com/animal/chameleon-jemensky.html#weight> ;
+        s:height              <http://example.com/animal/chameleon-jemensky.html#height> ;
+        s:height              <http://example.com/animal/chameleon-jemensky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/chameleon-jemensky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/chameleon-jemensky.html#pregnancyLength> ;
+        s:location            "horská údolí, zahrady "@cs .
+
+<http://example.com/animal/chameleon-jemensky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "hmyz, drobní obratlovci (ještěři, ptáčata), listy "@cs .
+
+<http://example.com/animal/chameleon-jemensky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "65" ;
+        s:maxValue  "45" ;
+        s:unitCode  "  cm" .
+
+<http://example.com/animal/chameleon-jemensky.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/chameleon-jemensky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/hrdlicka-cinska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Spilopelia chinensis"@la ;
+        sx:originalNameUsage  "Spotted Dove "@en ;
+        sx:originalNameUsage  "Hrdlička čínská"@cs ;
+        sx:order              "Měkkozobí (Columbiformes)"@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:weight              <http://example.com/animal/hrdlicka-cinska.html#weight> ;
+        s:height              <http://example.com/animal/hrdlicka-cinska.html#height> ;
+        s:height              <http://example.com/animal/hrdlicka-cinska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/hrdlicka-cinska.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/hrdlicka-cinska.html#pregnancyLength> ;
+        s:location            "v blízkosti obydlených oblastí, parky "@cs .
+
+<http://example.com/animal/hrdlicka-cinska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (semena, zrní)"@cs .
+
+<http://example.com/animal/hrdlicka-cinska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "30" ;
+        s:maxValue  "27,5" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/hrdlicka-cinska.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "0,13" ;
+        s:unitCode  "g" .
+
+<http://example.com/animal/hrdlicka-cinska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/holub-nikobarsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Caloenas nicobarica"@la ;
+        sx:originalNameUsage  "Nicobar Pigeon"@en ;
+        sx:originalNameUsage  "Holub nikobarský"@cs ;
+        sx:order              "Měkkozobí (Columbiformes)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/holub-nikobarsky.html#weight> ;
+        s:height              <http://example.com/animal/holub-nikobarsky.html#height> ;
+        s:height              <http://example.com/animal/holub-nikobarsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/holub-nikobarsky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/holub-nikobarsky.html#pregnancyLength> ;
+        s:location            "tropický les, mangrovy "@cs .
+
+<http://example.com/animal/holub-nikobarsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, ovoce, ořechy, bezobratlí)"@cs .
+
+<http://example.com/animal/holub-nikobarsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "35" ;
+        s:maxValue  "32" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/holub-nikobarsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,6" ;
+        s:maxValue  "0,46" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/holub-nikobarsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/gibon-belolici.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Hylobates (Nomascus) leucogenys"@la ;
+        sx:originalNameUsage  "Chinese White-cheeked Gibbon"@en ;
+        sx:originalNameUsage  "Gibon bělolící"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "200-212 dní " ;
+        s:weight              <http://example.com/animal/gibon-belolici.html#weight> ;
+        s:height              <http://example.com/animal/gibon-belolici.html#height> ;
+        s:height              <http://example.com/animal/gibon-belolici.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/gibon-belolici.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/gibon-belolici.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy "@cs .
+
+<http://example.com/animal/gibon-belolici.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (ovoce, listy, kořínky), hmyz"@cs .
+
+<http://example.com/animal/gibon-belolici.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "53" ;
+        s:maxValue  "47" ;
+        s:unitCode  " cm dlka tla " .
+
+<http://example.com/animal/gibon-belolici.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "7" ;
+        s:maxValue  "6" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/gibon-belolici.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "212" ;
+        s:maxValue  "200" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/fretka-domaci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Mustela putorius furo"@la ;
+        sx:originalNameUsage  "Ferret"@en ;
+        sx:originalNameUsage  "Fretka domácí"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-16" ;
+        s:pregnancyTime       "42-50 dní " ;
+        s:weight              <http://example.com/animal/fretka-domaci.html#weight> ;
+        s:height              <http://example.com/animal/fretka-domaci.html#height> ;
+        s:height              <http://example.com/animal/fretka-domaci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/fretka-domaci.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/fretka-domaci.html#pregnancyLength> ;
+        s:location            "chována jako domácí mazlíček a laboratorní zvíře"@cs .
+
+<http://example.com/animal/fretka-domaci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (hlodavci, ptáci)"@cs .
+
+<http://example.com/animal/fretka-domaci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "64" ;
+        s:maxValue  "42" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/fretka-domaci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,5" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/fretka-domaci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "50" ;
+        s:maxValue  "42" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/felsuma-madagaskarska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Phelsuma madagascariensis kochi "@la ;
+        sx:originalNameUsage  "Madagascar day gecko"@en ;
+        sx:originalNameUsage  "Felsuma madagaskarská"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "2 " ;
+        s:weight              <http://example.com/animal/felsuma-madagaskarska.html#weight> ;
+        s:height              <http://example.com/animal/felsuma-madagaskarska.html#height> ;
+        s:height              <http://example.com/animal/felsuma-madagaskarska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/felsuma-madagaskarska.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/felsuma-madagaskarska.html#pregnancyLength> ;
+        s:location            "lesy, plantáže, lidská obydlí"@cs .
+
+<http://example.com/animal/felsuma-madagaskarska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "hmyz, míza stromů, nektar květů"@cs .
+
+<http://example.com/animal/felsuma-madagaskarska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "30" ;
+        s:maxValue  "22" ;
+        s:unitCode  "  cm i s ocasem" .
+
+<http://example.com/animal/felsuma-madagaskarska.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/felsuma-madagaskarska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/dvojzoborozec-hnedavy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Buceros hydrocorax"@la ;
+        sx:originalNameUsage  "Rufous Hornbill"@en ;
+        sx:originalNameUsage  "Dvojzoborožec hnědavý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes) "@cs ;
+        s:numberOfChildren    "2-4 " ;
+        s:weight              <http://example.com/animal/dvojzoborozec-hnedavy.html#weight> ;
+        s:height              <http://example.com/animal/dvojzoborozec-hnedavy.html#height> ;
+        s:height              <http://example.com/animal/dvojzoborozec-hnedavy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/dvojzoborozec-hnedavy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/dvojzoborozec-hnedavy.html#pregnancyLength> ;
+        s:location            "tropický deštn�� les"@cs .
+
+<http://example.com/animal/dvojzoborozec-hnedavy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovoce, semena, hmyz)"@cs .
+
+<http://example.com/animal/dvojzoborozec-hnedavy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "65" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/dvojzoborozec-hnedavy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,82" ;
+        s:maxValue  "1,17" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/dvojzoborozec-hnedavy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/cimango-falklandsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Phalcoboenus australis"@la ;
+        sx:originalNameUsage  "Striated Caracara"@en ;
+        sx:originalNameUsage  "Čimango falklandský"@cs ;
+        sx:order              "Dravci (Falconiformes) "@cs ;
+        s:numberOfChildren    "1-4 " ;
+        s:weight              <http://example.com/animal/cimango-falklandsky.html#weight> ;
+        s:height              <http://example.com/animal/cimango-falklandsky.html#height> ;
+        s:height              <http://example.com/animal/cimango-falklandsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/cimango-falklandsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/cimango-falklandsky.html#pregnancyLength> ;
+        s:location            "otevřená krajina, skalnatá pobřeží"@cs .
+
+<http://example.com/animal/cimango-falklandsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci: savci, ptáci; bezobratlí)"@cs .
+
+<http://example.com/animal/cimango-falklandsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/cimango-falklandsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,2" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/cimango-falklandsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/buvolec-belocely.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Damaliscus pygargus phillipsi"@la ;
+        sx:originalNameUsage  "Blesbock"@en ;
+        sx:originalNameUsage  "Buvolec běločelý"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "220-250 dní" ;
+        s:weight              <http://example.com/animal/buvolec-belocely.html#weight> ;
+        s:height              <http://example.com/animal/buvolec-belocely.html#height> ;
+        s:height              <http://example.com/animal/buvolec-belocely.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/buvolec-belocely.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/buvolec-belocely.html#pregnancyLength> ;
+        s:location            "savana"@cs .
+
+<http://example.com/animal/buvolec-belocely.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva) "@cs .
+
+<http://example.com/animal/buvolec-belocely.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "100" ;
+        s:maxValue  "85" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/buvolec-belocely.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "80" ;
+        s:maxValue  "50" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/buvolec-belocely.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "250" ;
+        s:maxValue  "220" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/kun-prevalskeho.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus przewalskii"@la ;
+        sx:originalNameUsage  "Przewalski's horse"@en ;
+        sx:originalNameUsage  "Kůň Převalského"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "328-343" ;
+        s:weight              <http://example.com/animal/kun-prevalskeho.html#weight> ;
+        s:height              <http://example.com/animal/kun-prevalskeho.html#height> ;
+        s:height              <http://example.com/animal/kun-prevalskeho.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kun-prevalskeho.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kun-prevalskeho.html#pregnancyLength> ;
+        s:location            "stepi a polopouště"@cs .
+
+<http://example.com/animal/kun-prevalskeho.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, byliny)"@cs .
+
+<http://example.com/animal/kun-prevalskeho.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "280" ;
+        s:maxValue  "220" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/kun-prevalskeho.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "350" ;
+        s:maxValue  "200" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kun-prevalskeho.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "343" ;
+        s:maxValue  "328" ;
+        s:unitCode  "" .
+
+<http://example.com/animal/kun-domaci---pony-shetlandsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus caballus"@la ;
+        sx:originalNameUsage  "Shetland pony"@en ;
+        sx:originalNameUsage  "Kůň domácí - pony shetlandský"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "300-338 dní " ;
+        s:weight              <http://example.com/animal/kun-domaci---pony-shetlandsky.html#weight> ;
+        s:height              <http://example.com/animal/kun-domaci---pony-shetlandsky.html#height> ;
+        s:height              <http://example.com/animal/kun-domaci---pony-shetlandsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kun-domaci---pony-shetlandsky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kun-domaci---pony-shetlandsky.html#pregnancyLength> ;
+        s:location            "tundra, lidská sídla "@cs .
+
+<http://example.com/animal/kun-domaci---pony-shetlandsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, seno)"@cs .
+
+<http://example.com/animal/kun-domaci---pony-shetlandsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "107" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/kun-domaci---pony-shetlandsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "230" ;
+        s:maxValue  "200" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kun-domaci---pony-shetlandsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "338" ;
+        s:maxValue  "300" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/kun-domaci---mini-appaloosa.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus caballus"@la ;
+        sx:originalNameUsage  "Domestic horse - Mini Appaloosa"@en ;
+        sx:originalNameUsage  "Kůň domácí - mini appaloosa"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "310-340 dní" ;
+        s:weight              <http://example.com/animal/kun-domaci---mini-appaloosa.html#weight> ;
+        s:height              <http://example.com/animal/kun-domaci---mini-appaloosa.html#height> ;
+        s:height              <http://example.com/animal/kun-domaci---mini-appaloosa.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kun-domaci---mini-appaloosa.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kun-domaci---mini-appaloosa.html#pregnancyLength> ;
+        s:location            "lidská obydlí "@cs .
+
+<http://example.com/animal/kun-domaci---mini-appaloosa.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, seno)"@cs .
+
+<http://example.com/animal/kun-domaci---mini-appaloosa.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "90" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/kun-domaci---mini-appaloosa.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "250" ;
+        s:maxValue  "230" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kun-domaci---mini-appaloosa.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "340" ;
+        s:maxValue  "310" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/krokodyl-celnaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Osteolaemus tetraspis"@la ;
+        sx:originalNameUsage  "African Dwarf Crocodile"@en ;
+        sx:originalNameUsage  "Krokodýl čelnatý"@cs ;
+        sx:order              "Krokodýli (Crocodilia)"@cs ;
+        s:numberOfChildren    "10-18" ;
+        s:weight              <http://example.com/animal/krokodyl-celnaty.html#weight> ;
+        s:height              <http://example.com/animal/krokodyl-celnaty.html#height> ;
+        s:height              <http://example.com/animal/krokodyl-celnaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/krokodyl-celnaty.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/krokodyl-celnaty.html#pregnancyLength> ;
+        s:location            "tropický deštný les "@cs .
+
+<http://example.com/animal/krokodyl-celnaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "bezobratlí (korýši, měkkýši), drobní obratlovci"@cs .
+
+<http://example.com/animal/krokodyl-celnaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "230" ;
+        s:maxValue  "130" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/krokodyl-celnaty.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/krokodyl-celnaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/kratkokrcka-novoguinejska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Elseya novaeguineae"@la ;
+        sx:originalNameUsage  "New Guinea Snapping Turtle"@en ;
+        sx:originalNameUsage  "Krátkokrčka novoguinejská"@cs ;
+        sx:order              "Želvy (Testudines) "@cs ;
+        s:numberOfChildren    "3-5 ve snůšce" ;
+        s:weight              <http://example.com/animal/kratkokrcka-novoguinejska.html#weight> ;
+        s:height              <http://example.com/animal/kratkokrcka-novoguinejska.html#height> ;
+        s:height              <http://example.com/animal/kratkokrcka-novoguinejska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kratkokrcka-novoguinejska.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/kratkokrcka-novoguinejska.html#pregnancyLength> ;
+        s:location            "řeky tropického deštného lesa "@cs .
+
+<http://example.com/animal/kratkokrcka-novoguinejska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "ryby, bezobratlí: hmyz, měkkýši, kroužkovci"@cs .
+
+<http://example.com/animal/kratkokrcka-novoguinejska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "30" ;
+        s:maxValue  "11" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/kratkokrcka-novoguinejska.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/kratkokrcka-novoguinejska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/krajta-zelena.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Morelia viridis"@la ;
+        sx:originalNameUsage  "Green Tree Python"@en ;
+        sx:originalNameUsage  "Krajta zelená"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "15-25 " ;
+        s:weight              <http://example.com/animal/krajta-zelena.html#weight> ;
+        s:height              <http://example.com/animal/krajta-zelena.html#height> ;
+        s:height              <http://example.com/animal/krajta-zelena.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/krajta-zelena.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/krajta-zelena.html#pregnancyLength> ;
+        s:location            "tropický deštný les "@cs .
+
+<http://example.com/animal/krajta-zelena.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "menší obratlovci (hlodavci, netopýři, ptáci, žáby)"@cs .
+
+<http://example.com/animal/krajta-zelena.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "200" ;
+        s:maxValue  "150" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/krajta-zelena.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/krajta-zelena.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/krajta-mrizkovana.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Malayopython reticulatus"@la ;
+        sx:originalNameUsage  "Reticulated python"@en ;
+        sx:originalNameUsage  "Krajta mřížkovaná"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "20 - 50" ;
+        s:weight              <http://example.com/animal/krajta-mrizkovana.html#weight> ;
+        s:height              <http://example.com/animal/krajta-mrizkovana.html#height> ;
+        s:height              <http://example.com/animal/krajta-mrizkovana.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/krajta-mrizkovana.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/krajta-mrizkovana.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy, mokřady, rýžová pole"@cs .
+
+<http://example.com/animal/krajta-mrizkovana.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "obratlovci (savci, ptáci, plazi)"@cs .
+
+<http://example.com/animal/krajta-mrizkovana.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "400" ;
+        s:maxValue  "200" ;
+        s:unitCode  "  cm" .
+
+<http://example.com/animal/krajta-mrizkovana.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "50" ;
+        s:unitCode  "dokg" .
+
+<http://example.com/animal/krajta-mrizkovana.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/kozorozec-dagestansky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Capra cylindricornis"@la ;
+        sx:originalNameUsage  "East Caucasian Tur"@en ;
+        sx:originalNameUsage  "Kozorožec dagestánský"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "180-190 dní " ;
+        s:weight              <http://example.com/animal/kozorozec-dagestansky.html#weight> ;
+        s:height              <http://example.com/animal/kozorozec-dagestansky.html#height> ;
+        s:height              <http://example.com/animal/kozorozec-dagestansky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kozorozec-dagestansky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kozorozec-dagestansky.html#pregnancyLength> ;
+        s:location            "hory a horské oblasti "@cs .
+
+<http://example.com/animal/kozorozec-dagestansky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listy, pupeny, mech, lišejníky)"@cs .
+
+<http://example.com/animal/kozorozec-dagestansky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/kozorozec-dagestansky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "80" ;
+        s:maxValue  "45" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kozorozec-dagestansky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "190" ;
+        s:maxValue  "180" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/piskomil-mongolsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Meriones unguiculatus"@la ;
+        sx:originalNameUsage  "Mongolian Gerbil "@en ;
+        sx:originalNameUsage  "Pískomil mongolský"@cs ;
+        sx:order              "Hlodavci (Rodentia) "@cs ;
+        s:numberOfChildren    "2-8" ;
+        s:pregnancyTime       "24-29 dní " ;
+        s:weight              <http://example.com/animal/piskomil-mongolsky.html#weight> ;
+        s:height              <http://example.com/animal/piskomil-mongolsky.html#height> ;
+        s:height              <http://example.com/animal/piskomil-mongolsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/piskomil-mongolsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/piskomil-mongolsky.html#pregnancyLength> ;
+        s:location            "polopoušť, poušť, step"@cs .
+
+<http://example.com/animal/piskomil-mongolsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (semena, traviny, ovocné plody)"@cs .
+
+<http://example.com/animal/piskomil-mongolsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "15" ;
+        s:maxValue  "12" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/piskomil-mongolsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,06" ;
+        s:maxValue  "0,05" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/piskomil-mongolsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "29" ;
+        s:maxValue  "24" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/vyrecek-filipinsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Otus megalotis"@la ;
+        sx:originalNameUsage  " Luzon Lowland Scops-owl "@en ;
+        sx:originalNameUsage  "Výreček filipínský"@cs ;
+        sx:order              "Sovy (Strigiformes) "@cs ;
+        s:numberOfChildren    "1-4" ;
+        s:weight              <http://example.com/animal/vyrecek-filipinsky.html#weight> ;
+        s:height              <http://example.com/animal/vyrecek-filipinsky.html#height> ;
+        s:height              <http://example.com/animal/vyrecek-filipinsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/vyrecek-filipinsky.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/vyrecek-filipinsky.html#pregnancyLength> ;
+        s:location            "tropický les, sekundární lesnatá krajina"@cs .
+
+<http://example.com/animal/vyrecek-filipinsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (hmyz, drobní obratlovci)"@cs .
+
+<http://example.com/animal/vyrecek-filipinsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "28" ;
+        s:maxValue  "23" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/vyrecek-filipinsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0.3" ;
+        s:maxValue  "0.2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/vyrecek-filipinsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zirafa-rothschildova.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Giraffa camelopardalis rothschildi"@la ;
+        sx:originalNameUsage  "Rothschild's giraffe"@en ;
+        sx:originalNameUsage  "Žirafa Rothschildova"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "430 dní " ;
+        s:weight              <http://example.com/animal/zirafa-rothschildova.html#weight> ;
+        s:height              <http://example.com/animal/zirafa-rothschildova.html#height> ;
+        s:height              <http://example.com/animal/zirafa-rothschildova.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zirafa-rothschildova.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zirafa-rothschildova.html#pregnancyLength> ;
+        s:location            "savany, travnaté oblasti "@cs .
+
+<http://example.com/animal/zirafa-rothschildova.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (akácie)"@cs .
+
+<http://example.com/animal/zirafa-rothschildova.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "470" ;
+        s:maxValue  "350" ;
+        s:unitCode  " cm vka " .
+
+<http://example.com/animal/zirafa-rothschildova.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1900" ;
+        s:maxValue  "500" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zirafa-rothschildova.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "430" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/zenetka-skvrnita.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Genetta tigrina"@la ;
+        sx:originalNameUsage  "Cape Genet"@en ;
+        sx:originalNameUsage  "Ženetka skvrnitá"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-5" ;
+        s:pregnancyTime       "70 dní " ;
+        s:weight              <http://example.com/animal/zenetka-skvrnita.html#weight> ;
+        s:height              <http://example.com/animal/zenetka-skvrnita.html#height> ;
+        s:height              <http://example.com/animal/zenetka-skvrnita.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zenetka-skvrnita.html#diet> ;
+        s:activity            "soumračná"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zenetka-skvrnita.html#pregnancyLength> ;
+        s:location            "deštné lesy a savany"@cs .
+
+<http://example.com/animal/zenetka-skvrnita.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hlodavci, ptáci, plody)"@cs .
+
+<http://example.com/animal/zenetka-skvrnita.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "115" ;
+        s:maxValue  "90" ;
+        s:unitCode  " cm dlka tla s ocasem" .
+
+<http://example.com/animal/zenetka-skvrnita.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "3" ;
+        s:maxValue  "1,2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zenetka-skvrnita.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "70" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/zelva-uhlirska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Chelonoidis carbonaria "@la ;
+        sx:originalNameUsage  "Red-footed Tortoise"@en ;
+        sx:originalNameUsage  "Želva uhlířská"@cs ;
+        sx:order              "Želvy (Testudines)"@cs ;
+        s:numberOfChildren    "2-15 vajec v jedné snůšce" ;
+        s:weight              <http://example.com/animal/zelva-uhlirska.html#weight> ;
+        s:height              <http://example.com/animal/zelva-uhlirska.html#height> ;
+        s:height              <http://example.com/animal/zelva-uhlirska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zelva-uhlirska.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zelva-uhlirska.html#pregnancyLength> ;
+        s:location            "tropický deštný les, vlhká savana"@cs .
+
+<http://example.com/animal/zelva-uhlirska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovocné plody, houby, bezobratlí)"@cs .
+
+<http://example.com/animal/zelva-uhlirska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "50" ;
+        s:maxValue  "30" ;
+        s:unitCode  " cm dlka svrchnho krune" .
+
+<http://example.com/animal/zelva-uhlirska.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "28" ;
+        s:maxValue  "10" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zelva-uhlirska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zelva-ostruhata.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Centrochelys sulcata"@la ;
+        sx:originalNameUsage  "African Spurred Tortoise "@en ;
+        sx:originalNameUsage  "Želva ostruhatá"@cs ;
+        sx:order              "Želvy (Testudines) "@cs ;
+        s:numberOfChildren    "13-31 ve snůšce " ;
+        s:weight              <http://example.com/animal/zelva-ostruhata.html#weight> ;
+        s:height              <http://example.com/animal/zelva-ostruhata.html#height> ;
+        s:height              <http://example.com/animal/zelva-ostruhata.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zelva-ostruhata.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zelva-ostruhata.html#pregnancyLength> ;
+        s:location            "polopoušť, step "@cs .
+
+<http://example.com/animal/zelva-ostruhata.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (rostliny, kůra stromů, mršiny)"@cs .
+
+<http://example.com/animal/zelva-ostruhata.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "80" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/zelva-ostruhata.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/zelva-ostruhata.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zelva-nadherna.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Trachemys scripta elegans"@la ;
+        sx:originalNameUsage  "Red-eared Slider "@en ;
+        sx:originalNameUsage  "Želva nádherná"@cs ;
+        sx:order              "Želvy (Testudines) "@cs ;
+        s:numberOfChildren    "2-23 ve snůšce" ;
+        s:weight              <http://example.com/animal/zelva-nadherna.html#weight> ;
+        s:height              <http://example.com/animal/zelva-nadherna.html#height> ;
+        s:height              <http://example.com/animal/zelva-nadherna.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zelva-nadherna.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zelva-nadherna.html#pregnancyLength> ;
+        s:location            "klidné vody s bahnitými dny "@cs .
+
+<http://example.com/animal/zelva-nadherna.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (vodní hmyz, ryby, pulci žab, řasy)"@cs .
+
+<http://example.com/animal/zelva-nadherna.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "30" ;
+        s:maxValue  "20" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/zelva-nadherna.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/zelva-nadherna.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zelva-korunkata.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Hardella thurjii"@la ;
+        sx:originalNameUsage  "Crowned River Turtle"@en ;
+        sx:originalNameUsage  "Želva korunkatá"@cs ;
+        sx:order              "Želvy (Chelonia) "@cs ;
+        s:numberOfChildren    "14-19 ve snůšce" ;
+        s:weight              <http://example.com/animal/zelva-korunkata.html#weight> ;
+        s:height              <http://example.com/animal/zelva-korunkata.html#height> ;
+        s:height              <http://example.com/animal/zelva-korunkata.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zelva-korunkata.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zelva-korunkata.html#pregnancyLength> ;
+        s:location            "pomalu tekoucí vody"@cs .
+
+<http://example.com/animal/zelva-korunkata.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "převážně rostliny, výjimečně vodní živočichové"@cs .
+
+<http://example.com/animal/zelva-korunkata.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "55" ;
+        s:maxValue  "17" ;
+        s:unitCode  " cm dlka krune" .
+
+<http://example.com/animal/zelva-korunkata.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "10" ;
+        s:maxValue  "0,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zelva-korunkata.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zelva-bahenni.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Emys orbicularis"@la ;
+        sx:originalNameUsage  "European Pond Turtle"@en ;
+        sx:originalNameUsage  "Želva bahenní"@cs ;
+        sx:order              "Želvy (Testudines) "@cs ;
+        s:numberOfChildren    "3-16 ve snůšce" ;
+        s:weight              <http://example.com/animal/zelva-bahenni.html#weight> ;
+        s:height              <http://example.com/animal/zelva-bahenni.html#height> ;
+        s:height              <http://example.com/animal/zelva-bahenni.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zelva-bahenni.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zelva-bahenni.html#pregnancyLength> ;
+        s:location            "vodní nádrže, řeky a potoky "@cs .
+
+<http://example.com/animal/zelva-bahenni.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "ryby, pulci žab, hmyz, řasy, vodní rostliny "@cs .
+
+<http://example.com/animal/zelva-bahenni.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "21" ;
+        s:maxValue  "15" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/zelva-bahenni.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/zelva-bahenni.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-vrascity.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Rhabdotorrhinus (Aceros) corrugatus "@la ;
+        sx:originalNameUsage  "Wrinkled Hornbill "@en ;
+        sx:originalNameUsage  "Zoborožec vrásčitý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "4-7 " ;
+        s:weight              <http://example.com/animal/zoborozec-vrascity.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-vrascity.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-vrascity.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-vrascity.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-vrascity.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy, galeriové lesy"@cs .
+
+<http://example.com/animal/zoborozec-vrascity.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, malí obratlovci, ovoce)"@cs .
+
+<http://example.com/animal/zoborozec-vrascity.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "81" ;
+        s:maxValue  "65" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zoborozec-vrascity.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,6" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-vrascity.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-tmavy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Anthracoceros malayanus"@la ;
+        sx:originalNameUsage  "Black Hornbill "@en ;
+        sx:originalNameUsage  "Zoborožec tmavý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "4-7" ;
+        s:weight              <http://example.com/animal/zoborozec-tmavy.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-tmavy.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-tmavy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-tmavy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-tmavy.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy, galeriové lesy  "@cs .
+
+<http://example.com/animal/zoborozec-tmavy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovoce, hmyz, malí obratlovci)"@cs .
+
+<http://example.com/animal/zoborozec-tmavy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "65" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zoborozec-tmavy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,05" ;
+        s:maxValue  "0,9" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-tmavy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-sedolici.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Bycanistes brevis"@la ;
+        sx:originalNameUsage  "Silvery-cheeked Hornbill"@en ;
+        sx:originalNameUsage  "Zoborožec šedolící"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/zoborozec-sedolici.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-sedolici.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-sedolici.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-sedolici.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-sedolici.html#pregnancyLength> ;
+        s:location            "lesy "@cs .
+
+<http://example.com/animal/zoborozec-sedolici.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, malí obratlovci, ovoce)"@cs .
+
+<http://example.com/animal/zoborozec-sedolici.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "80" ;
+        s:maxValue  "75" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zoborozec-sedolici.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,5" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-sedolici.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-ryhozoby.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Penelopides panini "@la ;
+        sx:originalNameUsage  "Visayan Hornbill"@en ;
+        sx:originalNameUsage  "Zoborožec rýhozobý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:weight              <http://example.com/animal/zoborozec-ryhozoby.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-ryhozoby.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-ryhozoby.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-ryhozoby.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-ryhozoby.html#pregnancyLength> ;
+        s:location            "tropický les "@cs .
+
+<http://example.com/animal/zoborozec-ryhozoby.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, ovocné plody)"@cs .
+
+<http://example.com/animal/zoborozec-ryhozoby.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/zoborozec-ryhozoby.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0.5" ;
+        s:maxValue  "0.44" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-ryhozoby.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-narikavy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Bycanistes bucinator"@la ;
+        sx:originalNameUsage  "Trumpeter Hornbill"@en ;
+        sx:originalNameUsage  "Zoborožec naříkavý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "4-5 " ;
+        s:weight              <http://example.com/animal/zoborozec-narikavy.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-narikavy.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-narikavy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-narikavy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-narikavy.html#pregnancyLength> ;
+        s:location            "lesy, savany "@cs .
+
+<http://example.com/animal/zoborozec-narikavy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (plody, hmyz)"@cs .
+
+<http://example.com/animal/zoborozec-narikavy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "55" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zoborozec-narikavy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,9" ;
+        s:maxValue  "0,45" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-narikavy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zoborozec-kafersky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Bucorvus leadbeateri"@la ;
+        sx:originalNameUsage  "Southern Ground-Hornbill"@en ;
+        sx:originalNameUsage  "Zoborožec kaferský"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/zoborozec-kafersky.html#weight> ;
+        s:height              <http://example.com/animal/zoborozec-kafersky.html#height> ;
+        s:height              <http://example.com/animal/zoborozec-kafersky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zoborozec-kafersky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zoborozec-kafersky.html#pregnancyLength> ;
+        s:location            "savany, lesy a travnaté pláně "@cs .
+
+<http://example.com/animal/zoborozec-kafersky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (menší obratlovci, hmyz, plody)"@cs .
+
+<http://example.com/animal/zoborozec-kafersky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "100" ;
+        s:maxValue  "90" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zoborozec-kafersky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "6,2" ;
+        s:maxValue  "2,2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zoborozec-kafersky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zebricka-pestra.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Taeniopygia castanotis"@la ;
+        sx:originalNameUsage  "Zebra Finch"@en ;
+        sx:originalNameUsage  "Zebřička pestrá"@cs ;
+        sx:order              "Pěvci (Passeriformes)"@cs ;
+        s:numberOfChildren    "5-9" ;
+        s:weight              <http://example.com/animal/zebricka-pestra.html#weight> ;
+        s:height              <http://example.com/animal/zebricka-pestra.html#height> ;
+        s:height              <http://example.com/animal/zebricka-pestra.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zebricka-pestra.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/zebricka-pestra.html#pregnancyLength> ;
+        s:location            "travnaté stepi, kulturní krajina"@cs .
+
+<http://example.com/animal/zebricka-pestra.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (semena, ovoce, zelenina)"@cs .
+
+<http://example.com/animal/zebricka-pestra.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "12" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/zebricka-pestra.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,018" ;
+        s:maxValue  "0,014" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zebricka-pestra.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/zebra-chapmanova.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus quagga chapmanni"@la ;
+        sx:originalNameUsage  "Chapman's zebra"@en ;
+        sx:originalNameUsage  "Zebra Chapmanova"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "365 dní " ;
+        s:weight              <http://example.com/animal/zebra-chapmanova.html#weight> ;
+        s:height              <http://example.com/animal/zebra-chapmanova.html#height> ;
+        s:height              <http://example.com/animal/zebra-chapmanova.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zebra-chapmanova.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zebra-chapmanova.html#pregnancyLength> ;
+        s:location            "savana"@cs .
+
+<http://example.com/animal/zebra-chapmanova.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva) "@cs .
+
+<http://example.com/animal/zebra-chapmanova.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "125" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/zebra-chapmanova.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "275" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zebra-chapmanova.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "365" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/zebra-bezhriva.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus quagga borensis"@la ;
+        sx:originalNameUsage  "Maneless zebra "@en ;
+        sx:originalNameUsage  "Zebra bezhřívá"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "365 dní" ;
+        s:weight              <http://example.com/animal/zebra-bezhriva.html#weight> ;
+        s:height              <http://example.com/animal/zebra-bezhriva.html#height> ;
+        s:height              <http://example.com/animal/zebra-bezhriva.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/zebra-bezhriva.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/zebra-bezhriva.html#pregnancyLength> ;
+        s:location            "savany, řídké lesy"@cs .
+
+<http://example.com/animal/zebra-bezhriva.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva) "@cs .
+
+<http://example.com/animal/zebra-bezhriva.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "140" ;
+        s:maxValue  "120" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/zebra-bezhriva.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "340" ;
+        s:maxValue  "160" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/zebra-bezhriva.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "365" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/vyrecek-belolici.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Ptilopsis granti"@la ;
+        sx:originalNameUsage  "Southern White-faced Owl"@en ;
+        sx:originalNameUsage  "Výreček bělolící"@cs ;
+        sx:order              "Sovy (Strigiformes)"@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:weight              <http://example.com/animal/vyrecek-belolici.html#weight> ;
+        s:height              <http://example.com/animal/vyrecek-belolici.html#height> ;
+        s:height              <http://example.com/animal/vyrecek-belolici.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/vyrecek-belolici.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/vyrecek-belolici.html#pregnancyLength> ;
+        s:location            "savany, lesnaté oblasti "@cs .
+
+<http://example.com/animal/vyrecek-belolici.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (bezobratlí, menší savci a ptáci)"@cs .
+
+<http://example.com/animal/vyrecek-belolici.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "24" ;
+        s:maxValue  "22" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/vyrecek-belolici.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,28" ;
+        s:maxValue  "0,13" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/vyrecek-belolici.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/vyr-velky-zapadosibirsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Bubo bubo sibiricus"@la ;
+        sx:originalNameUsage  "Eurasian Eagle Owl"@en ;
+        sx:originalNameUsage  "Výr velký západosibiřský"@cs ;
+        sx:order              "Sovy (Strigiformes)"@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:weight              <http://example.com/animal/vyr-velky-zapadosibirsky.html#weight> ;
+        s:height              <http://example.com/animal/vyr-velky-zapadosibirsky.html#height> ;
+        s:height              <http://example.com/animal/vyr-velky-zapadosibirsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/vyr-velky-zapadosibirsky.html#diet> ;
+        s:activity            "soumračná/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/vyr-velky-zapadosibirsky.html#pregnancyLength> ;
+        s:location            "lesnaté a skalnaté oblasti"@cs .
+
+<http://example.com/animal/vyr-velky-zapadosibirsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci: savci, ptáci)"@cs .
+
+<http://example.com/animal/vyr-velky-zapadosibirsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "75" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/vyr-velky-zapadosibirsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "4,2" ;
+        s:maxValue  "1,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/vyr-velky-zapadosibirsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/vikuna.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Vicugna vicugna"@la ;
+        sx:originalNameUsage  "Vicugna "@en ;
+        sx:originalNameUsage  "Vikuňa"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "330-340 dní " ;
+        s:weight              <http://example.com/animal/vikuna.html#weight> ;
+        s:height              <http://example.com/animal/vikuna.html#height> ;
+        s:height              <http://example.com/animal/vikuna.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/vikuna.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/vikuna.html#pregnancyLength> ;
+        s:location            "hory a horské louky  "@cs .
+
+<http://example.com/animal/vikuna.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (byliny, traviny) "@cs .
+
+<http://example.com/animal/vikuna.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "90" ;
+        s:unitCode  " cm vka v kohoutku" .
+
+<http://example.com/animal/vikuna.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "55" ;
+        s:maxValue  "45" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/vikuna.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "340" ;
+        s:maxValue  "330" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/velbloud-dvouhrby---domaci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Camelus bactrianus ferus"@la ;
+        sx:originalNameUsage  "Domestic Bactrian Camel "@en ;
+        sx:originalNameUsage  "Velbloud dvouhrbý - domácí"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "365-430 dní " ;
+        s:weight              <http://example.com/animal/velbloud-dvouhrby---domaci.html#weight> ;
+        s:height              <http://example.com/animal/velbloud-dvouhrby---domaci.html#height> ;
+        s:height              <http://example.com/animal/velbloud-dvouhrby---domaci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/velbloud-dvouhrby---domaci.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/velbloud-dvouhrby---domaci.html#pregnancyLength> ;
+        s:location            "pouště a stepi"@cs .
+
+<http://example.com/animal/velbloud-dvouhrby---domaci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (listy, tráva, větve)"@cs .
+
+<http://example.com/animal/velbloud-dvouhrby---domaci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "230" ;
+        s:maxValue  "180" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/velbloud-dvouhrby---domaci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "690" ;
+        s:maxValue  "450" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/velbloud-dvouhrby---domaci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "430" ;
+        s:maxValue  "365" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/varan-smaragdovy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Varanus prasinus"@la ;
+        sx:originalNameUsage  "Emerald monitor"@en ;
+        sx:originalNameUsage  "Varan smaragdový"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "2-5 ve snůšce " ;
+        s:weight              <http://example.com/animal/varan-smaragdovy.html#weight> ;
+        s:height              <http://example.com/animal/varan-smaragdovy.html#height> ;
+        s:height              <http://example.com/animal/varan-smaragdovy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/varan-smaragdovy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/varan-smaragdovy.html#pregnancyLength> ;
+        s:location            "tropický deštný les, mangrovy, plantáže"@cs .
+
+<http://example.com/animal/varan-smaragdovy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, ptačí vejce, plody)"@cs .
+
+<http://example.com/animal/varan-smaragdovy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "100" ;
+        s:maxValue  "70" ;
+        s:unitCode  " cm s ocasem" .
+
+<http://example.com/animal/varan-smaragdovy.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/varan-smaragdovy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/varan-modry.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Varanus macraei"@la ;
+        sx:originalNameUsage  "Blue-spotted Tree Monitor "@en ;
+        sx:originalNameUsage  "Varan modrý"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "3 ve snůšce " ;
+        s:weight              <http://example.com/animal/varan-modry.html#weight> ;
+        s:height              <http://example.com/animal/varan-modry.html#height> ;
+        s:height              <http://example.com/animal/varan-modry.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/varan-modry.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/varan-modry.html#pregnancyLength> ;
+        s:location            "tropický deštný les "@cs .
+
+<http://example.com/animal/varan-modry.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "hmyz, vejce, menší ještěři"@cs .
+
+<http://example.com/animal/varan-modry.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "110" ;
+        s:unitCode  " cm s ocasem " .
+
+<http://example.com/animal/varan-modry.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/varan-modry.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/varan-antracitovy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Varanus beccarii"@la ;
+        sx:originalNameUsage  "Beccari's monitor "@en ;
+        sx:originalNameUsage  "Varan antracitový"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "2-6 ve snůšce" ;
+        s:weight              <http://example.com/animal/varan-antracitovy.html#weight> ;
+        s:height              <http://example.com/animal/varan-antracitovy.html#height> ;
+        s:height              <http://example.com/animal/varan-antracitovy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/varan-antracitovy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/varan-antracitovy.html#pregnancyLength> ;
+        s:location            "tropický deštný les, mangrovy"@cs .
+
+<http://example.com/animal/varan-antracitovy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "bezobratlí a menší obratlovci"@cs .
+
+<http://example.com/animal/varan-antracitovy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "130" ;
+        s:unitCode  " cm s ocasem" .
+
+<http://example.com/animal/varan-antracitovy.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/varan-antracitovy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/uzovka-cervena.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pantherophis guttatus"@la ;
+        sx:originalNameUsage  "Eastern corn snake"@en ;
+        sx:originalNameUsage  "Užovka červená"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "12-24 " ;
+        s:weight              <http://example.com/animal/uzovka-cervena.html#weight> ;
+        s:height              <http://example.com/animal/uzovka-cervena.html#height> ;
+        s:height              <http://example.com/animal/uzovka-cervena.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/uzovka-cervena.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/uzovka-cervena.html#pregnancyLength> ;
+        s:location            "sušší křovinaté a zalesněné oblasi"@cs .
+
+<http://example.com/animal/uzovka-cervena.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "obatlovci (hlodavci, ještěrky, ptáci, netopýři)"@cs .
+
+<http://example.com/animal/uzovka-cervena.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "180" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/uzovka-cervena.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/uzovka-cervena.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/uzovka-amurska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Elaphe schrenckii"@la ;
+        sx:originalNameUsage  "Amur ratsnake"@en ;
+        sx:originalNameUsage  "Užovka amurská"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "8-15" ;
+        s:weight              <http://example.com/animal/uzovka-amurska.html#weight> ;
+        s:height              <http://example.com/animal/uzovka-amurska.html#height> ;
+        s:height              <http://example.com/animal/uzovka-amurska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/uzovka-amurska.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/uzovka-amurska.html#pregnancyLength> ;
+        s:location            "vlhké biotopy v okolí řek a lesů"@cs .
+
+<http://example.com/animal/uzovka-amurska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "obratlovci (savci, ptáci a jejich vejce)"@cs .
+
+<http://example.com/animal/uzovka-amurska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "170" ;
+        s:maxValue  "150" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/uzovka-amurska.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/uzovka-amurska.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/urial-bucharsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Ovis orientalis bocharensis"@la ;
+        sx:originalNameUsage  "Bukhara Urial"@en ;
+        sx:originalNameUsage  "Urial bucharský"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "190 dní " ;
+        s:weight              <http://example.com/animal/urial-bucharsky.html#weight> ;
+        s:height              <http://example.com/animal/urial-bucharsky.html#height> ;
+        s:height              <http://example.com/animal/urial-bucharsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/urial-bucharsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/urial-bucharsky.html#pregnancyLength> ;
+        s:location            "stepi"@cs .
+
+<http://example.com/animal/urial-bucharsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, křoviny)"@cs .
+
+<http://example.com/animal/urial-bucharsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "90" ;
+        s:maxValue  "80" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/urial-bucharsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "50" ;
+        s:maxValue  "40" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/urial-bucharsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "190" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/tygr-indicky---bila-forma.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Panthera tigris tigris"@la ;
+        sx:originalNameUsage  "White Tiger"@en ;
+        sx:originalNameUsage  "Tygr indický - bílá forma"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:pregnancyTime       "103 dní " ;
+        s:weight              <http://example.com/animal/tygr-indicky---bila-forma.html#weight> ;
+        s:height              <http://example.com/animal/tygr-indicky---bila-forma.html#height> ;
+        s:height              <http://example.com/animal/tygr-indicky---bila-forma.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/tygr-indicky---bila-forma.html#diet> ;
+        s:activity            "soumračná"@cs ;
+        my:pregnancyTime      <http://example.com/animal/tygr-indicky---bila-forma.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy - tygr indický"@cs .
+
+<http://example.com/animal/tygr-indicky---bila-forma.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (hlodavci, ptáci, plazi, obojživelníci)"@cs .
+
+<http://example.com/animal/tygr-indicky---bila-forma.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm v kohoutku " .
+
+<http://example.com/animal/tygr-indicky---bila-forma.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "200" ;
+        s:maxValue  "150" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/tygr-indicky---bila-forma.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "103" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/turako-cervenokorunkaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tauraco erythrolophus"@la ;
+        sx:originalNameUsage  "Red-crested Turaco"@en ;
+        sx:originalNameUsage  "Turako červenokorunkatý"@cs ;
+        sx:order              "Turakové (Musophagiformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/turako-cervenokorunkaty.html#weight> ;
+        s:height              <http://example.com/animal/turako-cervenokorunkaty.html#height> ;
+        s:height              <http://example.com/animal/turako-cervenokorunkaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/turako-cervenokorunkaty.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/turako-cervenokorunkaty.html#pregnancyLength> ;
+        s:location            "galeriové lesy poblíž řek, lesnatá krajina "@cs .
+
+<http://example.com/animal/turako-cervenokorunkaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (semena, bobule, ovoce)"@cs .
+
+<http://example.com/animal/turako-cervenokorunkaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "43" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/turako-cervenokorunkaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,33" ;
+        s:maxValue  "0,21" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/turako-cervenokorunkaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/tucnak-humboldtuv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Spheniscus humboldti"@la ;
+        sx:originalNameUsage  "Humboldt Penguin"@en ;
+        sx:originalNameUsage  "Tučňák Humboldtův"@cs ;
+        sx:order              "Tučňáci (Sphenisciformes)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/tucnak-humboldtuv.html#weight> ;
+        s:height              <http://example.com/animal/tucnak-humboldtuv.html#height> ;
+        s:height              <http://example.com/animal/tucnak-humboldtuv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/tucnak-humboldtuv.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/tucnak-humboldtuv.html#pregnancyLength> ;
+        s:location            "moře a jeho pobřeží "@cs .
+
+<http://example.com/animal/tucnak-humboldtuv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (ryby, olihně) "@cs .
+
+<http://example.com/animal/tucnak-humboldtuv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "70" ;
+        s:maxValue  "65" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/tucnak-humboldtuv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "7" ;
+        s:maxValue  "5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/tucnak-humboldtuv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/toko-zlutozoby.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tockus flavirostris"@la ;
+        sx:originalNameUsage  "Eastern Yellow-billed Hornbill,"@en ;
+        sx:originalNameUsage  "Toko žlutozobý"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "2-3 " ;
+        s:weight              <http://example.com/animal/toko-zlutozoby.html#weight> ;
+        s:height              <http://example.com/animal/toko-zlutozoby.html#height> ;
+        s:height              <http://example.com/animal/toko-zlutozoby.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/toko-zlutozoby.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/toko-zlutozoby.html#pregnancyLength> ;
+        s:location            "otevřená krajina: savany, okraje lesů "@cs .
+
+<http://example.com/animal/toko-zlutozoby.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (menší obratlovci, hmyz, plody)"@cs .
+
+<http://example.com/animal/toko-zlutozoby.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/toko-zlutozoby.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,28" ;
+        s:maxValue  "0,19" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/toko-zlutozoby.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/toko-deckenuv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tockus deckeni"@la ;
+        sx:originalNameUsage  "Von der Decken's Hornbill"@en ;
+        sx:originalNameUsage  "Toko Deckenův"@cs ;
+        sx:order              "Srostloprstí (Coraciiformes)"@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:weight              <http://example.com/animal/toko-deckenuv.html#weight> ;
+        s:height              <http://example.com/animal/toko-deckenuv.html#height> ;
+        s:height              <http://example.com/animal/toko-deckenuv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/toko-deckenuv.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/toko-deckenuv.html#pregnancyLength> ;
+        s:location            "křovinaté buše, savany "@cs .
+
+<http://example.com/animal/toko-deckenuv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (menší obratlovci, hmyz, plody)"@cs .
+
+<http://example.com/animal/toko-deckenuv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "35" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/toko-deckenuv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,21" ;
+        s:maxValue  "0,12" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/toko-deckenuv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/tilikva-obrovska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tiliqua gigas evanescens"@la ;
+        sx:originalNameUsage  "Giant Bluetongue Skink "@en ;
+        sx:originalNameUsage  "Tilikva obrovská"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "2-25" ;
+        s:pregnancyTime       "120-190 dní" ;
+        s:weight              <http://example.com/animal/tilikva-obrovska.html#weight> ;
+        s:height              <http://example.com/animal/tilikva-obrovska.html#height> ;
+        s:height              <http://example.com/animal/tilikva-obrovska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/tilikva-obrovska.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/tilikva-obrovska.html#pregnancyLength> ;
+        s:location            "lesnaté oblasti nížin i hor"@cs .
+
+<http://example.com/animal/tilikva-obrovska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (šneci, hmyz, mršiny, plody, květy)"@cs .
+
+<http://example.com/animal/tilikva-obrovska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "50" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm i s ocasem" .
+
+<http://example.com/animal/tilikva-obrovska.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/tilikva-obrovska.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "190" ;
+        s:maxValue  "120" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/tapir-jihoamericky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tapirus terrestris"@la ;
+        sx:originalNameUsage  "Brazilian Tapir"@en ;
+        sx:originalNameUsage  "Tapír jihoamerický"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1 " ;
+        s:pregnancyTime       "400 dní " ;
+        s:weight              <http://example.com/animal/tapir-jihoamericky.html#weight> ;
+        s:height              <http://example.com/animal/tapir-jihoamericky.html#height> ;
+        s:height              <http://example.com/animal/tapir-jihoamericky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/tapir-jihoamericky.html#diet> ;
+        s:activity            "denní/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/tapir-jihoamericky.html#pregnancyLength> ;
+        s:location            "nížinný, bažinatý tropický les"@cs .
+
+<http://example.com/animal/tapir-jihoamericky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, rákos, ovoce)"@cs .
+
+<http://example.com/animal/tapir-jihoamericky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "200" ;
+        s:maxValue  "170" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/tapir-jihoamericky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "250" ;
+        s:maxValue  "225" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/tapir-jihoamericky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "400" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/tamarin-pinci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Saguinus oedipus"@la ;
+        sx:originalNameUsage  "Cotton-headed Tamarin"@en ;
+        sx:originalNameUsage  "Tamarín pinčí"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "140 dní" ;
+        s:weight              <http://example.com/animal/tamarin-pinci.html#weight> ;
+        s:height              <http://example.com/animal/tamarin-pinci.html#height> ;
+        s:height              <http://example.com/animal/tamarin-pinci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/tamarin-pinci.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/tamarin-pinci.html#pregnancyLength> ;
+        s:location            "nížinný opadavý les"@cs .
+
+<http://example.com/animal/tamarin-pinci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovoce, nektar, hmyz, ptáci)"@cs .
+
+<http://example.com/animal/tamarin-pinci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm dlka tla s ocasem" .
+
+<http://example.com/animal/tamarin-pinci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,45" ;
+        s:maxValue  "0,4" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/tamarin-pinci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "140" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/takin-cinsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Budorcas taxicolor bedfordi"@la ;
+        sx:originalNameUsage  "Golden takin "@en ;
+        sx:originalNameUsage  "Takin čínský"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "220-250 dní " ;
+        s:weight              <http://example.com/animal/takin-cinsky.html#weight> ;
+        s:height              <http://example.com/animal/takin-cinsky.html#height> ;
+        s:height              <http://example.com/animal/takin-cinsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/takin-cinsky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/takin-cinsky.html#pregnancyLength> ;
+        s:location            "horské oblasti  "@cs .
+
+<http://example.com/animal/takin-cinsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (listy, tráva, pupeny, výhonky)"@cs .
+
+<http://example.com/animal/takin-cinsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "220" ;
+        s:maxValue  "170" ;
+        s:unitCode  " cm vka v kohoutku" .
+
+<http://example.com/animal/takin-cinsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "350" ;
+        s:maxValue  "300" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/takin-cinsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "250" ;
+        s:maxValue  "220" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/simpanz.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pan troglodytes"@la ;
+        sx:originalNameUsage  "Chimpanzee"@en ;
+        sx:originalNameUsage  "Šimpanz"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/simpanz.html#weight> ;
+        s:height              <http://example.com/animal/simpanz.html#height> ;
+        s:height              <http://example.com/animal/simpanz.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/simpanz.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/simpanz.html#pregnancyLength> ;
+        s:location            "tropický deštný les, savana"@cs .
+
+<http://example.com/animal/simpanz.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, ovoce, bezobratlí, obratlovci)"@cs .
+
+<http://example.com/animal/simpanz.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "95" ;
+        s:maxValue  "65" ;
+        s:unitCode  "  cm " .
+
+<http://example.com/animal/simpanz.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "60" ;
+        s:maxValue  "30" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/simpanz.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/surikata.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Suricata suricatta"@la ;
+        sx:originalNameUsage  "Meerkat"@en ;
+        sx:originalNameUsage  "Surikata"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-5" ;
+        s:pregnancyTime       "70-85 dní " ;
+        s:weight              <http://example.com/animal/surikata.html#weight> ;
+        s:height              <http://example.com/animal/surikata.html#height> ;
+        s:height              <http://example.com/animal/surikata.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/surikata.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/surikata.html#pregnancyLength> ;
+        s:location            "polopouště, suché savany"@cs .
+
+<http://example.com/animal/surikata.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, drobní obratlovci, kořínky)"@cs .
+
+<http://example.com/animal/surikata.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "60" ;
+        s:maxValue  "42" ;
+        s:unitCode  " cm dlka tla s ocasem " .
+
+<http://example.com/animal/surikata.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1" ;
+        s:maxValue  "0,62" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/surikata.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "85" ;
+        s:maxValue  "70" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/sup-mrchozravy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Neophron percnopterus"@la ;
+        sx:originalNameUsage  "Egyptian Vulture"@en ;
+        sx:originalNameUsage  "Sup mrchožravý"@cs ;
+        sx:order              "Dravci (Accipitriformes) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/sup-mrchozravy.html#weight> ;
+        s:height              <http://example.com/animal/sup-mrchozravy.html#height> ;
+        s:height              <http://example.com/animal/sup-mrchozravy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sup-mrchozravy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/sup-mrchozravy.html#pregnancyLength> ;
+        s:location            "otevřená krajina: step, poušť, hory "@cs .
+
+<http://example.com/animal/sup-mrchozravy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci, hmyz) "@cs .
+
+<http://example.com/animal/sup-mrchozravy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "70" ;
+        s:maxValue  "58" ;
+        s:unitCode  " cm vka" .
+
+<http://example.com/animal/sup-mrchozravy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2,2" ;
+        s:maxValue  "1,6" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/sup-mrchozravy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/sup-himalajsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Gyps himalayensis"@la ;
+        sx:originalNameUsage  "Himalayan Griffon"@en ;
+        sx:originalNameUsage  "Sup himálajský"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/sup-himalajsky.html#weight> ;
+        s:height              <http://example.com/animal/sup-himalajsky.html#height> ;
+        s:height              <http://example.com/animal/sup-himalajsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sup-himalajsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/sup-himalajsky.html#pregnancyLength> ;
+        s:location            "horské oblasti"@cs .
+
+<http://example.com/animal/sup-himalajsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (mršiny obratlovců) "@cs .
+
+<http://example.com/animal/sup-himalajsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "150" ;
+        s:maxValue  "116" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/sup-himalajsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "12" ;
+        s:maxValue  "8" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/sup-himalajsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/sovice-snezni.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Bubo (Nyctea) scandiaca"@la ;
+        sx:originalNameUsage  "Snowy Owl "@en ;
+        sx:originalNameUsage  "Sovice sněžní"@cs ;
+        sx:order              "Sovy (Strigiformes)"@cs ;
+        s:numberOfChildren    "3-11" ;
+        s:weight              <http://example.com/animal/sovice-snezni.html#weight> ;
+        s:height              <http://example.com/animal/sovice-snezni.html#height> ;
+        s:height              <http://example.com/animal/sovice-snezni.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sovice-snezni.html#diet> ;
+        s:activity            "denní/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/sovice-snezni.html#pregnancyLength> ;
+        s:location            "tundra, mokřady"@cs .
+
+<http://example.com/animal/sovice-snezni.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (menší savci a ptáci, bezobratlí)"@cs .
+
+<http://example.com/animal/sovice-snezni.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "70" ;
+        s:maxValue  "55" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/sovice-snezni.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2,95" ;
+        s:maxValue  "0,7" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/sovice-snezni.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/sob-lesni-karelsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Rangifer tarandus fennicus"@la ;
+        sx:originalNameUsage  "Reindeer"@en ;
+        sx:originalNameUsage  "Sob lesní karelský"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "220-250 dní " ;
+        s:weight              <http://example.com/animal/sob-lesni-karelsky.html#weight> ;
+        s:height              <http://example.com/animal/sob-lesni-karelsky.html#height> ;
+        s:height              <http://example.com/animal/sob-lesni-karelsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sob-lesni-karelsky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/sob-lesni-karelsky.html#pregnancyLength> ;
+        s:location            "tundra, tajga"@cs .
+
+<http://example.com/animal/sob-lesni-karelsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, byliny, lišejníky, pupeny)"@cs .
+
+<http://example.com/animal/sob-lesni-karelsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "130" ;
+        s:maxValue  "80" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/sob-lesni-karelsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "250" ;
+        s:maxValue  "90" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/sob-lesni-karelsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "250" ;
+        s:maxValue  "220" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/slon-indicky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Elephas maximus "@la ;
+        sx:originalNameUsage  "Asian elephant"@en ;
+        sx:originalNameUsage  "Slon indický"@cs ;
+        sx:order              "Chobotnatci (Proboscidea)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "660-680 dní" ;
+        s:weight              <http://example.com/animal/slon-indicky.html#weight> ;
+        s:height              <http://example.com/animal/slon-indicky.html#height> ;
+        s:height              <http://example.com/animal/slon-indicky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/slon-indicky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/slon-indicky.html#pregnancyLength> ;
+        s:location            "tropický deštný les "@cs .
+
+<http://example.com/animal/slon-indicky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (kůra stromů, listy, kořínky, plody)"@cs .
+
+<http://example.com/animal/slon-indicky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "350" ;
+        s:unitCode  " cm dlka " .
+
+<http://example.com/animal/slon-indicky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "5000" ;
+        s:maxValue  "2000" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/slon-indicky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "680" ;
+        s:maxValue  "660" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/satyr-cabotuv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tragopan caboti"@la ;
+        sx:originalNameUsage  "Cabot's Tragopan"@en ;
+        sx:originalNameUsage  "Satyr Cabotův"@cs ;
+        sx:order              "Hrabaví (Galliformes)"@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:weight              <http://example.com/animal/satyr-cabotuv.html#weight> ;
+        s:height              <http://example.com/animal/satyr-cabotuv.html#height> ;
+        s:height              <http://example.com/animal/satyr-cabotuv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/satyr-cabotuv.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/satyr-cabotuv.html#pregnancyLength> ;
+        s:location            "horské smíšené lesy a otevřená krajina"@cs .
+
+<http://example.com/animal/satyr-cabotuv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (převaha rostlinné složky, hmyz)"@cs .
+
+<http://example.com/animal/satyr-cabotuv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "60" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/satyr-cabotuv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,4" ;
+        s:maxValue  "0,9" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/satyr-cabotuv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/sarance-vsezrava.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Schistocerca gregaria"@la ;
+        sx:originalNameUsage  "Desert locust "@en ;
+        sx:originalNameUsage  "Saranče všežravá"@cs ;
+        sx:order              "Rovnokřídlí (Orthoptera)"@cs ;
+        s:numberOfChildren    "40-400 jedna snůška" ;
+        s:weight              <http://example.com/animal/sarance-vsezrava.html#weight> ;
+        s:height              <http://example.com/animal/sarance-vsezrava.html#height> ;
+        s:height              <http://example.com/animal/sarance-vsezrava.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sarance-vsezrava.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/sarance-vsezrava.html#pregnancyLength> ;
+        s:location            "suché biotopy (polopoušť, poušť)"@cs .
+
+<http://example.com/animal/sarance-vsezrava.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "převážně býložravec (traviny, obiloviny)"@cs .
+
+<http://example.com/animal/sarance-vsezrava.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "7" ;
+        s:maxValue  "3" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/sarance-vsezrava.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/sarance-vsezrava.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/sambar-skvrnity.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Rusa alfredi"@la ;
+        sx:originalNameUsage  "Visayan Spotted Deer"@en ;
+        sx:originalNameUsage  "Sambar skvrnitý"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/sambar-skvrnity.html#weight> ;
+        s:height              <http://example.com/animal/sambar-skvrnity.html#height> ;
+        s:height              <http://example.com/animal/sambar-skvrnity.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/sambar-skvrnity.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/sambar-skvrnity.html#pregnancyLength> ;
+        s:location            "lesy, traviny "@cs .
+
+<http://example.com/animal/sambar-skvrnity.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (výhonky, listy, pupeny)"@cs .
+
+<http://example.com/animal/sambar-skvrnity.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "80" ;
+        s:maxValue  "70" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/sambar-skvrnity.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "85" ;
+        s:maxValue  "25" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/sambar-skvrnity.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/rys-karpatsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Lynx lynx carpaticus"@la ;
+        sx:originalNameUsage  "Carpathian Lynx "@en ;
+        sx:originalNameUsage  "Rys karpatský"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:pregnancyTime       "70 dní " ;
+        s:weight              <http://example.com/animal/rys-karpatsky.html#weight> ;
+        s:height              <http://example.com/animal/rys-karpatsky.html#height> ;
+        s:height              <http://example.com/animal/rys-karpatsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/rys-karpatsky.html#diet> ;
+        s:activity            "soumrak a noc"@cs ;
+        my:pregnancyTime      <http://example.com/animal/rys-karpatsky.html#pregnancyLength> ;
+        s:location            "lesy mírného pásma"@cs .
+
+<http://example.com/animal/rys-karpatsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (savci, ptáci)"@cs .
+
+<http://example.com/animal/rys-karpatsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "70" ;
+        s:unitCode  " cm v kohoutku " .
+
+<http://example.com/animal/rys-karpatsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "25" ;
+        s:maxValue  "20" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/rys-karpatsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "70" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/rosnicka-vceli.html>
+        rdf:type              sx:Animal ;
+        sx:originalNameUsage  "Rosnička včelí"@cs ;
+        sx:order              "Žáby (Anura) "@cs ;
+        s:weight              <http://example.com/animal/rosnicka-vceli.html#weight> ;
+        s:height              <http://example.com/animal/rosnicka-vceli.html#height> ;
+        s:height              <http://example.com/animal/rosnicka-vceli.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/rosnicka-vceli.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/rosnicka-vceli.html#pregnancyLength> ;
+        s:location            "tropický deštný les"@cs .
+
+<http://example.com/animal/rosnicka-vceli.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "bezobratlí (hmyz)"@cs .
+
+<http://example.com/animal/rosnicka-vceli.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "10" ;
+        s:maxValue  "6" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/rosnicka-vceli.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "35" ;
+        s:maxValue  "12" ;
+        s:unitCode  "g" .
+
+<http://example.com/animal/rosnicka-vceli.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/pustik-bradaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Strix nebulosa"@la ;
+        sx:originalNameUsage  "Great Grey Owl"@en ;
+        sx:originalNameUsage  "Puštík bradatý"@cs ;
+        sx:order              "Sovy (Strigiformes)"@cs ;
+        s:numberOfChildren    "2-9 " ;
+        s:weight              <http://example.com/animal/pustik-bradaty.html#weight> ;
+        s:height              <http://example.com/animal/pustik-bradaty.html#height> ;
+        s:height              <http://example.com/animal/pustik-bradaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/pustik-bradaty.html#diet> ;
+        s:activity            "soumračná/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/pustik-bradaty.html#pregnancyLength> ;
+        s:location            "boreální a jehličnaté lesy "@cs .
+
+<http://example.com/animal/pustik-bradaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci, hmyz) "@cs .
+
+<http://example.com/animal/pustik-bradaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "69" ;
+        s:maxValue  "59" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/pustik-bradaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,7" ;
+        s:maxValue  "0,8" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/pustik-bradaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/pustik-belavy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Strix uralensis"@la ;
+        sx:originalNameUsage  "Ural Owl"@en ;
+        sx:originalNameUsage  "Puštík bělavý"@cs ;
+        sx:order              "Sovy (Strigiformes)"@cs ;
+        s:numberOfChildren    "1-6" ;
+        s:weight              <http://example.com/animal/pustik-belavy.html#weight> ;
+        s:height              <http://example.com/animal/pustik-belavy.html#height> ;
+        s:height              <http://example.com/animal/pustik-belavy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/pustik-belavy.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/pustik-belavy.html#pregnancyLength> ;
+        s:location            "boreální lesy s bažinami, horské bukové lesy"@cs .
+
+<http://example.com/animal/pustik-belavy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (hlodavci, ptáci, plazi, obojživelníci)"@cs .
+
+<http://example.com/animal/pustik-belavy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "62" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/pustik-belavy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,3" ;
+        s:maxValue  "0,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/pustik-belavy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/plamenak-ruzovy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Phoenicopterus roseus"@la ;
+        sx:originalNameUsage  "Greater Flamingo"@en ;
+        sx:originalNameUsage  "Plameňák růžový"@cs ;
+        sx:order              "Plameňáci (Phoenicopteriformes)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/plamenak-ruzovy.html#weight> ;
+        s:height              <http://example.com/animal/plamenak-ruzovy.html#height> ;
+        s:height              <http://example.com/animal/plamenak-ruzovy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/plamenak-ruzovy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/plamenak-ruzovy.html#pregnancyLength> ;
+        s:location            "slaná jezera a laguny, ústí řek "@cs .
+
+<http://example.com/animal/plamenak-ruzovy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (vodní bezobratlí, ryby, řasy)"@cs .
+
+<http://example.com/animal/plamenak-ruzovy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "150" ;
+        s:maxValue  "120" ;
+        s:unitCode  " cm vka" .
+
+<http://example.com/animal/plamenak-ruzovy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "4" ;
+        s:maxValue  "2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/plamenak-ruzovy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/plamenak-kubansky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Phoenicopterus ruber"@la ;
+        sx:originalNameUsage  "Caribbean Flamingo "@en ;
+        sx:originalNameUsage  "Plameňák kubánský"@cs ;
+        sx:order              "Plameňáci (Phoenicopteriformes)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/plamenak-kubansky.html#weight> ;
+        s:height              <http://example.com/animal/plamenak-kubansky.html#height> ;
+        s:height              <http://example.com/animal/plamenak-kubansky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/plamenak-kubansky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/plamenak-kubansky.html#pregnancyLength> ;
+        s:location            "slané i sladké vody jezer a řek, mělké laguny"@cs .
+
+<http://example.com/animal/plamenak-kubansky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (vodní bezobratlí, ryby, řasy)"@cs .
+
+<http://example.com/animal/plamenak-kubansky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "145" ;
+        s:maxValue  "120" ;
+        s:unitCode  " cm vka" .
+
+<http://example.com/animal/plamenak-kubansky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "4" ;
+        s:maxValue  "2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/plamenak-kubansky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/pelikan-skvrnozoby.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pelecanus philippensis"@la ;
+        sx:originalNameUsage  "Spot-billed pelican"@en ;
+        sx:originalNameUsage  "Pelikán skvrnozobý"@cs ;
+        sx:order              "Veslonozí (Pelecaniformes)"@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:weight              <http://example.com/animal/pelikan-skvrnozoby.html#weight> ;
+        s:height              <http://example.com/animal/pelikan-skvrnozoby.html#height> ;
+        s:height              <http://example.com/animal/pelikan-skvrnozoby.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/pelikan-skvrnozoby.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/pelikan-skvrnozoby.html#pregnancyLength> ;
+        s:location            "mokřady se slanou i sladkou vodou"@cs .
+
+<http://example.com/animal/pelikan-skvrnozoby.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (ryby, korýši, žáby)"@cs .
+
+<http://example.com/animal/pelikan-skvrnozoby.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "152" ;
+        s:maxValue  "127" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/pelikan-skvrnozoby.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "5" ;
+        s:maxValue  "4,1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/pelikan-skvrnozoby.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/pelikan-bily.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pelecanus onocrotalus"@la ;
+        sx:originalNameUsage  "Great White Pelican"@en ;
+        sx:originalNameUsage  "Pelikán bílý"@cs ;
+        sx:order              "Veslonozí (Pelecaniformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/pelikan-bily.html#weight> ;
+        s:height              <http://example.com/animal/pelikan-bily.html#height> ;
+        s:height              <http://example.com/animal/pelikan-bily.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/pelikan-bily.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/pelikan-bily.html#pregnancyLength> ;
+        s:location            "jezera, delty řek, bažiny"@cs .
+
+<http://example.com/animal/pelikan-bily.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (ryby, vajíčka a mláďata vodních ptáků)"@cs .
+
+<http://example.com/animal/pelikan-bily.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "175" ;
+        s:maxValue  "148" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/pelikan-bily.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "15" ;
+        s:maxValue  "5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/pelikan-bily.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/pavian-plastikovy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Papio hamadryas"@la ;
+        sx:originalNameUsage  "Hamadryas Baboon"@en ;
+        sx:originalNameUsage  "Pavián pláštíkový"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "165-184 dní " ;
+        s:weight              <http://example.com/animal/pavian-plastikovy.html#weight> ;
+        s:height              <http://example.com/animal/pavian-plastikovy.html#height> ;
+        s:height              <http://example.com/animal/pavian-plastikovy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/pavian-plastikovy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/pavian-plastikovy.html#pregnancyLength> ;
+        s:location            "stepi, savany, skalnaté pouště, horská údolí"@cs .
+
+<http://example.com/animal/pavian-plastikovy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (tráva, ovoce, bezobratlí, menší savci)"@cs .
+
+<http://example.com/animal/pavian-plastikovy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "95,4260" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm dlka tla  cm ocas" .
+
+<http://example.com/animal/pavian-plastikovy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "21" ;
+        s:maxValue  "10" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/pavian-plastikovy.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "184" ;
+        s:maxValue  "165" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/papousek-vlnkovany.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Melopsittacus undulatus"@la ;
+        sx:originalNameUsage  "Budgerigar"@en ;
+        sx:originalNameUsage  "Papoušek vlnkovaný"@cs ;
+        sx:order              "Papoušci (Psittaciformes)"@cs ;
+        s:numberOfChildren    "4-6" ;
+        s:weight              <http://example.com/animal/papousek-vlnkovany.html#weight> ;
+        s:height              <http://example.com/animal/papousek-vlnkovany.html#height> ;
+        s:height              <http://example.com/animal/papousek-vlnkovany.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/papousek-vlnkovany.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/papousek-vlnkovany.html#pregnancyLength> ;
+        s:location            "otevřená krajina, v okolí lidských sídel"@cs .
+
+<http://example.com/animal/papousek-vlnkovany.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (semena)"@cs .
+
+<http://example.com/animal/papousek-vlnkovany.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "18" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/papousek-vlnkovany.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,03" ;
+        s:maxValue  "0,026" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/papousek-vlnkovany.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/panda-cervena.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Ailurus fulgens"@la ;
+        sx:originalNameUsage  "Red Panda"@en ;
+        sx:originalNameUsage  "Panda červená"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-4" ;
+        s:pregnancyTime       "90-150 dní " ;
+        s:weight              <http://example.com/animal/panda-cervena.html#weight> ;
+        s:height              <http://example.com/animal/panda-cervena.html#height> ;
+        s:height              <http://example.com/animal/panda-cervena.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/panda-cervena.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/panda-cervena.html#pregnancyLength> ;
+        s:location            "bambusové porosty horských lesů mírného pásma"@cs .
+
+<http://example.com/animal/panda-cervena.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (bambus, menší obratlovci)"@cs .
+
+<http://example.com/animal/panda-cervena.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "115" ;
+        s:maxValue  "80" ;
+        s:unitCode  " cm dlka tla i s ocasem" .
+
+<http://example.com/animal/panda-cervena.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "6" ;
+        s:maxValue  "3" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/panda-cervena.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "150" ;
+        s:maxValue  "90" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/ovce-kamerunska---domaci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Ovis aries"@la ;
+        sx:originalNameUsage  "Cameroon sheep"@en ;
+        sx:originalNameUsage  "Ovce kamerunská - domácí"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "90-100 dní " ;
+        s:weight              <http://example.com/animal/ovce-kamerunska---domaci.html#weight> ;
+        s:height              <http://example.com/animal/ovce-kamerunska---domaci.html#height> ;
+        s:height              <http://example.com/animal/ovce-kamerunska---domaci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/ovce-kamerunska---domaci.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/ovce-kamerunska---domaci.html#pregnancyLength> ;
+        s:location            "travnaté oblasti, lidská sídla"@cs .
+
+<http://example.com/animal/ovce-kamerunska---domaci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva) "@cs .
+
+<http://example.com/animal/ovce-kamerunska---domaci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "50" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm v kohoutku " .
+
+<http://example.com/animal/ovce-kamerunska---domaci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "35" ;
+        s:maxValue  "25" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/ovce-kamerunska---domaci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "100" ;
+        s:maxValue  "90" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/osel-somalsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Equus africanus somaliensis"@la ;
+        sx:originalNameUsage  "Somali Wild Ass"@en ;
+        sx:originalNameUsage  "Osel somálský"@cs ;
+        sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "330-365 dní " ;
+        s:weight              <http://example.com/animal/osel-somalsky.html#weight> ;
+        s:height              <http://example.com/animal/osel-somalsky.html#height> ;
+        s:height              <http://example.com/animal/osel-somalsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/osel-somalsky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/osel-somalsky.html#pregnancyLength> ;
+        s:location            "kamenité polopouště"@cs .
+
+<http://example.com/animal/osel-somalsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, kořinky)"@cs .
+
+<http://example.com/animal/osel-somalsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "150" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/osel-somalsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "370" ;
+        s:maxValue  "320" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/osel-somalsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "365" ;
+        s:maxValue  "330" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/orlosup-bradaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Gypaetus barbatus aureus"@la ;
+        sx:originalNameUsage  "Bearded Vulture"@en ;
+        sx:originalNameUsage  "Orlosup bradatý"@cs ;
+        sx:order              "Dravci (Accipitriformes) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/orlosup-bradaty.html#weight> ;
+        s:height              <http://example.com/animal/orlosup-bradaty.html#height> ;
+        s:height              <http://example.com/animal/orlosup-bradaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orlosup-bradaty.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orlosup-bradaty.html#pregnancyLength> ;
+        s:location            "hory se skalnatým terénem"@cs .
+
+<http://example.com/animal/orlosup-bradaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci) "@cs .
+
+<http://example.com/animal/orlosup-bradaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "115" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/orlosup-bradaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "7,1" ;
+        s:maxValue  "4,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orlosup-bradaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orlik-kratkoprsty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Circaetus gallicus"@la ;
+        sx:originalNameUsage  "Short-toed Snake-eagle"@en ;
+        sx:originalNameUsage  "Orlík krátkoprstý"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/orlik-kratkoprsty.html#weight> ;
+        s:height              <http://example.com/animal/orlik-kratkoprsty.html#height> ;
+        s:height              <http://example.com/animal/orlik-kratkoprsty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orlik-kratkoprsty.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orlik-kratkoprsty.html#pregnancyLength> ;
+        s:location            "otevřená krajina, polopouště, stepi"@cs .
+
+<http://example.com/animal/orlik-kratkoprsty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (plazi, obojživelníci, menší savci)"@cs .
+
+<http://example.com/animal/orlik-kratkoprsty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "67" ;
+        s:maxValue  "62" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/orlik-kratkoprsty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2,3" ;
+        s:maxValue  "1,2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orlik-kratkoprsty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orel-vychodni.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Haliaeetus pelagicus"@la ;
+        sx:originalNameUsage  "Steller's Sea Eagle"@en ;
+        sx:originalNameUsage  "Orel východní"@cs ;
+        sx:order              "Dravci (Accipitriformes) "@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/orel-vychodni.html#weight> ;
+        s:height              <http://example.com/animal/orel-vychodni.html#height> ;
+        s:height              <http://example.com/animal/orel-vychodni.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orel-vychodni.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orel-vychodni.html#pregnancyLength> ;
+        s:location            "pobřeží, zalesněná krajina poblíž řek "@cs .
+
+<http://example.com/animal/orel-vychodni.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (ryby) "@cs .
+
+<http://example.com/animal/orel-vychodni.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "94" ;
+        s:maxValue  "85" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/orel-vychodni.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "9" ;
+        s:maxValue  "4,9" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orel-vychodni.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orel-skalni.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Aquila chrysaetos"@la ;
+        sx:originalNameUsage  "Golden Eagle"@en ;
+        sx:originalNameUsage  "Orel skalní"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "2" ;
+        s:weight              <http://example.com/animal/orel-skalni.html#weight> ;
+        s:height              <http://example.com/animal/orel-skalni.html#height> ;
+        s:height              <http://example.com/animal/orel-skalni.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orel-skalni.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orel-skalni.html#pregnancyLength> ;
+        s:location            "otevřená krajina hor "@cs .
+
+<http://example.com/animal/orel-skalni.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (savci, ptáci)"@cs .
+
+<http://example.com/animal/orel-skalni.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "90" ;
+        s:maxValue  "75" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/orel-skalni.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "6,9" ;
+        s:maxValue  "2,8" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orel-skalni.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orel-nejmensi.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Hieraaetus pennatus"@la ;
+        sx:originalNameUsage  "Booted Eagle"@en ;
+        sx:originalNameUsage  "Orel nejmenší"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:weight              <http://example.com/animal/orel-nejmensi.html#weight> ;
+        s:height              <http://example.com/animal/orel-nejmensi.html#height> ;
+        s:height              <http://example.com/animal/orel-nejmensi.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orel-nejmensi.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orel-nejmensi.html#pregnancyLength> ;
+        s:location            "otevřená krajina poblíž lesa, hory"@cs .
+
+<http://example.com/animal/orel-nejmensi.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (menší obratlovci, hmyz) "@cs .
+
+<http://example.com/animal/orel-nejmensi.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "52" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/orel-nejmensi.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1" ;
+        s:maxValue  "0,75" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orel-nejmensi.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orel-kriklavy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Aquila pomarina"@la ;
+        sx:originalNameUsage  "Lesser Spotted Eagle "@en ;
+        sx:originalNameUsage  "Orel křiklavý"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:weight              <http://example.com/animal/orel-kriklavy.html#weight> ;
+        s:height              <http://example.com/animal/orel-kriklavy.html#height> ;
+        s:height              <http://example.com/animal/orel-kriklavy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orel-kriklavy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orel-kriklavy.html#pregnancyLength> ;
+        s:location            "lesy poblíž polí a luk "@cs .
+
+<http://example.com/animal/orel-kriklavy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (obratlovci) "@cs .
+
+<http://example.com/animal/orel-kriklavy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "64" ;
+        s:maxValue  "57" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/orel-kriklavy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2" ;
+        s:maxValue  "1,1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orel-kriklavy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/orel-kralovsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Aquila heliaca"@la ;
+        sx:originalNameUsage  "Imperial Eagle"@en ;
+        sx:originalNameUsage  "Orel královský"@cs ;
+        sx:order              "Dravci (Accipitriformes)"@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:weight              <http://example.com/animal/orel-kralovsky.html#weight> ;
+        s:height              <http://example.com/animal/orel-kralovsky.html#height> ;
+        s:height              <http://example.com/animal/orel-kralovsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/orel-kralovsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/orel-kralovsky.html#pregnancyLength> ;
+        s:location            "otevřená krajina, stepi, polopouště"@cs .
+
+<http://example.com/animal/orel-kralovsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (savci, ptáci)"@cs .
+
+<http://example.com/animal/orel-kralovsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "84" ;
+        s:maxValue  "72" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/orel-kralovsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "4,5" ;
+        s:maxValue  "2,5" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/orel-kralovsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/nyala-nizinna.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Tragelaphus angasi"@la ;
+        sx:originalNameUsage  "Nyala"@en ;
+        sx:originalNameUsage  "Nyala nížinná"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "220 dní " ;
+        s:weight              <http://example.com/animal/nyala-nizinna.html#weight> ;
+        s:height              <http://example.com/animal/nyala-nizinna.html#height> ;
+        s:height              <http://example.com/animal/nyala-nizinna.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/nyala-nizinna.html#diet> ;
+        s:activity            "noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/nyala-nizinna.html#pregnancyLength> ;
+        s:location            "nížinné lesy poblíž vody "@cs .
+
+<http://example.com/animal/nyala-nizinna.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listí, plody) "@cs .
+
+<http://example.com/animal/nyala-nizinna.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "110" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/nyala-nizinna.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "140" ;
+        s:maxValue  "62" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/nyala-nizinna.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "220" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/nosal-cerveny.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Nasua nasua"@la ;
+        sx:originalNameUsage  "South American coati"@en ;
+        sx:originalNameUsage  "Nosál červený"@cs ;
+        sx:order              "šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-7" ;
+        s:pregnancyTime       "70-77 dní " ;
+        s:weight              <http://example.com/animal/nosal-cerveny.html#weight> ;
+        s:height              <http://example.com/animal/nosal-cerveny.html#height> ;
+        s:height              <http://example.com/animal/nosal-cerveny.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/nosal-cerveny.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/nosal-cerveny.html#pregnancyLength> ;
+        s:location            "listnaté a smíšené lesy"@cs .
+
+<http://example.com/animal/nosal-cerveny.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hlízy, plody, ptačí vejce a mláďata)"@cs .
+
+<http://example.com/animal/nosal-cerveny.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "137" ;
+        s:maxValue  "67" ;
+        s:unitCode  " cm dlka tla s ocasem" .
+
+<http://example.com/animal/nosal-cerveny.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "8" ;
+        s:maxValue  "3" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/nosal-cerveny.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "77" ;
+        s:maxValue  "70" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/nestor-kea.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Nestor notabilis"@la ;
+        sx:originalNameUsage  "Kea "@en ;
+        sx:originalNameUsage  "Nestor kea"@cs ;
+        sx:order              "Papoušci (Psittaciformes)"@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:weight              <http://example.com/animal/nestor-kea.html#weight> ;
+        s:height              <http://example.com/animal/nestor-kea.html#height> ;
+        s:height              <http://example.com/animal/nestor-kea.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/nestor-kea.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/nestor-kea.html#pregnancyLength> ;
+        s:location            "horské oblasti  "@cs .
+
+<http://example.com/animal/nestor-kea.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (kořínky, bobule, semena, hmyz, mršiny)"@cs .
+
+<http://example.com/animal/nestor-kea.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "48" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/nestor-kea.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "0,92" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/nestor-kea.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/nandu-darwinuv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pterocnemia pennata pennata"@la ;
+        sx:originalNameUsage  "Darwin's rhea "@en ;
+        sx:originalNameUsage  "Nandu Darwinův"@cs ;
+        sx:order              "Nanduové (Rheiformes) "@cs ;
+        s:numberOfChildren    "10-30 " ;
+        s:weight              <http://example.com/animal/nandu-darwinuv.html#weight> ;
+        s:height              <http://example.com/animal/nandu-darwinuv.html#height> ;
+        s:height              <http://example.com/animal/nandu-darwinuv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/nandu-darwinuv.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/nandu-darwinuv.html#pregnancyLength> ;
+        s:location            "pouštní horské oblasti (puna), travnaté plochy"@cs .
+
+<http://example.com/animal/nandu-darwinuv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, listy, tráva, hmyz)"@cs .
+
+<http://example.com/animal/nandu-darwinuv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "100" ;
+        s:maxValue  "93" ;
+        s:unitCode  " cm vka tla " .
+
+<http://example.com/animal/nandu-darwinuv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "25" ;
+        s:maxValue  "15" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/nandu-darwinuv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/nahur-modry.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pseudois nayaur"@la ;
+        sx:originalNameUsage  "Bharal "@en ;
+        sx:originalNameUsage  "Nahur modrý"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "160 dní " ;
+        s:weight              <http://example.com/animal/nahur-modry.html#weight> ;
+        s:height              <http://example.com/animal/nahur-modry.html#height> ;
+        s:height              <http://example.com/animal/nahur-modry.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/nahur-modry.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/nahur-modry.html#pregnancyLength> ;
+        s:location            "hory, hoské louky "@cs .
+
+<http://example.com/animal/nahur-modry.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, lišejníky, mechy, výhonky)"@cs .
+
+<http://example.com/animal/nahur-modry.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "90" ;
+        s:maxValue  "75" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/nahur-modry.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "80" ;
+        s:maxValue  "50" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/nahur-modry.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "160" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/mys-domaci-%28laboratorni%29.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Mus musculus var. alba"@la ;
+        sx:originalNameUsage  "House mouse "@en ;
+        sx:originalNameUsage  "Myš domácí (laboratorní)"@cs ;
+        sx:order              "Hlodavci (Rodentia) "@cs ;
+        s:numberOfChildren    "1-22" ;
+        s:pregnancyTime       "21-23 dní" ;
+        s:weight              <http://example.com/animal/mys-domaci-%28laboratorni%29.html#weight> ;
+        s:height              <http://example.com/animal/mys-domaci-%28laboratorni%29.html#height> ;
+        s:height              <http://example.com/animal/mys-domaci-%28laboratorni%29.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/mys-domaci-%28laboratorni%29.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/mys-domaci-%28laboratorni%29.html#pregnancyLength> ;
+        s:location            "okolí lidských sídel, zemědělské plochy"@cs .
+
+<http://example.com/animal/mys-domaci-%28laboratorni%29.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (zrní, semena, hmyz)"@cs .
+
+<http://example.com/animal/mys-domaci-%28laboratorni%29.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "10,510" ;
+        s:maxValue  "7,5" ;
+        s:unitCode  " cm ocas  cm " .
+
+<http://example.com/animal/mys-domaci-%28laboratorni%29.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,030" ;
+        s:maxValue  "0,009" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/mys-domaci-%28laboratorni%29.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "23" ;
+        s:maxValue  "21" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/muntzak-maly.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Muntiacus reevesi"@la ;
+        sx:originalNameUsage  "Reeves's Muntjac"@en ;
+        sx:originalNameUsage  "Muntžak malý"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "180-190 dní " ;
+        s:weight              <http://example.com/animal/muntzak-maly.html#weight> ;
+        s:height              <http://example.com/animal/muntzak-maly.html#height> ;
+        s:height              <http://example.com/animal/muntzak-maly.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/muntzak-maly.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/muntzak-maly.html#pregnancyLength> ;
+        s:location            "tropické lesy "@cs .
+
+<http://example.com/animal/muntzak-maly.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listí, výhonky, ovoce)"@cs .
+
+<http://example.com/animal/muntzak-maly.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "50" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/muntzak-maly.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "18" ;
+        s:maxValue  "10" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/muntzak-maly.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "190" ;
+        s:maxValue  "180" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/muntzak-chocholaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Elaphodus cephalophus michianus"@la ;
+        sx:originalNameUsage  "Tufted Deer"@en ;
+        sx:originalNameUsage  "Muntžak chocholatý"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "180 dní" ;
+        s:weight              <http://example.com/animal/muntzak-chocholaty.html#weight> ;
+        s:height              <http://example.com/animal/muntzak-chocholaty.html#height> ;
+        s:height              <http://example.com/animal/muntzak-chocholaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/muntzak-chocholaty.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/muntzak-chocholaty.html#pregnancyLength> ;
+        s:location            "vlhké lesy poblíž vod"@cs .
+
+<http://example.com/animal/muntzak-chocholaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (bambus, tráva, ovocné plody)"@cs .
+
+<http://example.com/animal/muntzak-chocholaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "120" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/muntzak-chocholaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "30" ;
+        s:maxValue  "17" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/muntzak-chocholaty.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "180" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/mravenecnik-velky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Myrmecophaga tridactyla"@la ;
+        sx:originalNameUsage  "Giant Anteater"@en ;
+        sx:originalNameUsage  "Mravenečník velký"@cs ;
+        sx:order              "Chudozubí (Xenarthra)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "160-184 dní" ;
+        s:weight              <http://example.com/animal/mravenecnik-velky.html#weight> ;
+        s:height              <http://example.com/animal/mravenecnik-velky.html#height> ;
+        s:height              <http://example.com/animal/mravenecnik-velky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/mravenecnik-velky.html#diet> ;
+        s:activity            "denní i noční v závislosti na prostředí"@cs ;
+        my:pregnancyTime      <http://example.com/animal/mravenecnik-velky.html#pregnancyLength> ;
+        s:location            "tropický les, pampy"@cs .
+
+<http://example.com/animal/mravenecnik-velky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "myrmekofág (mravenci, termiti)"@cs .
+
+<http://example.com/animal/mravenecnik-velky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "130,4060" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm dlka tla  cm ocas" .
+
+<http://example.com/animal/mravenecnik-velky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "60" ;
+        s:maxValue  "35" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/mravenecnik-velky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "184" ;
+        s:maxValue  "160" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/morce-domaci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Cavia aperea var. porcellus"@la ;
+        sx:originalNameUsage  "Guinea pig"@en ;
+        sx:originalNameUsage  "Morče domácí"@cs ;
+        sx:order              "Hlodavci (Rodentia)"@cs ;
+        s:numberOfChildren    "1-5" ;
+        s:pregnancyTime       "60-70 dní " ;
+        s:weight              <http://example.com/animal/morce-domaci.html#weight> ;
+        s:height              <http://example.com/animal/morce-domaci.html#height> ;
+        s:height              <http://example.com/animal/morce-domaci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/morce-domaci.html#diet> ;
+        s:activity            "denn�� "@cs ;
+        my:pregnancyTime      <http://example.com/animal/morce-domaci.html#pregnancyLength> ;
+        s:location            "původně travnatá krajina nížin i hor"@cs .
+
+<http://example.com/animal/morce-domaci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (traviny, semena rostlin)"@cs .
+
+<http://example.com/animal/morce-domaci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "40" ;
+        s:maxValue  "25" ;
+        s:unitCode  " cm dlka tla" .
+
+<http://example.com/animal/morce-domaci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,8" ;
+        s:maxValue  "0,04" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/morce-domaci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "70" ;
+        s:maxValue  "60" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/morce-bolivijske.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Galea monasteriensis"@la ;
+        sx:originalNameUsage  "Muenster yellow-toothed cavy"@en ;
+        sx:originalNameUsage  "Morče bolivijské"@cs ;
+        sx:order              "Hlodavci (Rodentia)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:pregnancyTime       "60-70 dní" ;
+        s:weight              <http://example.com/animal/morce-bolivijske.html#weight> ;
+        s:height              <http://example.com/animal/morce-bolivijske.html#height> ;
+        s:height              <http://example.com/animal/morce-bolivijske.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/morce-bolivijske.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/morce-bolivijske.html#pregnancyLength> ;
+        s:location            "hory"@cs .
+
+<http://example.com/animal/morce-bolivijske.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (traviny, semena rostlin)"@cs .
+
+<http://example.com/animal/morce-bolivijske.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "30" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/morce-bolivijske.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,2" ;
+        s:maxValue  "0,700" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/morce-bolivijske.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "70" ;
+        s:maxValue  "60" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/mangusta-tmava.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Crossarchus obscurus"@la ;
+        sx:originalNameUsage  "Common Cusimanse"@en ;
+        sx:originalNameUsage  "Mangusta tmavá"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "2-4" ;
+        s:pregnancyTime       "60 dní " ;
+        s:weight              <http://example.com/animal/mangusta-tmava.html#weight> ;
+        s:height              <http://example.com/animal/mangusta-tmava.html#height> ;
+        s:height              <http://example.com/animal/mangusta-tmava.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/mangusta-tmava.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/mangusta-tmava.html#pregnancyLength> ;
+        s:location            "tropické deštné lesy, plantáže"@cs .
+
+<http://example.com/animal/mangusta-tmava.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, žáby, hadi, hlodavci, plody)"@cs .
+
+<http://example.com/animal/mangusta-tmava.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "60" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm dlka tla i s ocasem" .
+
+<http://example.com/animal/mangusta-tmava.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,5" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/mangusta-tmava.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "" ;
+        s:maxValue  "60" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/mangabej-zlutobrichy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Cercocebus agilis chrysogaster"@la ;
+        sx:originalNameUsage  "Golden-bellied mangabey"@en ;
+        sx:originalNameUsage  "Mangabej žlutobřichý"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "165-180 dní " ;
+        s:weight              <http://example.com/animal/mangabej-zlutobrichy.html#weight> ;
+        s:height              <http://example.com/animal/mangabej-zlutobrichy.html#height> ;
+        s:height              <http://example.com/animal/mangabej-zlutobrichy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/mangabej-zlutobrichy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/mangabej-zlutobrichy.html#pregnancyLength> ;
+        s:location            "deštné a bažinaté lesy "@cs .
+
+<http://example.com/animal/mangabej-zlutobrichy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovoce, listy, houby, hmyz)"@cs .
+
+<http://example.com/animal/mangabej-zlutobrichy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "66,5075" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm dlka tla  cm ocas" .
+
+<http://example.com/animal/mangabej-zlutobrichy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "14" ;
+        s:maxValue  "6" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/mangabej-zlutobrichy.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "180" ;
+        s:maxValue  "165" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/makak-lvi.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Macaca silenus"@la ;
+        sx:originalNameUsage  "Lion-tailed Macaque"@en ;
+        sx:originalNameUsage  "Makak lví"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "162-186 dní " ;
+        s:weight              <http://example.com/animal/makak-lvi.html#weight> ;
+        s:height              <http://example.com/animal/makak-lvi.html#height> ;
+        s:height              <http://example.com/animal/makak-lvi.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/makak-lvi.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/makak-lvi.html#pregnancyLength> ;
+        s:location            "tropické monsunové lesy "@cs .
+
+<http://example.com/animal/makak-lvi.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec s převahou rostlinné složky (ovoce)"@cs .
+
+<http://example.com/animal/makak-lvi.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "61,2439" ;
+        s:maxValue  "42" ;
+        s:unitCode  " cm dlka tla  cm ocas" .
+
+<http://example.com/animal/makak-lvi.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "10" ;
+        s:maxValue  "2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/makak-lvi.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "186" ;
+        s:maxValue  "162" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/majna-rothschildova.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Leucopsar rothschildi"@la ;
+        sx:originalNameUsage  "Bali Myna"@en ;
+        sx:originalNameUsage  "Majna Rothschildova"@cs ;
+        sx:order              "Pěvci (Passeriformes)"@cs ;
+        s:numberOfChildren    "2-3 " ;
+        s:weight              <http://example.com/animal/majna-rothschildova.html#weight> ;
+        s:height              <http://example.com/animal/majna-rothschildova.html#height> ;
+        s:height              <http://example.com/animal/majna-rothschildova.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/majna-rothschildova.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/majna-rothschildova.html#pregnancyLength> ;
+        s:location            "otevřené lesy s travinným podrostem"@cs .
+
+<http://example.com/animal/majna-rothschildova.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, ovoce, hmyz, plazi)"@cs .
+
+<http://example.com/animal/majna-rothschildova.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "25" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/majna-rothschildova.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,11" ;
+        s:maxValue  "0,07" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/majna-rothschildova.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/loskutak-posvatny.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Gracula religiosa"@la ;
+        sx:originalNameUsage  "Common Hill Myna"@en ;
+        sx:originalNameUsage  "Loskuták posvátný"@cs ;
+        sx:order              "Pěvci (Passeriformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/loskutak-posvatny.html#weight> ;
+        s:height              <http://example.com/animal/loskutak-posvatny.html#height> ;
+        s:height              <http://example.com/animal/loskutak-posvatny.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/loskutak-posvatny.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/loskutak-posvatny.html#pregnancyLength> ;
+        s:location            "vlhký tropický les "@cs .
+
+<http://example.com/animal/loskutak-posvatny.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (hmyz, ovocné plody)"@cs .
+
+<http://example.com/animal/loskutak-posvatny.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "29" ;
+        s:maxValue  "17" ;
+        s:unitCode  " cm " .
+
+<http://example.com/animal/loskutak-posvatny.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0.3" ;
+        s:maxValue  "0.2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/loskutak-posvatny.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/levhart-snezny.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Panthera uncia"@la ;
+        sx:originalNameUsage  "Snow Leopard"@en ;
+        sx:originalNameUsage  "Levhart sněžný"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:pregnancyTime       "90-100 dní " ;
+        s:weight              <http://example.com/animal/levhart-snezny.html#weight> ;
+        s:height              <http://example.com/animal/levhart-snezny.html#height> ;
+        s:height              <http://example.com/animal/levhart-snezny.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/levhart-snezny.html#diet> ;
+        s:activity            "noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/levhart-snezny.html#pregnancyLength> ;
+        s:location            "hory a horské oblasti "@cs .
+
+<http://example.com/animal/levhart-snezny.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (savci, ptáci)"@cs .
+
+<http://example.com/animal/levhart-snezny.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm v kohotku" .
+
+<http://example.com/animal/levhart-snezny.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "55" ;
+        s:maxValue  "30" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/levhart-snezny.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "100" ;
+        s:maxValue  "90" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/levhart-cinsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Panthera pardus japonensis"@la ;
+        sx:originalNameUsage  "North-Chinese leopard "@en ;
+        sx:originalNameUsage  "Levhart čínský"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "2-3" ;
+        s:pregnancyTime       "90-112 dní " ;
+        s:weight              <http://example.com/animal/levhart-cinsky.html#weight> ;
+        s:height              <http://example.com/animal/levhart-cinsky.html#height> ;
+        s:height              <http://example.com/animal/levhart-cinsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/levhart-cinsky.html#diet> ;
+        s:activity            "denní/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/levhart-cinsky.html#pregnancyLength> ;
+        s:location            "stepi, lesy a náhorní plošiny"@cs .
+
+<http://example.com/animal/levhart-cinsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (antilopy, ptáci)"@cs .
+
+<http://example.com/animal/levhart-cinsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "75" ;
+        s:maxValue  "45" ;
+        s:unitCode  " cm v kohoutku  " .
+
+<http://example.com/animal/levhart-cinsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "80" ;
+        s:maxValue  "50" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/levhart-cinsky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "112" ;
+        s:maxValue  "90" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/lev-berbersky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Panthera leo leo "@la ;
+        sx:originalNameUsage  "Barbary lion"@en ;
+        sx:originalNameUsage  "Lev berberský"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1-4" ;
+        s:pregnancyTime       "102-105 dní " ;
+        s:weight              <http://example.com/animal/lev-berbersky.html#weight> ;
+        s:height              <http://example.com/animal/lev-berbersky.html#height> ;
+        s:height              <http://example.com/animal/lev-berbersky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/lev-berbersky.html#diet> ;
+        s:activity            "denní/noční"@cs ;
+        my:pregnancyTime      <http://example.com/animal/lev-berbersky.html#pregnancyLength> ;
+        s:location            "hory"@cs .
+
+<http://example.com/animal/lev-berbersky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (kopytníci)"@cs .
+
+<http://example.com/animal/lev-berbersky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "110" ;
+        s:maxValue  "90" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/lev-berbersky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "190" ;
+        s:maxValue  "110" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/lev-berbersky.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "105" ;
+        s:maxValue  "102" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/lemur-cerny.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Eulemur macaco macaco"@la ;
+        sx:originalNameUsage  "Black lemur"@en ;
+        sx:originalNameUsage  "Lemur černý"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "125-127 dní " ;
+        s:weight              <http://example.com/animal/lemur-cerny.html#weight> ;
+        s:height              <http://example.com/animal/lemur-cerny.html#height> ;
+        s:height              <http://example.com/animal/lemur-cerny.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/lemur-cerny.html#diet> ;
+        s:activity            "denní/noční "@cs ;
+        my:pregnancyTime      <http://example.com/animal/lemur-cerny.html#pregnancyLength> ;
+        s:location            "primární a sekundární tropický les, plantáže"@cs .
+
+<http://example.com/animal/lemur-cerny.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "převážně býložravci (ovoce, listy, nektar), hmyz"@cs .
+
+<http://example.com/animal/lemur-cerny.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "45,5165" ;
+        s:maxValue  "39" ;
+        s:unitCode  " cm dlka tla  cm ocas" .
+
+<http://example.com/animal/lemur-cerny.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/lemur-cerny.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "127" ;
+        s:maxValue  "125" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/lachtan-hrivnaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Otaria byronia"@la ;
+        sx:originalNameUsage  "South American Sea Lion"@en ;
+        sx:originalNameUsage  "Lachtan hřivnatý"@cs ;
+        sx:order              "Šelmy (Carnivora) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/lachtan-hrivnaty.html#weight> ;
+        s:height              <http://example.com/animal/lachtan-hrivnaty.html#height> ;
+        s:height              <http://example.com/animal/lachtan-hrivnaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/lachtan-hrivnaty.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/lachtan-hrivnaty.html#pregnancyLength> ;
+        s:location            "moře a pobřeží"@cs .
+
+<http://example.com/animal/lachtan-hrivnaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "masožravec (ryby, hlavonožci, korýši)"@cs .
+
+<http://example.com/animal/lachtan-hrivnaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "280" ;
+        s:maxValue  "230" ;
+        s:unitCode  " cm dlka tla " .
+
+<http://example.com/animal/lachtan-hrivnaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "250" ;
+        s:maxValue  "140" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/lachtan-hrivnaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/koza-srouboroha.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Capra falconeri heptneri"@la ;
+        sx:originalNameUsage  "Bukharan Markhor"@en ;
+        sx:originalNameUsage  "Koza šrouborohá"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-2" ;
+        s:pregnancyTime       "147-154 dní " ;
+        s:weight              <http://example.com/animal/koza-srouboroha.html#weight> ;
+        s:height              <http://example.com/animal/koza-srouboroha.html#height> ;
+        s:height              <http://example.com/animal/koza-srouboroha.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/koza-srouboroha.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/koza-srouboroha.html#pregnancyLength> ;
+        s:location            "hory a horské oblasti "@cs .
+
+<http://example.com/animal/koza-srouboroha.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listy, kůra)"@cs .
+
+<http://example.com/animal/koza-srouboroha.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "110" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/koza-srouboroha.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "100" ;
+        s:maxValue  "90" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/koza-srouboroha.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "154" ;
+        s:maxValue  "147" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/koza-kamerunska---domaci.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Capra hircus"@la ;
+        sx:originalNameUsage  "Domestic goat"@en ;
+        sx:originalNameUsage  "Koza kamerunská - domácí"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:pregnancyTime       "150-170 dní" ;
+        s:weight              <http://example.com/animal/koza-kamerunska---domaci.html#weight> ;
+        s:height              <http://example.com/animal/koza-kamerunska---domaci.html#height> ;
+        s:height              <http://example.com/animal/koza-kamerunska---domaci.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/koza-kamerunska---domaci.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/koza-kamerunska---domaci.html#pregnancyLength> ;
+        s:location            "travnaté oblasti, polopouště, pouště, lidská sídla"@cs .
+
+<http://example.com/animal/koza-kamerunska---domaci.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listy, kůra)"@cs .
+
+<http://example.com/animal/koza-kamerunska---domaci.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/koza-kamerunska---domaci.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "" ;
+        s:maxValue  "15" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/koza-kamerunska---domaci.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "170" ;
+        s:maxValue  "150" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/kosman-zakrsly.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Cebuella pygmaea"@la ;
+        sx:originalNameUsage  "Pygmy marmoset"@en ;
+        sx:originalNameUsage  "Kosman zakrslý"@cs ;
+        sx:order              "Primáti (Primates)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:pregnancyTime       "119-142 dní " ;
+        s:weight              <http://example.com/animal/kosman-zakrsly.html#weight> ;
+        s:height              <http://example.com/animal/kosman-zakrsly.html#height> ;
+        s:height              <http://example.com/animal/kosman-zakrsly.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/kosman-zakrsly.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/kosman-zakrsly.html#pregnancyLength> ;
+        s:location            "deštné lesy, okraje polí"@cs .
+
+<http://example.com/animal/kosman-zakrsly.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (ovoce, nektar, hmyz, ptáci)"@cs .
+
+<http://example.com/animal/kosman-zakrsly.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "38" ;
+        s:maxValue  "19" ;
+        s:unitCode  " cm dlka tla s ocasem " .
+
+<http://example.com/animal/kosman-zakrsly.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,14" ;
+        s:maxValue  "0,12" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/kosman-zakrsly.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "142" ;
+        s:maxValue  "119" ;
+        s:unitCode  "dní" .
+
+<http://example.com/animal/korunac-sclateruv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Goura scheepmakeri"@la ;
+        sx:originalNameUsage  "Scheepmaker's Crowned-pigeon"@en ;
+        sx:originalNameUsage  "Korunáč Sclaterův"@cs ;
+        sx:order              "Měkkozobí (Columbiformes)"@cs ;
+        s:numberOfChildren    "1" ;
+        s:weight              <http://example.com/animal/korunac-sclateruv.html#weight> ;
+        s:height              <http://example.com/animal/korunac-sclateruv.html#height> ;
+        s:height              <http://example.com/animal/korunac-sclateruv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/korunac-sclateruv.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/korunac-sclateruv.html#pregnancyLength> ;
+        s:location            "tropický deštný les "@cs .
+
+<http://example.com/animal/korunac-sclateruv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, bobule, ovoce, hmyz)"@cs .
+
+<http://example.com/animal/korunac-sclateruv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "79" ;
+        s:maxValue  "71" ;
+        s:unitCode  " cm dlka tla " .
+
+<http://example.com/animal/korunac-sclateruv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2,3" ;
+        s:maxValue  "2" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/korunac-sclateruv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/koralovka-pruhovana.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Lampropeltis getula"@la ;
+        sx:originalNameUsage  "Common kingsnake"@en ;
+        sx:originalNameUsage  "Korálovka pruhovaná"@cs ;
+        sx:order              "Šupinatí (Squamata)"@cs ;
+        s:numberOfChildren    "12 - 20" ;
+        s:weight              <http://example.com/animal/koralovka-pruhovana.html#weight> ;
+        s:height              <http://example.com/animal/koralovka-pruhovana.html#height> ;
+        s:height              <http://example.com/animal/koralovka-pruhovana.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/koralovka-pruhovana.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/koralovka-pruhovana.html#pregnancyLength> ;
+        s:location            "lesostep, polopouště, prérie"@cs .
+
+<http://example.com/animal/koralovka-pruhovana.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "obratlovci (hlodavci, jěštěři, ptáci, žáby)"@cs .
+
+<http://example.com/animal/koralovka-pruhovana.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "200" ;
+        s:maxValue  "100" ;
+        s:unitCode  "  cm" .
+
+<http://example.com/animal/koralovka-pruhovana.html#weight>
+        rdf:type  s:Weight .
+
+<http://example.com/animal/koralovka-pruhovana.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/bulbul-zahradni.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Pycnonotus barbatus"@la ;
+        sx:originalNameUsage  "Common Bulbul"@en ;
+        sx:originalNameUsage  "Bulbul zahradní"@cs ;
+        sx:order              "Pěvci (Passeriformes)"@cs ;
+        s:numberOfChildren    "2-3 " ;
+        s:weight              <http://example.com/animal/bulbul-zahradni.html#weight> ;
+        s:height              <http://example.com/animal/bulbul-zahradni.html#height> ;
+        s:height              <http://example.com/animal/bulbul-zahradni.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/bulbul-zahradni.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/bulbul-zahradni.html#pregnancyLength> ;
+        s:location            "lesy, křoviny, zahrady a parky "@cs .
+
+<http://example.com/animal/bulbul-zahradni.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (plody, nektar, hmyz)"@cs .
+
+<http://example.com/animal/bulbul-zahradni.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "21" ;
+        s:maxValue  "18" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/bulbul-zahradni.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,060" ;
+        s:maxValue  "0,023" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/bulbul-zahradni.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/bazant-zlaty.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Chrysolophus pictus"@la ;
+        sx:originalNameUsage  "Golden Pheasant "@en ;
+        sx:originalNameUsage  "Bažant zlatý"@cs ;
+        sx:order              "Hrabaví (Galliformes)"@cs ;
+        s:numberOfChildren    "5-12" ;
+        s:weight              <http://example.com/animal/bazant-zlaty.html#weight> ;
+        s:height              <http://example.com/animal/bazant-zlaty.html#height> ;
+        s:height              <http://example.com/animal/bazant-zlaty.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/bazant-zlaty.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/bazant-zlaty.html#pregnancyLength> ;
+        s:location            "lesy s hustým podrostem"@cs .
+
+<http://example.com/animal/bazant-zlaty.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "listy, kořínky, ovoce, hmyz"@cs .
+
+<http://example.com/animal/bazant-zlaty.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "115" ;
+        s:maxValue  "60" ;
+        s:unitCode  " cm dlka tla i s ocasem" .
+
+<http://example.com/animal/bazant-zlaty.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,88" ;
+        s:maxValue  "0,55" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/bazant-zlaty.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/bazant-palawansky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Polyplectron napoleonis"@la ;
+        sx:originalNameUsage  "Palawan Peacock-pheasant"@en ;
+        sx:originalNameUsage  "Bažant palawanský"@cs ;
+        sx:order              "Hrabaví (Galliformes)"@cs ;
+        s:numberOfChildren    "2 " ;
+        s:weight              <http://example.com/animal/bazant-palawansky.html#weight> ;
+        s:height              <http://example.com/animal/bazant-palawansky.html#height> ;
+        s:height              <http://example.com/animal/bazant-palawansky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/bazant-palawansky.html#diet> ;
+        s:activity            "denní"@cs ;
+        my:pregnancyTime      <http://example.com/animal/bazant-palawansky.html#pregnancyLength> ;
+        s:location            "tropické lesy nížin a hor "@cs .
+
+<http://example.com/animal/bazant-palawansky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "všežravec (semena, ovoce, listy, výhonky, hmyz)"@cs .
+
+<http://example.com/animal/bazant-palawansky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "50" ;
+        s:maxValue  "40" ;
+        s:unitCode  " cm" .
+
+<http://example.com/animal/bazant-palawansky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "0,44" ;
+        s:maxValue  "0,32" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/bazant-palawansky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/bazant-obecny-korejsky.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Phasianus colchicus karpowi"@la ;
+        sx:originalNameUsage  "Korean Ring-necked Pheasant  "@en ;
+        sx:originalNameUsage  "Bažant obecný korejský"@cs ;
+        sx:order              "Hrabaví (Galliformes)"@cs ;
+        s:numberOfChildren    "9-14" ;
+        s:weight              <http://example.com/animal/bazant-obecny-korejsky.html#weight> ;
+        s:height              <http://example.com/animal/bazant-obecny-korejsky.html#height> ;
+        s:height              <http://example.com/animal/bazant-obecny-korejsky.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/bazant-obecny-korejsky.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/bazant-obecny-korejsky.html#pregnancyLength> ;
+        s:location            "větrolamy, meze "@cs .
+
+<http://example.com/animal/bazant-obecny-korejsky.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "semena, bobule, hmyz"@cs .
+
+<http://example.com/animal/bazant-obecny-korejsky.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "90" ;
+        s:maxValue  "50" ;
+        s:unitCode  " cm tlo i s ocasem" .
+
+<http://example.com/animal/bazant-obecny-korejsky.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "2" ;
+        s:maxValue  "0,55" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/bazant-obecny-korejsky.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/bazant-edwardsuv.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Lophura edwardsi"@la ;
+        sx:originalNameUsage  "Edwards's Pheasant "@en ;
+        sx:originalNameUsage  "Bažant Edwardsův"@cs ;
+        sx:order              "Hrabaví (Galliformes)"@cs ;
+        s:numberOfChildren    "4-7" ;
+        s:weight              <http://example.com/animal/bazant-edwardsuv.html#weight> ;
+        s:height              <http://example.com/animal/bazant-edwardsuv.html#height> ;
+        s:height              <http://example.com/animal/bazant-edwardsuv.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/bazant-edwardsuv.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/bazant-edwardsuv.html#pregnancyLength> ;
+        s:location            "deštné lesy "@cs .
+
+<http://example.com/animal/bazant-edwardsuv.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "semena, plody, hmyz"@cs .
+
+<http://example.com/animal/bazant-edwardsuv.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "65,2026" ;
+        s:maxValue  "58" ;
+        s:unitCode  " cm tlo  cm ocas" .
+
+<http://example.com/animal/bazant-edwardsuv.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,15" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/bazant-edwardsuv.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/ara-hyacintovy.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Anodorhynchus hyacinthinus"@la ;
+        sx:originalNameUsage  "Hyacinth Macaw"@en ;
+        sx:originalNameUsage  "Ara hyacintový"@cs ;
+        sx:order              "Papou��ci (Psittaciformes)"@cs ;
+        s:numberOfChildren    "1-3" ;
+        s:weight              <http://example.com/animal/ara-hyacintovy.html#weight> ;
+        s:height              <http://example.com/animal/ara-hyacintovy.html#height> ;
+        s:height              <http://example.com/animal/ara-hyacintovy.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/ara-hyacintovy.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/ara-hyacintovy.html#pregnancyLength> ;
+        s:location            "deštné lesy "@cs .
+
+<http://example.com/animal/ara-hyacintovy.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "ořechy, plody, ovoce, malí obratlovci"@cs .
+
+<http://example.com/animal/ara-hyacintovy.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "100" ;
+        s:unitCode  " cm v kohoutku " .
+
+<http://example.com/animal/ara-hyacintovy.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "1,5" ;
+        s:maxValue  "1" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/ara-hyacintovy.html#pregnancyLength>
+        rdf:type  s:QuantitativeValue .
+
+<http://example.com/animal/antilopa-konska.html>
+        rdf:type              sx:Animal ;
+        sx:scientificName     "Hippotragus equinus"@la ;
+        sx:originalNameUsage  "Roan Antelope"@en ;
+        sx:originalNameUsage  "Antilopa koňská"@cs ;
+        sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
+        s:numberOfChildren    "1" ;
+        s:pregnancyTime       "270-280 dní " ;
+        s:weight              <http://example.com/animal/antilopa-konska.html#weight> ;
+        s:height              <http://example.com/animal/antilopa-konska.html#height> ;
+        s:height              <http://example.com/animal/antilopa-konska.html#pregnancyLength> ;
+        s:diet                <http://example.com/animal/antilopa-konska.html#diet> ;
+        s:activity            "denní "@cs ;
+        my:pregnancyTime      <http://example.com/animal/antilopa-konska.html#pregnancyLength> ;
+        s:location            "savana"@cs .
+
+<http://example.com/animal/antilopa-konska.html#diet>
+        rdf:type    s:Diet ;
+        s:overview  "býložravec (tráva, listí, plody) "@cs .
+
+<http://example.com/animal/antilopa-konska.html#height>
+        rdf:type    s:Height ;
+        s:minValue  "" ;
+        s:maxValue  "150" ;
+        s:unitCode  " cm v kohoutku" .
+
+<http://example.com/animal/antilopa-konska.html#weight>
+        rdf:type    s:Weight ;
+        s:minValue  "300" ;
+        s:maxValue  "270" ;
+        s:unitCode  "kg" .
+
+<http://example.com/animal/antilopa-konska.html#pregnancyLength>
+        rdf:type    s:QuantitativeValue ;
+        s:minValue  "280" ;
+        s:maxValue  "270" ;
+        s:unitCode  "dní" .

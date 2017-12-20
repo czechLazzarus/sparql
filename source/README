@@ -1,0 +1,13 @@
+1. Dataset seznam zvířat Pražské ZOO k adopci (CSV)
+
+https://www.europeandataportal.eu/data/en/dataset/https-nkod-opendata-cz-zdroj-datova-sada-223642936/resource/630cc267-789f-4b52-bf9a-6d36d30ecb56
+
+2. Dataset vypársován seznam k adopci Liberecké ZOO (všechny jejich zvířata) HTML -> CSV
+
+https://www.zooliberec.cz/zvirata-u-nas.html?page=1
+
+3. Dataset seznam rozšířených živočíchů včetně rozsáhlé charakteristiky a údaji o jejich ohroženosti atd..  HTML -> CSV
+
+https://a-z-animals.com/animals/
+
+V této složce dále scripty v pythonu použité k parsování. Vize je taková, že zvířata ze ZOO budou propojena s podrobnějšími informacemi o nich a poté bude možnost si i vybrat zvíře a podívat se jestli se nachází v nějaké zoo k adopci. Pro převedení byl použit Tarql.
