@@ -1,0 +1,213 @@
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+PREFIX list: <http://jena.apache.org/ARQ/list#>
+PREFIX s: <http://schema.org/>
+PREFIX he: <http://www.snik.eu/ontology/he/>
+PREFIX my: <http://myschema.cz/zvirata#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+     ?animalURI a sx:Animal ;
+	sx:scientificName ?nameLatin;
+	sx:commonName ?commonNames;
+	sx:originalNameUsage ?name;
+	sx:vernacularName ?otherNames;
+	s:type ?classURI ;
+	s:weight ?weightURI ;
+	s:height ?heightURI ;
+	s:ageOfWeaning ?ageOfWeaningURI ;
+	s:gestionPeriod ?gestionURI ;
+	s:diet ?dietURI ;
+	s:speed ?speedURI ;
+	s:charackteristic ?charakteristicURI ;
+	s:location ?locationURI ;
+	s:status ?status ;
+	s:typicalAgeRange ?typicalAgeRange ;
+	my:nameOfYoung ?nameOfYoung ;
+	my:distinctiveFeature ?distinctiveFeature ;
+	my:funFacts ?funFacts. 
+
+     my:funFacts rdfs:subClassOf rdfs:comment .
+     my:distinctiveFeature rdfs:subClassOf rdfs:comment .
+     my:populationSize rdfs:subClassOf rdfs:comment .
+     my:nameOfYoung rdfs:subClassOf s:name .
+
+     my:habitat rdfs:subClassOf s:location .
+	
+     ?locationURI a s:Location ; 
+	sx:habitat ?habitat ;
+	sx:locationName ?location .
+
+    ?classURI a my:OrganismClassification  ;
+	      sx:class ?classC ;
+	      sx:kingdom ?kingdomC ;
+	      sx:order ?orderC ;
+	      sx:group ?groupC ;
+	      sx:genus ?genusC ;
+	      sx:familu ?familyC ;
+	      sx:phylum ?phylumC .
+
+   ?skosScheme a skos:ConceptScheme ;
+	rdfs:label "Animals hiearchy"@en ;
+	skos:hasTopConcept ?classC .
+
+   ?classC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+	skos:topConceptOf ?skosScheme ;
+   	skos:prefLabel ?class ;
+   	skos:narrower ?kingdom .
+
+   ?kingdomC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+   	skos:prefLabel ?kingdom ;
+   	skos:broader ?class ;
+   	skos:narrower ?order .
+
+   ?orderC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+   	skos:prefLabel ?order ;
+   	skos:broader ?kingdom ;
+   	skos:narrower ?group .
+
+   ?groupC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+   	skos:prefLabel ?group ;
+   	skos:broader ?order ;
+   	skos:narrower ?genus .
+   
+   ?genusC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+	skos:prefLabel ?genus ;
+   	skos:broader ?group ;
+   	skos:narrower ?family .
+
+
+   ?familyC a skos:Concept;
+	skos:inScheme ?skosScheme ;
+   	skos:prefLabel ?family ;
+   	skos:broader ?genus ;
+   	skos:narrower ?phylum .
+   
+   ?phylumC a skos:Concept ;
+	skos:inScheme ?skosScheme ;  
+	skos:prefLabel ?phylum ;
+   	skos:broader ?family .
+   	   	
+    ?characteristicURI a my:Characteristic;
+	sx:behavioralNote ?behaviour ;
+	my:predators ?predators ;
+	my:skin ?skin ;
+	my:lifestyle ?lifestyle ;
+	my:populationSize ?populationSize ;
+	my:prey ?prey ;
+	my:numberSpecies ?numberSpecies .
+    
+    ?characteristicURI s:color ?color .
+
+    ?speedURI a s:Speed ;
+	s:maxValue ?speed ;
+	s:unitCode ?speedCode .
+
+    ?dietURI a s:Diet ;
+	s:overview ?diet .
+
+    ?heightURI a s:Height ;
+	s:minValue ?minHeight ;
+	s:maxValue ?maxHeight ;
+	s:unitCode ?heightCode .
+
+    ?gestionURI a s:GestionPeriod ;
+	s:minValue ?minGestionPeriod ;
+	s:maxValue ?maxGestionPeriod ;
+	s:unitCode ?gestionPeriodCode .
+
+    ?ageOfWeaningURI a s:AgeOfWeaning ;
+	s:minValue ?minAgeOfWeaning ;
+	s:maxValue ?maxAgeOfWeaning ;
+	s:unitCode ?ageOfWeaningCode .
+	
+    ?weightURI a s:Weight ;
+	s:minValue ?minWeight ;
+	s:maxValue ?maxWeight ;
+	s:unitCode ?weightCode .
+}
+WHERE {
+  BIND("http://example.com/animal/" AS ?baseURI)
+  BIND(IRI(CONCAT(?baseURI,ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))))) as ?animalURI)
+
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/animalClassification")) AS ?classURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/characteristic")) AS ?characteristicURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/speed")) AS ?speedURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/diet")) AS ?dietURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/location")) AS ?locationURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/gestionPeriod")) AS ?gestionURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/ageOfWeaning")) AS ?ageOfWeaningURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/height")) AS ?heightURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/weight")) AS ?weightURI)
+
+  BIND (xsd:decimal(replace(STRBEFORE(?n, "("),"[^0-9.]",'')) AS ?speed)
+  BIND (replace(STRBEFORE(?n, "("),"[^a-zA-Z/]",'') AS ?speedCode)
+
+  BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^a-zA-Z/]",''), replace(STRBEFORE(?q, "("),"[^a-zA-Z/]",'')) AS ?heightCode)
+  BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^0-9,./]",''), '') AS ?minHeight)
+  BIND (IF(STRBEFORE(STRBEFORE(?q, "("), "-"), replace(STRBEFORE(STRBEFORE(?q, "("), "-"),"[^0-9,./]",''), replace(STRBEFORE(?q, "("), "[^0-9,./]",'')) AS ?maxHeight)
+
+  BIND (IF(STRAFTER(?j, "-"),replace(STRAFTER(?j, "-"),"[^a-zA-Z/]",''), replace(?j , "[^a-zA-Z/]",'')) AS ?ageOfWeaningCode)
+  BIND (IF(STRAFTER(?j, "-"), xsd:decimal(replace(STRAFTER(?j, "-"),"[^0-9,./]",'')), '') AS ?minAgeOfWeaning)
+  BIND (IF(STRBEFORE(?j, "-"),xsd:decimal(replace(STRBEFORE(?j, "-"),"[^0-9,./]",'')), xsd:decimal(replace(?j ,"[^0-9,./]",''))) AS ?maxAgeOfWeaning)
+
+  BIND (IF(STRAFTER(?h, "-"), replace(STRAFTER(?h, "-"),"[^a-zA-Z/]",''), replace(?h,"[^a-zA-Z/]",'')) AS ?gestionPeriodCode)
+  BIND (IF(STRAFTER(?h, "-"), xsd:decimal(replace(STRAFTER(?h, "-"),"[^0-9,./]",'')), '') AS ?minGestionPeriod)
+  BIND (IF(STRBEFORE(?h, "-"), xsd:decimal(replace(STRBEFORE(?h, "-"),"[^0-9,./]",'')), xsd:decimal(replace(?h, "[^0-9,./]",''))) AS ?maxGestionPeriod)
+
+  BIND (IF(STRAFTER(STRBEFORE(?ah, "("), "-"), replace(STRAFTER(STRBEFORE(?ah, "("), "-"),"[^a-zA-Z/]",''), replace(STRBEFORE(?ah, "("),"[^a-zA-Z/]",'')) AS ?weightCode)
+  BIND (IF(STRAFTER(STRBEFORE(?ah, "("), "-"), xsd:decimal(replace(STRAFTER(STRBEFORE(?ah, "("), "-"),"[^0-9,./]",'')), '') AS ?minWeight)
+  BIND (IF(STRBEFORE(STRBEFORE(?ah, "("), "-"), xsd:decimal(replace(STRBEFORE(STRBEFORE(?ah, "("), "-"),"[^0-9,./]",'')), xsd:decimal(replace(STRBEFORE(?ah, "("), "[^0-9,./]",''))) AS ?maxWeight)
+
+  BIND (xsd:integer(?a) AS ?numberSpecies)
+  BIND (STRLANG(?o, "en") AS ?populationSize)
+  BIND (STRLANG(?b, "en") AS ?group)
+  BIND (STRLANG(?x, "en") AS ?typicalAgeRange)
+  BIND (STRLANG(?c, "la") AS ?genus)
+  BIND (STRLANG(?l, "en") AS ?name)
+  BIND (STRLANG(?k, "la") AS ?nameLatin)
+  BIND (STRLANG(?e, "en") AS ?prey)
+  BIND (STRLANG(?f, "en") AS ?location)
+  BIND (STRLANG(?g, "en") AS ?skin)
+  BIND (STRLANG(?i, "la") AS ?kingdom)
+  BIND (STRLANG(?r, "en") AS ?otherNames)
+  BIND (STRLANG(?s, "la") AS ?class)
+
+  BIND (URI(CONCAT(?baseURI, "animalSkosScheme/")) AS ?skosScheme)
+  BIND (URI(CONCAT(?baseURI, "concept/",?s)) AS ?classC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?i)) AS ?kingdomC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?ab)) AS ?orderC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?b)) AS ?groupC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?c)) AS ?genusC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?ad)) AS ?familyC)
+  BIND (URI(CONCAT(?baseURI, "concept/",?al)) AS ?phylumC)
+
+  BIND (STRLANG(?t, "en") AS ?lifestyle)
+  
+  ?colors apf:strSplit (?v", ")
+  BIND(xsd:string(?colors) as ?color)  
+
+  BIND (STRLANG(?y, "en") AS ?predators)
+  BIND (STRLANG(?aa, "en") AS ?commonNames)
+  BIND (STRLANG(?ab, "en") AS ?order)
+  BIND (STRLANG(?m, "en") AS ?diet)
+  BIND (STRLANG(?w, "en") AS ?nameOfYoung)
+  BIND (STRLANG(?ad, "la") AS ?family)
+  BIND (STRLANG(?ae, "en") AS ?habitat)
+  BIND (STRLANG(?af, "en") AS ?status)
+  BIND (STRLANG(?al, "en") AS ?phylum)
+  BIND (STRLANG(?ac, "en") AS ?behaviour)
+  BIND (STRLANG(?ag, "en") AS ?distinctiveFeature)
+  BIND (STRLANG(?z, "en") AS ?funFacts)
+}
+
+OFFSET 1
+LIMIT 2
