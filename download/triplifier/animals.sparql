@@ -1,12 +1,12 @@
 PREFIX apf: <http://jena.apache.org/ARQ/property#>
 PREFIX list: <http://jena.apache.org/ARQ/list#>
-PREFIX s: <http://schema.org/>
+PREFIX schema: <http://schema.org/>
 PREFIX he: <http://www.snik.eu/ontology/he/>
 PREFIX my: <http://myschema.cz/zvirata#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 CONSTRUCT {
@@ -15,17 +15,17 @@ CONSTRUCT {
 	sx:commonName ?commonNames;
 	sx:originalNameUsage ?name;
 	sx:vernacularName ?otherNames;
-	s:type ?classURI ;
-	s:weight ?weightURI ;
-	s:height ?heightURI ;
-	s:ageOfWeaning ?ageOfWeaningURI ;
-	s:gestionPeriod ?gestionURI ;
-	s:diet ?dietURI ;
-	s:speed ?speedURI ;
-	s:charackteristic ?charakteristicURI ;
-	s:location ?locationURI ;
-	s:status ?status ;
-	s:typicalAgeRange ?typicalAgeRange ;
+	schema:type ?classURI ;
+	schema:weight ?weightURI ;
+	schema:height ?heightURI ;
+	schema:ageOfWeaning ?ageOfWeaningURI ;
+	schema:gestionPeriod ?gestionURI ;
+	schema:diet ?dietURI ;
+	schema:speed ?speedURI ;
+	schema:charackteristic ?charakteristicURI ;
+	schema:location ?locationURI ;
+	schema:status ?status ;
+	schema:typicalAgeRange ?typicalAgeRange ;
 	my:nameOfYoung ?nameOfYoung ;
 	my:distinctiveFeature ?distinctiveFeature ;
 	my:funFacts ?funFacts. 
@@ -33,11 +33,11 @@ CONSTRUCT {
      my:funFacts rdfs:subClassOf rdfs:comment .
      my:distinctiveFeature rdfs:subClassOf rdfs:comment .
      my:populationSize rdfs:subClassOf rdfs:comment .
-     my:nameOfYoung rdfs:subClassOf s:name .
+     my:nameOfYoung rdfs:subClassOf schema:name .
 
-     my:habitat rdfs:subClassOf s:location .
+     my:habitat rdfs:subClassOf schema:location .
 	
-     ?locationURI a s:Location ; 
+     ?locationURI a schema:Location ; 
 	sx:habitat ?habitat ;
 	sx:locationName ?location .
 
@@ -105,34 +105,34 @@ CONSTRUCT {
 	my:prey ?prey ;
 	my:numberSpecies ?numberSpecies .
     
-    ?characteristicURI s:color ?color .
+    ?characteristicURI schema:color ?color .
 
-    ?speedURI a s:Speed ;
-	s:maxValue ?speed ;
-	s:unitCode ?speedCode .
+    ?speedURI a schema:Speed ;
+	schema:maxValue ?speed ;
+	schema:unitCode ?speedCode .
 
-    ?dietURI a s:Diet ;
-	s:overview ?diet .
+    ?dietURI a schema:Diet ;
+	schema:overview ?diet .
 
-    ?heightURI a s:Height ;
-	s:minValue ?minHeight ;
-	s:maxValue ?maxHeight ;
-	s:unitCode ?heightCode .
+    ?heightURI a schema:Height ;
+	schema:minValue ?minHeight ;
+	schema:maxValue ?maxHeight ;
+	schema:unitCode ?heightCode .
 
-    ?gestionURI a s:GestionPeriod ;
-	s:minValue ?minGestionPeriod ;
-	s:maxValue ?maxGestionPeriod ;
-	s:unitCode ?gestionPeriodCode .
+    ?gestionURI a schema:GestionPeriod ;
+	schema:minValue ?minGestionPeriod ;
+	schema:maxValue ?maxGestionPeriod ;
+	schema:unitCode ?gestionPeriodCode .
 
-    ?ageOfWeaningURI a s:AgeOfWeaning ;
-	s:minValue ?minAgeOfWeaning ;
-	s:maxValue ?maxAgeOfWeaning ;
-	s:unitCode ?ageOfWeaningCode .
+    ?ageOfWeaningURI a schema:AgeOfWeaning ;
+	schema:minValue ?minAgeOfWeaning ;
+	schema:maxValue ?maxAgeOfWeaning ;
+	schema:unitCode ?ageOfWeaningCode .
 	
-    ?weightURI a s:Weight ;
-	s:minValue ?minWeight ;
-	s:maxValue ?maxWeight ;
-	s:unitCode ?weightCode .
+    ?weightURI a schema:Weight ;
+	schema:minValue ?minWeight ;
+	schema:maxValue ?maxWeight ;
+	schema:unitCode ?weightCode .
 }
 WHERE {
   BIND("http://example.com/animal/" AS ?baseURI)
@@ -152,8 +152,8 @@ WHERE {
   BIND (replace(STRBEFORE(?n, "("),"[^a-zA-Z/]",'') AS ?speedCode)
 
   BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^a-zA-Z/]",''), replace(STRBEFORE(?q, "("),"[^a-zA-Z/]",'')) AS ?heightCode)
-  BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^0-9,./]",''), '') AS ?minHeight)
-  BIND (IF(STRBEFORE(STRBEFORE(?q, "("), "-"), replace(STRBEFORE(STRBEFORE(?q, "("), "-"),"[^0-9,./]",''), replace(STRBEFORE(?q, "("), "[^0-9,./]",'')) AS ?maxHeight)
+  BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), xsd:decimal(replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^0-9,./]",'')), '') AS ?minHeight)
+  BIND (IF(STRBEFORE(STRBEFORE(?q, "("), "-"), xsd:decimal(replace(STRBEFORE(STRBEFORE(?q, "("), "-"),"[^0-9,./]",'')), xsd:decimal(replace(STRBEFORE(?q, "("), "[^0-9,./]",''))) AS ?maxHeight)
 
   BIND (IF(STRAFTER(?j, "-"),replace(STRAFTER(?j, "-"),"[^a-zA-Z/]",''), replace(?j , "[^a-zA-Z/]",'')) AS ?ageOfWeaningCode)
   BIND (IF(STRAFTER(?j, "-"), xsd:decimal(replace(STRAFTER(?j, "-"),"[^0-9,./]",'')), '') AS ?minAgeOfWeaning)
@@ -210,4 +210,3 @@ WHERE {
 }
 
 OFFSET 1
-LIMIT 2

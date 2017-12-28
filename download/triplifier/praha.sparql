@@ -1,24 +1,25 @@
-PREFIX s: <http://schema.org/>
+PREFIX schema: <http://schema.org/>
 PREFIX my: <http://myschema.cz/animals#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
 
 CONSTRUCT {
-    ?id a s:id ;
-	s:name ?name ,
+    ?animalURI a sx:Animal ;
+	schema:name ?name ,
 	       ?nameEng ;
-        s:type ?class ;
-	s:priceSpecification ?price;
-	s:forView ?viewable .
+        schema:type ?class ;
+	schema:priceSpecification ?price;
+	my:forView ?viewable .
 
     my:forView rdfs:subClassOf rdfs:comment  .
 
-    ?price a s:priceSpecification ;
-	s:price ?e ; 
-	s:priceCurrency 'CZK' .
+    ?price a schema:priceSpecification ;
+	schema:price ?e ; 
+	schema:priceCurrency 'CZK' .
 }
 WHERE {
-  BIND(IRI(CONCAT("http://example.com/id/",?a)) as ?id)
+  BIND(IRI(CONCAT("http://example.com/id/",?a)) as ?animalURI)
   BIND(IRI(CONCAT(CONCAT("http://example.com/id/",?a),"/price")) as ?price)
   BIND(IRI(CONCAT("http://example.com/class/",?d)) as ?class)
   BIND (STRLANG(?b, "cs") AS ?name)

@@ -1,6 +1,6 @@
 @prefix s:  <http://schema.org/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sx:  <http://lod.taxonconcept.org/ontology/txn.owl> .
+@prefix sx:  <http://lod.taxonconcept.org/ontology/txn.owl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix my:  <http://www.myschema.cz/animal#> .
@@ -466,7 +466,7 @@
         s:diet                <http://example.com/animal/dvojzoborozec-hnedavy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://example.com/animal/dvojzoborozec-hnedavy.html#pregnancyLength> ;
-        s:location            "tropický deštn�� les"@cs .
+        s:location            "tropický deštný les"@cs .
 
 <http://example.com/animal/dvojzoborozec-hnedavy.html#diet>
         rdf:type    s:Diet ;
@@ -3513,7 +3513,7 @@
         s:height              <http://example.com/animal/morce-domaci.html#height> ;
         s:height              <http://example.com/animal/morce-domaci.html#pregnancyLength> ;
         s:diet                <http://example.com/animal/morce-domaci.html#diet> ;
-        s:activity            "denn�� "@cs ;
+        s:activity            "denní "@cs ;
         my:pregnancyTime      <http://example.com/animal/morce-domaci.html#pregnancyLength> ;
         s:location            "původně travnatá krajina nížin i hor"@cs .
 
@@ -4033,7 +4033,7 @@
         s:height              <http://example.com/animal/kosman-zakrsly.html#height> ;
         s:height              <http://example.com/animal/kosman-zakrsly.html#pregnancyLength> ;
         s:diet                <http://example.com/animal/kosman-zakrsly.html#diet> ;
-        s:activity            "denní"@cs ;
+        s:activity            "denn��"@cs ;
         my:pregnancyTime      <http://example.com/animal/kosman-zakrsly.html#pregnancyLength> ;
         s:location            "deštné lesy, okraje polí"@cs .
 
@@ -4299,7 +4299,7 @@
         sx:scientificName     "Anodorhynchus hyacinthinus"@la ;
         sx:originalNameUsage  "Hyacinth Macaw"@en ;
         sx:originalNameUsage  "Ara hyacintový"@cs ;
-        sx:order              "Papou��ci (Psittaciformes)"@cs ;
+        sx:order              "Papoušci (Psittaciformes)"@cs ;
         s:numberOfChildren    "1-3" ;
         s:weight              <http://example.com/animal/ara-hyacintovy.html#weight> ;
         s:height              <http://example.com/animal/ara-hyacintovy.html#height> ;

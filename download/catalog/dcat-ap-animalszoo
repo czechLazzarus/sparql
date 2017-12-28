@@ -1,0 +1,146 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://www.w3.org/ns/adms#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://animalszoo.org/datasets/dcat#catalog>
+  a dcat:Catalog ;
+  dc:title "Zoo Animals Dataset catalog"@en ;
+  dc:description "A range of datasets maintained by Nobel Media AB " ;
+  dcat:themeTaxonomy <http://eurovoc.europa.eu/> ;
+  dcat:dataset <http://animalszoo.org/datasets/dcat#prague> ;
+  dcat:dataset <http://animalszoo.org/datasets/dcat#liberec> ;
+  dcat:dataset <http://animalszoo.org/datasets/dcat#animals> ;
+  dc:publisher <http://animalszoo.org/publisher/n0> ;
+  dc:issued "2017-09-25"^^xsd:date ;
+  dc:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+  dc:modified "2017-12-25"^^xsd:date ;
+  foaf:homepage <http://data.animalszoo.org/> ;
+  dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcat:record <http://animalszoo.org/datarecords/dcat#dr1> ;
+  dcat:record <http://animalszoo.org/datarecords/dcat#dr2> ;
+  dcat:record <http://animalszoo.org/datarecords/dcat#dr3> ;
+  dc:rights <http://animalszoo.org/rights/n0> ;
+  dc:spatial <http://animalszoo.org/spatial/n0> .
+
+<http://animalszoo.org/datarecords/dcat#dr1>
+  a dcat:CatalogRecord ;
+  foaf:primaryTopic <http://animalszoo.org/datasets/dcat#animals> ;
+  dc:issued "2017-09-25"^^xsd:date ;
+  dc:modified "2017-12-25"^^xsd:date .
+
+<http://animalszoo.org/datarecords/dcat#dr2>
+  a dcat:CatalogRecord ;
+  foaf:primaryTopic <http://animalszoo.org/datasets/dcat#liberec> ;
+  dc:issued "2017-09-25"^^xsd:date ;
+  dc:modified "2017-12-25"^^xsd:date .
+
+<http://animalszoo.org/datarecords/dcat#dr3>
+  a dcat:CatalogRecord ;
+  foaf:primaryTopic <http://animalszoo.org/datasets/dcat#prague> ;
+  dc:issued "2017-09-25"^^xsd:date ;
+  dc:modified "2017-12-25"^^xsd:date .
+
+<http://animalszoo.org/datasets/dcat#liberec>
+  a dcat:Dataset ;
+  dc:title "Liberec Zoo animals"@en ;
+  dc:description "Animals for adoption in Liberec" ;
+  ns0:contactPoint <http://animalszoo.org/contacts/n1> ;
+  dcat:keyword "Animals", "Zoo", "Liberec", "adoption" ;
+  dc:publisher <http://animalszoo.org/publisher/n0> ;
+  dcat:theme <http://eurovoc.europa.eu/100142> ;
+  dcat:distribution <http://animalszoo.org/datasets/dcat#dist1> ;
+  dc:issued "2017-09-15"^^xsd:date ;
+  dc:modified "2017-12-27"^^xsd:date ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dcat:landingPage <http://data.animalszoo.org/> ;
+  dc:conformsTo <http://www.animalszoo.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
+  dc:temporal <http://data.animalszoo.org/period> ;
+  dc:spatial <http://sws.geonames.org/3071961> ;
+  dcat:contactPoint "Liberec" ;
+  dc:accrualPeriodicity <http://purl.org/cld/freq/irregular> .
+
+<http://animalszoo.org/datasets/dcat#animals>
+  a dcat:Dataset ;
+  dc:title "Animals"@en ;
+  dc:description "Animals from animals a-z" ;
+  ns0:contactPoint <http://animalszoo.org/contacts/n1> ;
+  dcat:keyword "animals" ;
+  dc:publisher <http://animalszoo.org/publisher/n0> ;
+  dcat:theme <http://eurovoc.europa.eu/100142> ;
+  dcat:distribution <http://animalszoo.org/datasets/dcat#dist1> ;
+  dc:issued "2017-09-9"^^xsd:date ;
+  dc:modified "2017-12-27"^^xsd:date ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dcat:landingPage <http://data.animalszoo.org/> ;
+  dc:conformsTo <http://www.animalszoo.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
+  dc:temporal <http://data.animalszoo.org/period> ;
+  dc:spatial <http://sws.geonames.org/2673730> ;
+  dc:accrualPeriodicity <http://purl.org/cld/freq/irregular> .
+
+<http://animalszoo.org/datasets/dcat#prague>
+  a dcat:Dataset ;
+  dc:title "Prague Zoo animals"@en ;
+  dc:description "Animals for adoption in Prague" ;
+  ns0:contactPoint <http://animalszoo.org/contacts/n1> ;
+  dcat:keyword "Animals", "Zoo", "Prague", "adoption" ;
+  dc:publisher <http://animalszoo.org/publisher/n0> ;
+  dcat:theme <http://eurovoc.europa.eu/100142> ;
+  dcat:distribution <http://animalszoo.org/datasets/dcat#dist1> ;
+  dc:issued "2017-09-15"^^xsd:date ;
+  dc:modified "2017-12-27"^^xsd:date ;
+  dc:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+  dcat:landingPage <http://data.animalszoo.org/> ;
+  dc:conformsTo <http://www.animalszoo.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
+  dc:temporal <http://data.animalszoo.org/period> ;
+  dc:spatial <http://sws.geonames.org/3067695> ;
+  dcat:contactPoint "Prague" ;
+  dc:accrualPeriodicity <http://purl.org/cld/freq/irregular> .
+
+<http://animalszoo.org/contacts/n1>
+  a vcard:VCard ;
+  vcard:fn "Nobel Media AB" ;
+  vcard:hasTelephone [
+    vcard:hasValue <tel:777444666> ;
+    a vcard:Voice, vcard:Work
+  ] ;
+  vcard:hasAddress [
+    a vcard:Address ;
+    vcard:street-address "Thákurova 9" ;
+    vcard:postal-code "160 00" ;
+    vcard:locality "Prague" ;
+    vcard:country-name "Czech republic"
+  ] ;
+  vcard:hasEmail <mailto:vejrjaku@fit.cvut.cz> .
+
+<http://animalszoo.org/datasets/dcat#dist1>
+  a dcat:Distribution ;
+  dc:title "Linked Data endpoint"@en ;
+  dc:description "Provides browsable linked data and a SPARQL endpoint."@en ;
+  dcat:accessURL <http://data.animalszoo.org/> ;
+  dc:license <http://creativecommons.org/licenses/by-nc/3.0/> ;
+  dc:format <http://animalszoo.org/format/rdf+xml> .
+
+<http://data.animalszoo.org/period>
+  a dc:PeriodOfTime ;
+  schema:startDate "1905-03-01"^^xsd:date ;
+  schema:endDate "2017-01-05"^^xsd:date .
+
+<http://www.geonames.org/3067695>
+  rdfs:label "Prague" ;
+  a dc:Location .
+
+<http://www.geonames.org/3071961>
+  rdfs:label "Liberec" ;
+  a dc:Location .
+
+
+<http://animalszoo.org/publisher/n0>
+  a foaf:Agent ;
+  foaf:name "Jakub Vejr" ;
+  dc:type <http://purl.org/adms/publishertype/person> .
+
