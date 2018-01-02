@@ -19,9 +19,9 @@ CONSTRUCT {
 	schema:priceCurrency 'CZK' .
 }
 WHERE {
-  BIND(IRI(CONCAT("http://example.com/id/",?a)) as ?animalURI)
-  BIND(IRI(CONCAT(CONCAT("http://example.com/id/",?a),"/price")) as ?price)
-  BIND(IRI(CONCAT("http://example.com/class/",?d)) as ?class)
+  BIND(IRI(CONCAT("http://jakubvejr.org/praha/id/",?a)) as ?animalURI)
+  BIND(IRI(CONCAT(CONCAT("http://jakubvejr.org/praha/id/",?a),"/price")) as ?price)
+  BIND(IRI(CONCAT("http://jakubvejr.org/praha/class/",?d)) as ?class)
   BIND (STRLANG(?b, "cs") AS ?name)
   BIND (STRLANG(?c, "en") AS ?nameEng)
   BIND (STRLANG(IF(?f = "1", "For view", "Not for view"), "en") AS ?viewable)

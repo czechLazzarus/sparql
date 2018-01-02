@@ -1,0 +1,16 @@
+PREFIX se: <http://www.w3.org/2002/07/owl#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
+PREFIX my: <http://myschema.cz/animals#>
+
+ASK  
+FROM <http://localhost:3030/animals-server/data/praha>
+FROM <http://localhost:3030/animals-server/data/animals>
+WHERE { 
+    ?animal2 se:sameAs ?animal1 .
+  	?animal1 a sx:Animal ;
+  		my:forView ?forView .
+  FILTER(?forView = "For view"@en)
+  
+}
+
+

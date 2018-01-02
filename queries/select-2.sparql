@@ -1,0 +1,21 @@
+PREFIX se: <http://www.w3.org/2002/07/owl#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
+PREFIX my: <http://myschema.cz/animals#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?name ?color
+FROM <http://localhost:3030/animals-server/data/praha>
+FROM <http://localhost:3030/animals-server/data/animals>
+WHERE { 
+   ?animal2 se:sameAs ?animal1 .
+   ?animal2 a sx:Animal ; 
+    		schema:charackteristic ?charU ;
+  			sx:originalNameUsage ?name .
+   ?charU schema:color ?color .
+   VALUES ?color { "Brown" "Grey" }
+}
+
+

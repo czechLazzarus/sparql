@@ -1,0 +1,23 @@
+PREFIX se: <http://www.w3.org/2002/07/owl#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX s: <http://schema.org/>
+
+SELECT DISTINCT ?name ?biotop ?diet ?scientificName
+FROM <http://localhost:3030/animals-server/data/liberec>
+FROM <http://localhost:3030/animals-server/data/praha>
+WHERE { 
+    ?animal1 se:sameAs ?animal2 .
+  	?animal1 a sx:Animal ;
+  			 sx:originalNameUsage ?name .
+  	OPTIONAL { 	?animal1 s:location ?biotop . 
+    			?animal1 sx:scientificName ?scientificName . 
+    			?animal1 s:diet/s:overview ?diet .
+  	}
+  
+    FILTER (lang(?diet) = 'cs')
+    FILTER (lang(?biotop) = 'cs')
+    FILTER (lang(?name) = 'cs')
+}
+
+

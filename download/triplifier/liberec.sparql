@@ -40,7 +40,7 @@ CONSTRUCT {
 	s:unitCode ?pregnancyCode .
 }
 WHERE {
-  BIND("http://example.com/animal/" AS ?baseURI)
+  BIND("http://jakubvejr.org/liberec/" AS ?baseURI)
   BIND(IRI(CONCAT(?baseURI, ENCODE_FOR_URI(?l))) as ?uri)
   BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#weight")) as ?weightURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "#diet")) AS ?dietURI)

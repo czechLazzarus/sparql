@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+:Animals rdf:type void:Dataset ;
+        foaf:homepage <http://jakuvejr.org/animals> .
+	dcterms:title "Animals with characteristic" ;
+	dcterms:creator <http://jakuvejr.org/me>
+	void:sparqlEndpoint<http://linked.opendata.cz/sparql>;
+	void:dataDump<http://linked.opendata.cz/dump/animals.cz.zip> ;
+	dcterms:publisher <http://opendata.cz> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Liberec rdf:type void:Dataset ;
+        foaf:homepage <http://jakuvejr.org/liberec> .
+	dcterms:title "Animals for adoption Liberec" ;
+	dcterms:creator <http://jakuvejr.org/me>
+	void:sparqlEndpoint<http://linked.opendata.cz/sparql>;
+	void:dataDump<http://linked.opendata.cz/dump/libereczoo.cz.zip> ;
+	dcterms:publisher <http://opendata.cz> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Animals void:subset :Animals2Liberec  .
+
+:Animals2Liberec rdf:type void:Linkset ;
+              void:target :Animals ;
+              void:target :Liberec .
+

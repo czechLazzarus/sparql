@@ -24,7 +24,7 @@ CONSTRUCT {
 	schema:speed ?speedURI ;
 	schema:charackteristic ?charakteristicURI ;
 	schema:location ?locationURI ;
-	schema:status ?status ;
+	schema:status ?statusC ;
 	schema:typicalAgeRange ?typicalAgeRange ;
 	my:nameOfYoung ?nameOfYoung ;
 	my:distinctiveFeature ?distinctiveFeature ;
@@ -50,53 +50,60 @@ CONSTRUCT {
 	      sx:familu ?familyC ;
 	      sx:phylum ?phylumC .
 
-   ?skosScheme a skos:ConceptScheme ;
+   ?skosStatusScheme a skos:ConceptScheme ;
+	rdfs:label "Animals status"@en .
+
+   ?statusC a skos:Concept;
+	skos:inScheme ?skosStatusScheme ;
+        skos:prefLabel ?status .
+
+   ?skosTypeScheme a skos:ConceptScheme ;
 	rdfs:label "Animals hiearchy"@en ;
 	skos:hasTopConcept ?classC .
 
    ?classC a skos:Concept;
-	skos:inScheme ?skosScheme ;
-	skos:topConceptOf ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
+	skos:topConceptOf ?skosTypeScheme ;
    	skos:prefLabel ?class ;
    	skos:narrower ?kingdom .
 
    ?kingdomC a skos:Concept;
-	skos:inScheme ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
    	skos:prefLabel ?kingdom ;
    	skos:broader ?class ;
    	skos:narrower ?order .
 
    ?orderC a skos:Concept;
-	skos:inScheme ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
    	skos:prefLabel ?order ;
    	skos:broader ?kingdom ;
    	skos:narrower ?group .
 
    ?groupC a skos:Concept;
-	skos:inScheme ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
    	skos:prefLabel ?group ;
    	skos:broader ?order ;
    	skos:narrower ?genus .
    
    ?genusC a skos:Concept;
-	skos:inScheme ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
 	skos:prefLabel ?genus ;
    	skos:broader ?group ;
    	skos:narrower ?family .
 
 
    ?familyC a skos:Concept;
-	skos:inScheme ?skosScheme ;
+	skos:inScheme ?skosTypeScheme ;
    	skos:prefLabel ?family ;
    	skos:broader ?genus ;
    	skos:narrower ?phylum .
    
    ?phylumC a skos:Concept ;
-	skos:inScheme ?skosScheme ;  
+	skos:inScheme ?skosTypeScheme ;  
 	skos:prefLabel ?phylum ;
    	skos:broader ?family .
    	   	
-    ?characteristicURI a my:Characteristic;
+    ?charakteristicURI a my:Characteristic;
 	sx:behavioralNote ?behaviour ;
 	my:predators ?predators ;
 	my:skin ?skin ;
@@ -105,7 +112,7 @@ CONSTRUCT {
 	my:prey ?prey ;
 	my:numberSpecies ?numberSpecies .
     
-    ?characteristicURI schema:color ?color .
+    ?charakteristicURI schema:color ?color .
 
     ?speedURI a schema:Speed ;
 	schema:maxValue ?speed ;
@@ -135,11 +142,11 @@ CONSTRUCT {
 	schema:unitCode ?weightCode .
 }
 WHERE {
-  BIND("http://example.com/animal/" AS ?baseURI)
+  BIND("http://jakubvejr.org/animals/" AS ?baseURI)
   BIND(IRI(CONCAT(?baseURI,ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))))) as ?animalURI)
 
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/animalClassification")) AS ?classURI)
-  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/characteristic")) AS ?characteristicURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/characteristic")) AS ?charakteristicURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/speed")) AS ?speedURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/diet")) AS ?dietURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/location")) AS ?locationURI)
@@ -180,8 +187,10 @@ WHERE {
   BIND (STRLANG(?i, "la") AS ?kingdom)
   BIND (STRLANG(?r, "en") AS ?otherNames)
   BIND (STRLANG(?s, "la") AS ?class)
+  BIND (STRLANG(?af, "en") AS ?status)
 
-  BIND (URI(CONCAT(?baseURI, "animalSkosScheme/")) AS ?skosScheme)
+  BIND (URI(CONCAT(?baseURI, "skosTypeScheme/")) AS ?skosTypeScheme)
+  BIND (URI(CONCAT(?baseURI, "skosStatusScheme/")) AS ?skosStatusScheme)
   BIND (URI(CONCAT(?baseURI, "concept/",?s)) AS ?classC)
   BIND (URI(CONCAT(?baseURI, "concept/",?i)) AS ?kingdomC)
   BIND (URI(CONCAT(?baseURI, "concept/",?ab)) AS ?orderC)
@@ -189,6 +198,7 @@ WHERE {
   BIND (URI(CONCAT(?baseURI, "concept/",?c)) AS ?genusC)
   BIND (URI(CONCAT(?baseURI, "concept/",?ad)) AS ?familyC)
   BIND (URI(CONCAT(?baseURI, "concept/",?al)) AS ?phylumC)
+  BIND (URI(CONCAT(?baseURI, "concept/",ENCODE_FOR_URI(?af))) AS ?statusC)
 
   BIND (STRLANG(?t, "en") AS ?lifestyle)
   
@@ -202,7 +212,7 @@ WHERE {
   BIND (STRLANG(?w, "en") AS ?nameOfYoung)
   BIND (STRLANG(?ad, "la") AS ?family)
   BIND (STRLANG(?ae, "en") AS ?habitat)
-  BIND (STRLANG(?af, "en") AS ?status)
+  
   BIND (STRLANG(?al, "en") AS ?phylum)
   BIND (STRLANG(?ac, "en") AS ?behaviour)
   BIND (STRLANG(?ag, "en") AS ?distinctiveFeature)

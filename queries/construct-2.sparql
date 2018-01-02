@@ -1,0 +1,41 @@
+PREFIX se: <http://www.w3.org/2002/07/owl#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
+PREFIX my: <http://myschema.cz/animals#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sc: <http://purl.org/science/owl/sciencecommons/>
+PREFIX apf: <http://jena.apache.org/ARQ/property#>
+PREFIX list: <http://jena.apache.org/ARQ/list#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT { ?animal1 schema:type ?charUrl .
+      ?charUrl a my:Characteristic  ;
+                my:predators ?predators ;
+    			sx:behavioralNote ?behaviour ;
+                my:skin ?skin ;
+                my:lifestyle ?lifestyle ;
+                my:populationSize ?populationSize ;
+                my:prey ?prey ;
+                my:numberSpecies ?numberSpecies ;
+                schema:color ?color .
+}
+FROM <http://localhost:3030/animals-server/data/liberec>
+FROM <http://localhost:3030/animals-server/data/animals>
+WHERE { 
+    ?animal2 se:sameAs ?animal1 .
+  	?animal1 sx:scientificName ?scienName .
+    ?animal2 a sx:Animal ; 
+    	    schema:charackteristic ?charU .
+
+    OPTIONAL { ?charU sx:behavioralNote ?behaviour .}
+    OPTIONAL { ?charU sx:predators ?predators .}
+    OPTIONAL { ?charU my:skin ?skin .}
+    OPTIONAL { ?charU my:lifestyle ?lifestyle . }
+    OPTIONAL { ?charU my:populationSize ?populationSize . }
+    OPTIONAL { ?charU my:prey ?prey . }
+    OPTIONAL { ?charU my:numberSpecies ?numberSpecies . }
+    OPTIONAL { ?charU schema:color ?color . } 
+
+    BIND(IRI(CONCAT(str(?animal1), "/charackteristic")) AS ?charUrl)
+}
+
+

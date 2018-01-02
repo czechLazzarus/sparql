@@ -1,0 +1,20 @@
+PREFIX se: <http://www.w3.org/2002/07/owl#>
+PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
+PREFIX my: <http://myschema.cz/animals#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+DESCRIBE ?animal1
+FROM <http://localhost:3030/animals-server/data/animals>
+FROM <http://localhost:3030/animals-server/data/praha>
+WHERE { 
+    ?animal2 se:sameAs ?animal1 .
+  	?animal1 my:forView "For view"@en .
+  	?animal2 a sx:Animal ;
+  			schema:status ?statusC .
+  	?statusC skos:prefLabel ?status
+  	FILTER(?status = "Critically Endangered"@en)
+}
+
+
