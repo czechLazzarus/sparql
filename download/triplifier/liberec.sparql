@@ -2,7 +2,7 @@ PREFIX s: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX my: <http://www.myschema.cz/animal#>
+PREFIX my: <http://www.myschema.cz/animals#>
 PREFIX sx: <http://lod.taxonconcept.org/ontology/txn.owl#>
 
 CONSTRUCT {
@@ -11,11 +11,9 @@ CONSTRUCT {
 	sx:originalNameUsage ?nameEng;
 	sx:originalNameUsage ?name;
         sx:order ?order ;
-	s:numberOfChildren ?k ;
-	s:pregnancyTime ?i ;
+	s:numberOfChildren ?numberOfChildren ;
 	s:weight ?weightURI ;
 	s:height ?heightURI ;
-	s:height ?pregnancyURI ;
 	s:diet ?dietURI ;
 	s:activity ?activity ;
 	my:pregnancyTime ?pregnancyURI ;
@@ -48,16 +46,16 @@ WHERE {
   BIND(IRI(CONCAT(CONCAT(?baseURI, ENCODE_FOR_URI(?l)),"#pregnancyLength")) as ?pregnancyURI)
 
   BIND (if(STRAFTER(?h, "-"), replace(STRAFTER(?h, "-"),"[^a-zA-Z /]",''), replace(?h,"[^a-zA-Z /]",'')) AS ?heightCode)
-  BIND (replace(STRAFTER(?h, "-"),"[^0-9,./]",'') AS ?minHeight)
-  BIND (IF(STRBEFORE(?h, "-"),replace(STRBEFORE(?h, "-"),"[^0-9,./]",''),replace(?h,"[^0-9,./]",'')) AS ?maxHeight)
+  BIND (xsd:decimal(replace(STRAFTER(?h, "-"),"[^0-9,./]",'')) AS ?minHeight)
+  BIND (IF(STRBEFORE(?h, "-"),xsd:decimal(replace(STRBEFORE(?h, "-"),"[^0-9,./]",'')),xsd:decimal(replace(?h,"[^0-9,./]",''))) AS ?maxHeight)
 
   BIND (IF(STRAFTER(?e, "-"), replace(STRAFTER(?e, "-"),"[^a-zA-Z/]",''), replace(?e,"[^a-zA-Z/]",'')) AS ?weightCode)
-  BIND (replace(STRAFTER(?e, "-"),"[^0-9,./]",'') AS ?minWeight)
-  BIND (IF(STRBEFORE(?e, "-"),replace(STRBEFORE(?e, "-"),"[^0-9,./]",''),replace(?e,"[^0-9,./]",'')) AS ?maxWeight)
+  BIND (xsd:decimal(replace(STRAFTER(?e, "-"),"[^0-9,./]",'')) AS ?minWeight)
+  BIND (IF(STRBEFORE(?e, "-"),xsd:decimal(replace(STRBEFORE(?e, "-"),"[^0-9,./]",'')),xsd:decimal(replace(?e,"[^0-9,./]",''))) AS ?maxWeight)
 
-  BIND (IF(STRAFTER(?i, "-"),replace(STRAFTER(?i, "-"),"[^a-zA-Zá-ú/]",''), replace(?i ,"[^a-zA-Zá-ú/]",'')) AS ?pregnancyCode)
-  BIND (replace(STRAFTER(?i, "-"),"[^0-9,./]",'') AS ?minPregnancy)
-  BIND (IF(STRBEFORE(?i, "-"),replace(STRBEFORE(?i, "-"),"[^0-9,./]",''),replace(?i,"[^0-9,./]",'')) AS ?maxPregnancy)
+  BIND (IF(STRAFTER(?i, "-"), replace(STRAFTER(?i, "-"),"[^a-zA-Zá-ú/]",''), replace(?i ,"[^a-zA-Zá-ú/]",'')) AS ?pregnancyCode)
+  BIND (xsd:decimal(replace(STRAFTER(?i, "-"),"[^0-9,./]",'')) AS ?minPregnancy)
+  BIND (IF(STRBEFORE(?i, "-"),xsd:decimal(replace(STRBEFORE(?i, "-"),"[^0-9,./]",'')),xsd:decimal(replace(?i,"[^0-9,./]",''))) AS ?maxPregnancy)
 
   BIND (STRLANG(?b, "cs") AS ?name)
   BIND (STRLANG(?j, "cs") AS ?order)
@@ -66,6 +64,7 @@ WHERE {
   BIND (STRLANG(?g, "cs") AS ?diet)
   BIND (STRLANG(?d, "cs") AS ?location)
   BIND (STRLANG(?a, "cs") AS ?activity)
+  BIND (xsd:integer(?k) AS ?numberOfChildren)
 
 }
 

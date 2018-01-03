@@ -1,8 +1,7 @@
 PREFIX apf: <http://jena.apache.org/ARQ/property#>
 PREFIX list: <http://jena.apache.org/ARQ/list#>
 PREFIX schema: <http://schema.org/>
-PREFIX he: <http://www.snik.eu/ontology/he/>
-PREFIX my: <http://myschema.cz/zvirata#>
+PREFIX my: <http://myschema.cz/animals#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -25,7 +24,7 @@ CONSTRUCT {
 	schema:charackteristic ?charakteristicURI ;
 	schema:location ?locationURI ;
 	schema:status ?statusC ;
-	schema:typicalAgeRange ?typicalAgeRange ;
+	my:lifeSpan ?lifeSpanURI ;
 	my:nameOfYoung ?nameOfYoung ;
 	my:distinctiveFeature ?distinctiveFeature ;
 	my:funFacts ?funFacts. 
@@ -126,6 +125,11 @@ CONSTRUCT {
 	schema:maxValue ?maxHeight ;
 	schema:unitCode ?heightCode .
 
+    ?weightURI a schema:Weight ;
+	schema:minValue ?minWeight ;
+	schema:maxValue ?maxWeight ;
+	schema:unitCode ?weightCode .
+
     ?gestionURI a schema:GestionPeriod ;
 	schema:minValue ?minGestionPeriod ;
 	schema:maxValue ?maxGestionPeriod ;
@@ -136,10 +140,10 @@ CONSTRUCT {
 	schema:maxValue ?maxAgeOfWeaning ;
 	schema:unitCode ?ageOfWeaningCode .
 	
-    ?weightURI a schema:Weight ;
-	schema:minValue ?minWeight ;
-	schema:maxValue ?maxWeight ;
-	schema:unitCode ?weightCode .
+    ?lifeSpanURI a schema:QuantitativeValue ;
+	schema:minValue ?minLifeSpan ;
+	schema:maxValue ?maxLifeSpan ;
+	schema:unitCode ?lifeSpanCode .
 }
 WHERE {
   BIND("http://jakubvejr.org/animals/" AS ?baseURI)
@@ -154,9 +158,14 @@ WHERE {
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/ageOfWeaning")) AS ?ageOfWeaningURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/height")) AS ?heightURI)
   BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/weight")) AS ?weightURI)
+  BIND(URI(CONCAT(?baseURI, ENCODE_FOR_URI(lcase(REPLACE(?l, " ", "_"))), "/lifespan")) AS ?lifeSpanURI)
 
   BIND (xsd:decimal(replace(STRBEFORE(?n, "("),"[^0-9.]",'')) AS ?speed)
   BIND (replace(STRBEFORE(?n, "("),"[^a-zA-Z/]",'') AS ?speedCode)
+
+  BIND (IF(STRAFTER(?x, "-"), replace(STRAFTER(?x, "-"),"[^a-zA-Zá-ú/]",''), replace(?x ,"[^a-zA-Zá-ú/]",'')) AS ?lifeSpanCode)
+  BIND (xsd:decimal(replace(STRAFTER(?x, "-"),"[^0-9,./]",'')) AS ?minLifeSpan)
+  BIND (IF(STRBEFORE(?x, "-"),xsd:decimal(replace(STRBEFORE(?x, "-"),"[^0-9,./]",'')),xsd:decimal(replace(?x,"[^0-9,./]",''))) AS ?maxLifeSpan)
 
   BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^a-zA-Z/]",''), replace(STRBEFORE(?q, "("),"[^a-zA-Z/]",'')) AS ?heightCode)
   BIND (IF(STRAFTER(STRBEFORE(?q, "("), "-"), xsd:decimal(replace(STRAFTER(STRBEFORE(?q, "("), "-"),"[^0-9,./]",'')), '') AS ?minHeight)
@@ -177,7 +186,6 @@ WHERE {
   BIND (xsd:integer(?a) AS ?numberSpecies)
   BIND (STRLANG(?o, "en") AS ?populationSize)
   BIND (STRLANG(?b, "en") AS ?group)
-  BIND (STRLANG(?x, "en") AS ?typicalAgeRange)
   BIND (STRLANG(?c, "la") AS ?genus)
   BIND (STRLANG(?l, "en") AS ?name)
   BIND (STRLANG(?k, "la") AS ?nameLatin)
@@ -218,5 +226,5 @@ WHERE {
   BIND (STRLANG(?ag, "en") AS ?distinctiveFeature)
   BIND (STRLANG(?z, "en") AS ?funFacts)
 }
-
 OFFSET 1
+

@@ -1,0 +1,121 @@
+<Silk>
+        <Prefixes>
+      <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/><Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/><Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+    </Prefixes>
+        <DataSources>
+          <Dataset id="animals" type="file">
+            <Param name="file" value="animals.ttl"/><Param name="format" value="Turtle"/><Param name="graph" value=""/>
+          </Dataset><Dataset id="liberec" type="file">
+            <Param name="file" value="liberec.ttl"/><Param name="format" value="Turtle"/><Param name="graph" value=""/>
+          </Dataset>
+        </DataSources>
+        <Interlinks>
+          <Interlink id="LiberecAnimals">
+        <SourceDataset dataSource="animals" var="a" typeUri="http://lod.taxonconcept.org/ontology/txn.owl#Animal">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </SourceDataset>
+        <TargetDataset dataSource="liberec" var="b" typeUri="http://lod.taxonconcept.org/ontology/txn.owl#Animal">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </TargetDataset>
+        <LinkageRule linkType="owl:sameAs">
+        <Aggregate id="max1" required="false" weight="1" type="max">
+            <Compare id="levenshteinDistance3" required="false" weight="1" metric="levenshteinDistance" threshold="1.2" indexing="true">
+            <TransformInput id="removeBlanks6" function="removeBlanks">
+            <TransformInput id="removeSpecialChars6" function="removeSpecialChars">
+            <TransformInput id="removeParentheses1" function="removeParentheses">
+            <TransformInput id="lowerCase5" function="lowerCase">
+            <Input id="sourcePath1" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#originalNameUsage&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><TransformInput id="removeBlanks5" function="removeBlanks">
+            <TransformInput id="removeSpecialChars5" function="removeSpecialChars">
+            <TransformInput id="removeParentheses2" function="removeParentheses">
+            <TransformInput id="lowerCase6" function="lowerCase">
+            <Input id="targetPath1" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#originalNameUsage&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><Param name="minChar" value="0"/><Param name="maxChar" value="z"/>
+          </Compare><Compare id="levenshteinDistance2" required="false" weight="1" metric="levenshteinDistance" threshold="1.2" indexing="true">
+            <TransformInput id="removeBlanks2" function="removeBlanks">
+            <TransformInput id="removeSpecialChars3" function="removeSpecialChars">
+            <TransformInput id="removeParentheses4" function="removeParentheses">
+            <TransformInput id="lowerCase3" function="lowerCase">
+            <Input id="sourcePath2" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#commonName&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><TransformInput id="removeBlanks1" function="removeBlanks">
+            <TransformInput id="removeSpecialChars4" function="removeSpecialChars">
+            <TransformInput id="removeParentheses3" function="removeParentheses">
+            <TransformInput id="lowerCase4" function="lowerCase">
+            <Input id="targetPath3" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#originalNameUsage&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><Param name="minChar" value="0"/><Param name="maxChar" value="z"/>
+          </Compare><Compare id="levenshteinDistance1" required="false" weight="1" metric="levenshteinDistance" threshold="1.0" indexing="true">
+            <TransformInput id="removeBlanks3" function="removeBlanks">
+            <TransformInput id="removeSpecialChars2" function="removeSpecialChars">
+            <TransformInput id="removeParentheses5" function="removeParentheses">
+            <TransformInput id="lowerCase2" function="lowerCase">
+            <Input id="sourcePath3" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#scientificName&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><TransformInput id="removeBlanks4" function="removeBlanks">
+            <TransformInput id="removeSpecialChars1" function="removeSpecialChars">
+            <TransformInput id="removeParentheses6" function="removeParentheses">
+            <TransformInput id="lowerCase1" function="lowerCase">
+            <Input id="targetPath2" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#scientificName&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><Param name="minChar" value="0"/><Param name="maxChar" value="z"/>
+          </Compare>
+          </Aggregate>
+        <Filter/>
+      </LinkageRule>
+        <Outputs>
+          <Output id="outputLiberecAnimals"/>
+        </Outputs>
+      </Interlink>
+        </Interlinks>
+        <Transforms>
+          
+        </Transforms>
+        <Outputs>
+          <Dataset id="outputLiberecAnimals" type="file">
+            <Param name="file" value="outputLiberecAnimals.nt"/><Param name="format" value="N-Triples"/><Param name="graph" value=""/>
+          </Dataset>
+        </Outputs>
+      </Silk>

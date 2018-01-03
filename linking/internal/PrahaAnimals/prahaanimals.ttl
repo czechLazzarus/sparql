@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+:Animals rdf:type void:Dataset ;
+        foaf:homepage <http://jakuvejr.org/animals> .
+	dcterms:title "Animals with characteristic" ;
+	dcterms:creator <http://jakuvejr.org/me>
+	void:sparqlEndpoint<http://linked.jakubvejr.org/sparql>;
+	void:dataDump<http://linked.jakubvejr.org/dump/animals.cz.zip> ;
+	dcterms:publisher <http://jakubvejr.org> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Praha rdf:type void:Dataset ;
+        foaf:homepage <http://jakuvejr.org/praha> .
+	dcterms:title "Animals for adoption Praha" ;
+	dcterms:creator <http://jakuvejr.org/me>
+	void:sparqlEndpoint<http://linked.opendata.cz/sparql>;
+	void:dataDump<http://linked.jakubvejr.org/dump/prahazoo.cz.zip> ;
+	dcterms:publisher <http://jakubvejr.org> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Animals void:subset :Animals2Praha  .
+
+:Animals2Praha rdf:type void:Linkset ;
+              void:target :Animals ;
+              void:target :Praha .
+

@@ -11,11 +11,9 @@
         sx:originalNameUsage  "Alpaca "@en ;
         sx:originalNameUsage  "Alpaka"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "365 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/alpaka.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/alpaka.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/alpaka.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/alpaka.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/alpaka.html#pregnancyLength> ;
@@ -27,20 +25,18 @@
 
 <http://jakubvejr.org/liberec/alpaka.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "100" ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku " .
 
 <http://jakubvejr.org/liberec/alpaka.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "65" ;
-        s:maxValue  "55" ;
+        s:minValue  "65"^^xsd:decimal ;
+        s:maxValue  "55"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/alpaka.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "365" ;
+        s:maxValue  "365"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/kockodan-dianin.html>
@@ -49,11 +45,9 @@
         sx:originalNameUsage  "Diana Monkey"@en ;
         sx:originalNameUsage  "Kočkodan Dianin"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "150-180 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/kockodan-dianin.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kockodan-dianin.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kockodan-dianin.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kockodan-dianin.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kockodan-dianin.html#pregnancyLength> ;
@@ -65,20 +59,20 @@
 
 <http://jakubvejr.org/liberec/kockodan-dianin.html#height>
         rdf:type    s:Height ;
-        s:minValue  "150" ;
-        s:maxValue  "100" ;
+        s:minValue  "150"^^xsd:decimal ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm dlka tla i s ocasem" .
 
 <http://jakubvejr.org/liberec/kockodan-dianin.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "5.5" ;
-        s:maxValue  "3.9" ;
+        s:minValue  5.5 ;
+        s:maxValue  3.9 ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kockodan-dianin.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "180" ;
-        s:maxValue  "150" ;
+        s:minValue  "180"^^xsd:decimal ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/kocka-cejlonska.html>
@@ -87,11 +81,8 @@
         sx:originalNameUsage  "Rusty-spotted Cat"@en ;
         sx:originalNameUsage  "Kočka cejlonská"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "70 dní " ;
         s:weight              <http://jakubvejr.org/liberec/kocka-cejlonska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kocka-cejlonska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kocka-cejlonska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kocka-cejlonska.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kocka-cejlonska.html#pregnancyLength> ;
@@ -103,20 +94,16 @@
 
 <http://jakubvejr.org/liberec/kocka-cejlonska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "48" ;
+        s:maxValue  "48"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/kocka-cejlonska.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "1,5" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kocka-cejlonska.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "70" ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/karas-zlaty.html>
@@ -127,7 +114,6 @@
         sx:order              "Máloostní (Cypriniformes) "@cs ;
         s:weight              <http://jakubvejr.org/liberec/karas-zlaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/karas-zlaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/karas-zlaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/karas-zlaty.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/karas-zlaty.html#pregnancyLength> ;
@@ -139,8 +125,8 @@
 
 <http://jakubvejr.org/liberec/karas-zlaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "40" ;
-        s:maxValue  "15" ;
+        s:minValue  "40"^^xsd:decimal ;
+        s:maxValue  "15"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/karas-zlaty.html#weight>
@@ -157,7 +143,6 @@
         sx:order              "Máloostní (Cypriniformes) "@cs ;
         s:weight              <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#pregnancyLength> ;
@@ -169,8 +154,8 @@
 
 <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#height>
         rdf:type    s:Height ;
-        s:minValue  "90" ;
-        s:maxValue  "60" ;
+        s:minValue  "90"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/kapr-obecny--nishikigoi.html#weight>
@@ -185,10 +170,8 @@
         sx:originalNameUsage  "Mandarin Duck"@en ;
         sx:originalNameUsage  "Kachnička mandarinská"@cs ;
         sx:order              "Vrubozobí (Anseriformes) "@cs ;
-        s:numberOfChildren    "9-12" ;
         s:weight              <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#pregnancyLength> ;
@@ -200,14 +183,12 @@
 
 <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "51" ;
-        s:maxValue  "41" ;
+        s:minValue  "51"^^xsd:decimal ;
+        s:maxValue  "41"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,5" ;
-        s:maxValue  "0,44" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kachnicka-mandarinska.html#pregnancyLength>
@@ -219,10 +200,9 @@
         sx:originalNameUsage  "Black-necked Crane "@en ;
         sx:originalNameUsage  "Jeřáb černokrký"@cs ;
         sx:order              "Krátkokřídlí (Gruiformes)"@cs ;
-        s:numberOfChildren    "2" ;
+        s:numberOfChildren    2 ;
         s:weight              <http://jakubvejr.org/liberec/jerab-cernokrky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/jerab-cernokrky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/jerab-cernokrky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/jerab-cernokrky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/jerab-cernokrky.html#pregnancyLength> ;
@@ -234,14 +214,13 @@
 
 <http://jakubvejr.org/liberec/jerab-cernokrky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "115" ;
+        s:maxValue  "115"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/jerab-cernokrky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "7" ;
-        s:maxValue  "5" ;
+        s:minValue  "7"^^xsd:decimal ;
+        s:maxValue  "5"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/jerab-cernokrky.html#pregnancyLength>
@@ -253,10 +232,8 @@
         sx:originalNameUsage  "Veiled chameleon"@en ;
         sx:originalNameUsage  "Chameleon jemenský"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "12 - 85" ;
         s:weight              <http://jakubvejr.org/liberec/chameleon-jemensky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/chameleon-jemensky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/chameleon-jemensky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/chameleon-jemensky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/chameleon-jemensky.html#pregnancyLength> ;
@@ -268,8 +245,8 @@
 
 <http://jakubvejr.org/liberec/chameleon-jemensky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "65" ;
-        s:maxValue  "45" ;
+        s:minValue  "65"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  "  cm" .
 
 <http://jakubvejr.org/liberec/chameleon-jemensky.html#weight>
@@ -284,10 +261,8 @@
         sx:originalNameUsage  "Spotted Dove "@en ;
         sx:originalNameUsage  "Hrdlička čínská"@cs ;
         sx:order              "Měkkozobí (Columbiformes)"@cs ;
-        s:numberOfChildren    "2-3" ;
         s:weight              <http://jakubvejr.org/liberec/hrdlicka-cinska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/hrdlicka-cinska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/hrdlicka-cinska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/hrdlicka-cinska.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/hrdlicka-cinska.html#pregnancyLength> ;
@@ -299,14 +274,11 @@
 
 <http://jakubvejr.org/liberec/hrdlicka-cinska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "30" ;
-        s:maxValue  "27,5" ;
+        s:minValue  "30"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/hrdlicka-cinska.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "0,13" ;
         s:unitCode  "g" .
 
 <http://jakubvejr.org/liberec/hrdlicka-cinska.html#pregnancyLength>
@@ -318,10 +290,8 @@
         sx:originalNameUsage  "Nicobar Pigeon"@en ;
         sx:originalNameUsage  "Holub nikobarský"@cs ;
         sx:order              "Měkkozobí (Columbiformes)"@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/holub-nikobarsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/holub-nikobarsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/holub-nikobarsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/holub-nikobarsky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/holub-nikobarsky.html#pregnancyLength> ;
@@ -333,14 +303,12 @@
 
 <http://jakubvejr.org/liberec/holub-nikobarsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "35" ;
-        s:maxValue  "32" ;
+        s:minValue  "35"^^xsd:decimal ;
+        s:maxValue  "32"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/holub-nikobarsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,6" ;
-        s:maxValue  "0,46" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/holub-nikobarsky.html#pregnancyLength>
@@ -352,11 +320,9 @@
         sx:originalNameUsage  "Chinese White-cheeked Gibbon"@en ;
         sx:originalNameUsage  "Gibon bělolící"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "200-212 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/gibon-belolici.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/gibon-belolici.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/gibon-belolici.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/gibon-belolici.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/gibon-belolici.html#pregnancyLength> ;
@@ -368,20 +334,20 @@
 
 <http://jakubvejr.org/liberec/gibon-belolici.html#height>
         rdf:type    s:Height ;
-        s:minValue  "53" ;
-        s:maxValue  "47" ;
+        s:minValue  "53"^^xsd:decimal ;
+        s:maxValue  "47"^^xsd:decimal ;
         s:unitCode  " cm dlka tla " .
 
 <http://jakubvejr.org/liberec/gibon-belolici.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "7" ;
-        s:maxValue  "6" ;
+        s:minValue  "7"^^xsd:decimal ;
+        s:maxValue  "6"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/gibon-belolici.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "212" ;
-        s:maxValue  "200" ;
+        s:minValue  "212"^^xsd:decimal ;
+        s:maxValue  "200"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/fretka-domaci.html>
@@ -390,11 +356,8 @@
         sx:originalNameUsage  "Ferret"@en ;
         sx:originalNameUsage  "Fretka domácí"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-16" ;
-        s:pregnancyTime       "42-50 dní " ;
         s:weight              <http://jakubvejr.org/liberec/fretka-domaci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/fretka-domaci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/fretka-domaci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/fretka-domaci.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/fretka-domaci.html#pregnancyLength> ;
@@ -406,20 +369,19 @@
 
 <http://jakubvejr.org/liberec/fretka-domaci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "64" ;
-        s:maxValue  "42" ;
+        s:minValue  "64"^^xsd:decimal ;
+        s:maxValue  "42"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/fretka-domaci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,5" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/fretka-domaci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "50" ;
-        s:maxValue  "42" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "42"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/felsuma-madagaskarska.html>
@@ -428,10 +390,8 @@
         sx:originalNameUsage  "Madagascar day gecko"@en ;
         sx:originalNameUsage  "Felsuma madagaskarská"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "2 " ;
         s:weight              <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#pregnancyLength> ;
@@ -443,8 +403,8 @@
 
 <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "30" ;
-        s:maxValue  "22" ;
+        s:minValue  "30"^^xsd:decimal ;
+        s:maxValue  "22"^^xsd:decimal ;
         s:unitCode  "  cm i s ocasem" .
 
 <http://jakubvejr.org/liberec/felsuma-madagaskarska.html#weight>
@@ -459,10 +419,8 @@
         sx:originalNameUsage  "Rufous Hornbill"@en ;
         sx:originalNameUsage  "Dvojzoborožec hnědavý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes) "@cs ;
-        s:numberOfChildren    "2-4 " ;
         s:weight              <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#pregnancyLength> ;
@@ -474,14 +432,12 @@
 
 <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "65" ;
-        s:maxValue  "60" ;
+        s:minValue  "65"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,82" ;
-        s:maxValue  "1,17" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/dvojzoborozec-hnedavy.html#pregnancyLength>
@@ -493,10 +449,8 @@
         sx:originalNameUsage  "Striated Caracara"@en ;
         sx:originalNameUsage  "Čimango falklandský"@cs ;
         sx:order              "Dravci (Falconiformes) "@cs ;
-        s:numberOfChildren    "1-4 " ;
         s:weight              <http://jakubvejr.org/liberec/cimango-falklandsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/cimango-falklandsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/cimango-falklandsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/cimango-falklandsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/cimango-falklandsky.html#pregnancyLength> ;
@@ -508,14 +462,12 @@
 
 <http://jakubvejr.org/liberec/cimango-falklandsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "60" ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/cimango-falklandsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,2" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/cimango-falklandsky.html#pregnancyLength>
@@ -527,11 +479,9 @@
         sx:originalNameUsage  "Blesbock"@en ;
         sx:originalNameUsage  "Buvolec běločelý"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "220-250 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/buvolec-belocely.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/buvolec-belocely.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/buvolec-belocely.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/buvolec-belocely.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/buvolec-belocely.html#pregnancyLength> ;
@@ -543,20 +493,20 @@
 
 <http://jakubvejr.org/liberec/buvolec-belocely.html#height>
         rdf:type    s:Height ;
-        s:minValue  "100" ;
-        s:maxValue  "85" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "85"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/buvolec-belocely.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "80" ;
-        s:maxValue  "50" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/buvolec-belocely.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "250" ;
-        s:maxValue  "220" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "220"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/kun-prevalskeho.html>
@@ -565,11 +515,9 @@
         sx:originalNameUsage  "Przewalski's horse"@en ;
         sx:originalNameUsage  "Kůň Převalského"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "328-343" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/kun-prevalskeho.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kun-prevalskeho.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kun-prevalskeho.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kun-prevalskeho.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kun-prevalskeho.html#pregnancyLength> ;
@@ -581,20 +529,20 @@
 
 <http://jakubvejr.org/liberec/kun-prevalskeho.html#height>
         rdf:type    s:Height ;
-        s:minValue  "280" ;
-        s:maxValue  "220" ;
+        s:minValue  "280"^^xsd:decimal ;
+        s:maxValue  "220"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/kun-prevalskeho.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "350" ;
-        s:maxValue  "200" ;
+        s:minValue  "350"^^xsd:decimal ;
+        s:maxValue  "200"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kun-prevalskeho.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "343" ;
-        s:maxValue  "328" ;
+        s:minValue  "343"^^xsd:decimal ;
+        s:maxValue  "328"^^xsd:decimal ;
         s:unitCode  "" .
 
 <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html>
@@ -603,11 +551,9 @@
         sx:originalNameUsage  "Shetland pony"@en ;
         sx:originalNameUsage  "Kůň domácí - pony shetlandský"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "300-338 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#pregnancyLength> ;
@@ -619,20 +565,19 @@
 
 <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "107" ;
+        s:maxValue  "107"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "230" ;
-        s:maxValue  "200" ;
+        s:minValue  "230"^^xsd:decimal ;
+        s:maxValue  "200"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kun-domaci---pony-shetlandsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "338" ;
-        s:maxValue  "300" ;
+        s:minValue  "338"^^xsd:decimal ;
+        s:maxValue  "300"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html>
@@ -641,11 +586,9 @@
         sx:originalNameUsage  "Domestic horse - Mini Appaloosa"@en ;
         sx:originalNameUsage  "Kůň domácí - mini appaloosa"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "310-340 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#pregnancyLength> ;
@@ -657,20 +600,19 @@
 
 <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "90" ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "250" ;
-        s:maxValue  "230" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "230"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kun-domaci---mini-appaloosa.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "340" ;
-        s:maxValue  "310" ;
+        s:minValue  "340"^^xsd:decimal ;
+        s:maxValue  "310"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/krokodyl-celnaty.html>
@@ -679,10 +621,8 @@
         sx:originalNameUsage  "African Dwarf Crocodile"@en ;
         sx:originalNameUsage  "Krokodýl čelnatý"@cs ;
         sx:order              "Krokodýli (Crocodilia)"@cs ;
-        s:numberOfChildren    "10-18" ;
         s:weight              <http://jakubvejr.org/liberec/krokodyl-celnaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/krokodyl-celnaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/krokodyl-celnaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/krokodyl-celnaty.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/krokodyl-celnaty.html#pregnancyLength> ;
@@ -694,8 +634,8 @@
 
 <http://jakubvejr.org/liberec/krokodyl-celnaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "230" ;
-        s:maxValue  "130" ;
+        s:minValue  "230"^^xsd:decimal ;
+        s:maxValue  "130"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/krokodyl-celnaty.html#weight>
@@ -710,10 +650,8 @@
         sx:originalNameUsage  "New Guinea Snapping Turtle"@en ;
         sx:originalNameUsage  "Krátkokrčka novoguinejská"@cs ;
         sx:order              "Želvy (Testudines) "@cs ;
-        s:numberOfChildren    "3-5 ve snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#pregnancyLength> ;
@@ -725,8 +663,8 @@
 
 <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "30" ;
-        s:maxValue  "11" ;
+        s:minValue  "30"^^xsd:decimal ;
+        s:maxValue  "11"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/kratkokrcka-novoguinejska.html#weight>
@@ -741,10 +679,8 @@
         sx:originalNameUsage  "Green Tree Python"@en ;
         sx:originalNameUsage  "Krajta zelená"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "15-25 " ;
         s:weight              <http://jakubvejr.org/liberec/krajta-zelena.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/krajta-zelena.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/krajta-zelena.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/krajta-zelena.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/krajta-zelena.html#pregnancyLength> ;
@@ -756,8 +692,8 @@
 
 <http://jakubvejr.org/liberec/krajta-zelena.html#height>
         rdf:type    s:Height ;
-        s:minValue  "200" ;
-        s:maxValue  "150" ;
+        s:minValue  "200"^^xsd:decimal ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/krajta-zelena.html#weight>
@@ -772,10 +708,8 @@
         sx:originalNameUsage  "Reticulated python"@en ;
         sx:originalNameUsage  "Krajta mřížkovaná"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "20 - 50" ;
         s:weight              <http://jakubvejr.org/liberec/krajta-mrizkovana.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/krajta-mrizkovana.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/krajta-mrizkovana.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/krajta-mrizkovana.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/krajta-mrizkovana.html#pregnancyLength> ;
@@ -787,14 +721,13 @@
 
 <http://jakubvejr.org/liberec/krajta-mrizkovana.html#height>
         rdf:type    s:Height ;
-        s:minValue  "400" ;
-        s:maxValue  "200" ;
+        s:minValue  "400"^^xsd:decimal ;
+        s:maxValue  "200"^^xsd:decimal ;
         s:unitCode  "  cm" .
 
 <http://jakubvejr.org/liberec/krajta-mrizkovana.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "50" ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  "dokg" .
 
 <http://jakubvejr.org/liberec/krajta-mrizkovana.html#pregnancyLength>
@@ -806,11 +739,8 @@
         sx:originalNameUsage  "East Caucasian Tur"@en ;
         sx:originalNameUsage  "Kozorožec dagestánský"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "180-190 dní " ;
         s:weight              <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#pregnancyLength> ;
@@ -822,20 +752,19 @@
 
 <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "100" ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "80" ;
-        s:maxValue  "45" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kozorozec-dagestansky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "190" ;
-        s:maxValue  "180" ;
+        s:minValue  "190"^^xsd:decimal ;
+        s:maxValue  "180"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/piskomil-mongolsky.html>
@@ -844,11 +773,8 @@
         sx:originalNameUsage  "Mongolian Gerbil "@en ;
         sx:originalNameUsage  "Pískomil mongolský"@cs ;
         sx:order              "Hlodavci (Rodentia) "@cs ;
-        s:numberOfChildren    "2-8" ;
-        s:pregnancyTime       "24-29 dní " ;
         s:weight              <http://jakubvejr.org/liberec/piskomil-mongolsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/piskomil-mongolsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/piskomil-mongolsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/piskomil-mongolsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/piskomil-mongolsky.html#pregnancyLength> ;
@@ -860,20 +786,18 @@
 
 <http://jakubvejr.org/liberec/piskomil-mongolsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "15" ;
-        s:maxValue  "12" ;
+        s:minValue  "15"^^xsd:decimal ;
+        s:maxValue  "12"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/piskomil-mongolsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,06" ;
-        s:maxValue  "0,05" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/piskomil-mongolsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "29" ;
-        s:maxValue  "24" ;
+        s:minValue  "29"^^xsd:decimal ;
+        s:maxValue  "24"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/vyrecek-filipinsky.html>
@@ -882,10 +806,8 @@
         sx:originalNameUsage  " Luzon Lowland Scops-owl "@en ;
         sx:originalNameUsage  "Výreček filipínský"@cs ;
         sx:order              "Sovy (Strigiformes) "@cs ;
-        s:numberOfChildren    "1-4" ;
         s:weight              <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#pregnancyLength> ;
@@ -897,14 +819,14 @@
 
 <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "28" ;
-        s:maxValue  "23" ;
+        s:minValue  "28"^^xsd:decimal ;
+        s:maxValue  "23"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0.3" ;
-        s:maxValue  "0.2" ;
+        s:minValue  0.3 ;
+        s:maxValue  0.2 ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/vyrecek-filipinsky.html#pregnancyLength>
@@ -916,11 +838,9 @@
         sx:originalNameUsage  "Rothschild's giraffe"@en ;
         sx:originalNameUsage  "Žirafa Rothschildova"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "430 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/zirafa-rothschildova.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zirafa-rothschildova.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zirafa-rothschildova.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zirafa-rothschildova.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zirafa-rothschildova.html#pregnancyLength> ;
@@ -932,20 +852,19 @@
 
 <http://jakubvejr.org/liberec/zirafa-rothschildova.html#height>
         rdf:type    s:Height ;
-        s:minValue  "470" ;
-        s:maxValue  "350" ;
+        s:minValue  "470"^^xsd:decimal ;
+        s:maxValue  "350"^^xsd:decimal ;
         s:unitCode  " cm vka " .
 
 <http://jakubvejr.org/liberec/zirafa-rothschildova.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1900" ;
-        s:maxValue  "500" ;
+        s:minValue  "1900"^^xsd:decimal ;
+        s:maxValue  "500"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zirafa-rothschildova.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "430" ;
+        s:maxValue  "430"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/zenetka-skvrnita.html>
@@ -954,11 +873,8 @@
         sx:originalNameUsage  "Cape Genet"@en ;
         sx:originalNameUsage  "Ženetka skvrnitá"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-5" ;
-        s:pregnancyTime       "70 dní " ;
         s:weight              <http://jakubvejr.org/liberec/zenetka-skvrnita.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zenetka-skvrnita.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zenetka-skvrnita.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zenetka-skvrnita.html#diet> ;
         s:activity            "soumračná"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zenetka-skvrnita.html#pregnancyLength> ;
@@ -970,20 +886,18 @@
 
 <http://jakubvejr.org/liberec/zenetka-skvrnita.html#height>
         rdf:type    s:Height ;
-        s:minValue  "115" ;
-        s:maxValue  "90" ;
+        s:minValue  "115"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  " cm dlka tla s ocasem" .
 
 <http://jakubvejr.org/liberec/zenetka-skvrnita.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "3" ;
-        s:maxValue  "1,2" ;
+        s:minValue  "3"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zenetka-skvrnita.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "70" ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/zelva-uhlirska.html>
@@ -992,10 +906,8 @@
         sx:originalNameUsage  "Red-footed Tortoise"@en ;
         sx:originalNameUsage  "Želva uhlířská"@cs ;
         sx:order              "Želvy (Testudines)"@cs ;
-        s:numberOfChildren    "2-15 vajec v jedné snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/zelva-uhlirska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zelva-uhlirska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zelva-uhlirska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zelva-uhlirska.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zelva-uhlirska.html#pregnancyLength> ;
@@ -1007,14 +919,14 @@
 
 <http://jakubvejr.org/liberec/zelva-uhlirska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "50" ;
-        s:maxValue  "30" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "30"^^xsd:decimal ;
         s:unitCode  " cm dlka svrchnho krune" .
 
 <http://jakubvejr.org/liberec/zelva-uhlirska.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "28" ;
-        s:maxValue  "10" ;
+        s:minValue  "28"^^xsd:decimal ;
+        s:maxValue  "10"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zelva-uhlirska.html#pregnancyLength>
@@ -1026,10 +938,8 @@
         sx:originalNameUsage  "African Spurred Tortoise "@en ;
         sx:originalNameUsage  "Želva ostruhatá"@cs ;
         sx:order              "Želvy (Testudines) "@cs ;
-        s:numberOfChildren    "13-31 ve snůšce " ;
         s:weight              <http://jakubvejr.org/liberec/zelva-ostruhata.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zelva-ostruhata.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zelva-ostruhata.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zelva-ostruhata.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zelva-ostruhata.html#pregnancyLength> ;
@@ -1041,8 +951,8 @@
 
 <http://jakubvejr.org/liberec/zelva-ostruhata.html#height>
         rdf:type    s:Height ;
-        s:minValue  "80" ;
-        s:maxValue  "50" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/zelva-ostruhata.html#weight>
@@ -1057,10 +967,8 @@
         sx:originalNameUsage  "Red-eared Slider "@en ;
         sx:originalNameUsage  "Želva nádherná"@cs ;
         sx:order              "Želvy (Testudines) "@cs ;
-        s:numberOfChildren    "2-23 ve snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/zelva-nadherna.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zelva-nadherna.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zelva-nadherna.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zelva-nadherna.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zelva-nadherna.html#pregnancyLength> ;
@@ -1072,8 +980,8 @@
 
 <http://jakubvejr.org/liberec/zelva-nadherna.html#height>
         rdf:type    s:Height ;
-        s:minValue  "30" ;
-        s:maxValue  "20" ;
+        s:minValue  "30"^^xsd:decimal ;
+        s:maxValue  "20"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/zelva-nadherna.html#weight>
@@ -1088,10 +996,8 @@
         sx:originalNameUsage  "Crowned River Turtle"@en ;
         sx:originalNameUsage  "Želva korunkatá"@cs ;
         sx:order              "Želvy (Chelonia) "@cs ;
-        s:numberOfChildren    "14-19 ve snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/zelva-korunkata.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zelva-korunkata.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zelva-korunkata.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zelva-korunkata.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zelva-korunkata.html#pregnancyLength> ;
@@ -1103,14 +1009,13 @@
 
 <http://jakubvejr.org/liberec/zelva-korunkata.html#height>
         rdf:type    s:Height ;
-        s:minValue  "55" ;
-        s:maxValue  "17" ;
+        s:minValue  "55"^^xsd:decimal ;
+        s:maxValue  "17"^^xsd:decimal ;
         s:unitCode  " cm dlka krune" .
 
 <http://jakubvejr.org/liberec/zelva-korunkata.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "10" ;
-        s:maxValue  "0,5" ;
+        s:minValue  "10"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zelva-korunkata.html#pregnancyLength>
@@ -1122,10 +1027,8 @@
         sx:originalNameUsage  "European Pond Turtle"@en ;
         sx:originalNameUsage  "Želva bahenní"@cs ;
         sx:order              "Želvy (Testudines) "@cs ;
-        s:numberOfChildren    "3-16 ve snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/zelva-bahenni.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zelva-bahenni.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zelva-bahenni.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zelva-bahenni.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zelva-bahenni.html#pregnancyLength> ;
@@ -1137,8 +1040,8 @@
 
 <http://jakubvejr.org/liberec/zelva-bahenni.html#height>
         rdf:type    s:Height ;
-        s:minValue  "21" ;
-        s:maxValue  "15" ;
+        s:minValue  "21"^^xsd:decimal ;
+        s:maxValue  "15"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/zelva-bahenni.html#weight>
@@ -1153,10 +1056,8 @@
         sx:originalNameUsage  "Wrinkled Hornbill "@en ;
         sx:originalNameUsage  "Zoborožec vrásčitý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "4-7 " ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-vrascity.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-vrascity.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-vrascity.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-vrascity.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-vrascity.html#pregnancyLength> ;
@@ -1168,14 +1069,13 @@
 
 <http://jakubvejr.org/liberec/zoborozec-vrascity.html#height>
         rdf:type    s:Height ;
-        s:minValue  "81" ;
-        s:maxValue  "65" ;
+        s:minValue  "81"^^xsd:decimal ;
+        s:maxValue  "65"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zoborozec-vrascity.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,6" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-vrascity.html#pregnancyLength>
@@ -1187,10 +1087,8 @@
         sx:originalNameUsage  "Black Hornbill "@en ;
         sx:originalNameUsage  "Zoborožec tmavý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "4-7" ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-tmavy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-tmavy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-tmavy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-tmavy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-tmavy.html#pregnancyLength> ;
@@ -1202,14 +1100,12 @@
 
 <http://jakubvejr.org/liberec/zoborozec-tmavy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "65" ;
-        s:maxValue  "60" ;
+        s:minValue  "65"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zoborozec-tmavy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,05" ;
-        s:maxValue  "0,9" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-tmavy.html#pregnancyLength>
@@ -1221,10 +1117,8 @@
         sx:originalNameUsage  "Silvery-cheeked Hornbill"@en ;
         sx:originalNameUsage  "Zoborožec šedolící"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-sedolici.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-sedolici.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-sedolici.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-sedolici.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-sedolici.html#pregnancyLength> ;
@@ -1236,14 +1130,13 @@
 
 <http://jakubvejr.org/liberec/zoborozec-sedolici.html#height>
         rdf:type    s:Height ;
-        s:minValue  "80" ;
-        s:maxValue  "75" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "75"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zoborozec-sedolici.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,5" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-sedolici.html#pregnancyLength>
@@ -1255,10 +1148,8 @@
         sx:originalNameUsage  "Visayan Hornbill"@en ;
         sx:originalNameUsage  "Zoborožec rýhozobý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "2-3" ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#pregnancyLength> ;
@@ -1270,14 +1161,13 @@
 
 <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "45" ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0.5" ;
-        s:maxValue  "0.44" ;
+        s:minValue  0.5 ;
+        s:maxValue  0.44 ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-ryhozoby.html#pregnancyLength>
@@ -1289,10 +1179,8 @@
         sx:originalNameUsage  "Trumpeter Hornbill"@en ;
         sx:originalNameUsage  "Zoborožec naříkavý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "4-5 " ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-narikavy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-narikavy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-narikavy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-narikavy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-narikavy.html#pregnancyLength> ;
@@ -1304,14 +1192,12 @@
 
 <http://jakubvejr.org/liberec/zoborozec-narikavy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "55" ;
-        s:maxValue  "50" ;
+        s:minValue  "55"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zoborozec-narikavy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,9" ;
-        s:maxValue  "0,45" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-narikavy.html#pregnancyLength>
@@ -1323,10 +1209,8 @@
         sx:originalNameUsage  "Southern Ground-Hornbill"@en ;
         sx:originalNameUsage  "Zoborožec kaferský"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/zoborozec-kafersky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zoborozec-kafersky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zoborozec-kafersky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zoborozec-kafersky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zoborozec-kafersky.html#pregnancyLength> ;
@@ -1338,14 +1222,12 @@
 
 <http://jakubvejr.org/liberec/zoborozec-kafersky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "100" ;
-        s:maxValue  "90" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zoborozec-kafersky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "6,2" ;
-        s:maxValue  "2,2" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zoborozec-kafersky.html#pregnancyLength>
@@ -1357,10 +1239,8 @@
         sx:originalNameUsage  "Zebra Finch"@en ;
         sx:originalNameUsage  "Zebřička pestrá"@cs ;
         sx:order              "Pěvci (Passeriformes)"@cs ;
-        s:numberOfChildren    "5-9" ;
         s:weight              <http://jakubvejr.org/liberec/zebricka-pestra.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zebricka-pestra.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zebricka-pestra.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zebricka-pestra.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zebricka-pestra.html#pregnancyLength> ;
@@ -1372,14 +1252,11 @@
 
 <http://jakubvejr.org/liberec/zebricka-pestra.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "12" ;
+        s:maxValue  "12"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/zebricka-pestra.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,018" ;
-        s:maxValue  "0,014" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zebricka-pestra.html#pregnancyLength>
@@ -1391,11 +1268,9 @@
         sx:originalNameUsage  "Chapman's zebra"@en ;
         sx:originalNameUsage  "Zebra Chapmanova"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "365 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/zebra-chapmanova.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zebra-chapmanova.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zebra-chapmanova.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zebra-chapmanova.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zebra-chapmanova.html#pregnancyLength> ;
@@ -1407,20 +1282,17 @@
 
 <http://jakubvejr.org/liberec/zebra-chapmanova.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "125" ;
+        s:maxValue  "125"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/zebra-chapmanova.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "275" ;
+        s:maxValue  "275"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zebra-chapmanova.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "365" ;
+        s:maxValue  "365"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/zebra-bezhriva.html>
@@ -1429,11 +1301,9 @@
         sx:originalNameUsage  "Maneless zebra "@en ;
         sx:originalNameUsage  "Zebra bezhřívá"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "365 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/zebra-bezhriva.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/zebra-bezhriva.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/zebra-bezhriva.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/zebra-bezhriva.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/zebra-bezhriva.html#pregnancyLength> ;
@@ -1445,20 +1315,19 @@
 
 <http://jakubvejr.org/liberec/zebra-bezhriva.html#height>
         rdf:type    s:Height ;
-        s:minValue  "140" ;
-        s:maxValue  "120" ;
+        s:minValue  "140"^^xsd:decimal ;
+        s:maxValue  "120"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/zebra-bezhriva.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "340" ;
-        s:maxValue  "160" ;
+        s:minValue  "340"^^xsd:decimal ;
+        s:maxValue  "160"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/zebra-bezhriva.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "365" ;
+        s:maxValue  "365"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/vyrecek-belolici.html>
@@ -1467,10 +1336,8 @@
         sx:originalNameUsage  "Southern White-faced Owl"@en ;
         sx:originalNameUsage  "Výreček bělolící"@cs ;
         sx:order              "Sovy (Strigiformes)"@cs ;
-        s:numberOfChildren    "2-3" ;
         s:weight              <http://jakubvejr.org/liberec/vyrecek-belolici.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/vyrecek-belolici.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/vyrecek-belolici.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/vyrecek-belolici.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/vyrecek-belolici.html#pregnancyLength> ;
@@ -1482,14 +1349,12 @@
 
 <http://jakubvejr.org/liberec/vyrecek-belolici.html#height>
         rdf:type    s:Height ;
-        s:minValue  "24" ;
-        s:maxValue  "22" ;
+        s:minValue  "24"^^xsd:decimal ;
+        s:maxValue  "22"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/vyrecek-belolici.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,28" ;
-        s:maxValue  "0,13" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/vyrecek-belolici.html#pregnancyLength>
@@ -1501,10 +1366,8 @@
         sx:originalNameUsage  "Eurasian Eagle Owl"@en ;
         sx:originalNameUsage  "Výr velký západosibiřský"@cs ;
         sx:order              "Sovy (Strigiformes)"@cs ;
-        s:numberOfChildren    "2-4" ;
         s:weight              <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#diet> ;
         s:activity            "soumračná/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#pregnancyLength> ;
@@ -1516,14 +1379,12 @@
 
 <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "75" ;
-        s:maxValue  "60" ;
+        s:minValue  "75"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "4,2" ;
-        s:maxValue  "1,5" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/vyr-velky-zapadosibirsky.html#pregnancyLength>
@@ -1535,11 +1396,9 @@
         sx:originalNameUsage  "Vicugna "@en ;
         sx:originalNameUsage  "Vikuňa"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "330-340 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/vikuna.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/vikuna.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/vikuna.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/vikuna.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/vikuna.html#pregnancyLength> ;
@@ -1551,20 +1410,19 @@
 
 <http://jakubvejr.org/liberec/vikuna.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "90" ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  " cm vka v kohoutku" .
 
 <http://jakubvejr.org/liberec/vikuna.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "55" ;
-        s:maxValue  "45" ;
+        s:minValue  "55"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/vikuna.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "340" ;
-        s:maxValue  "330" ;
+        s:minValue  "340"^^xsd:decimal ;
+        s:maxValue  "330"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html>
@@ -1573,11 +1431,9 @@
         sx:originalNameUsage  "Domestic Bactrian Camel "@en ;
         sx:originalNameUsage  "Velbloud dvouhrbý - domácí"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "365-430 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#pregnancyLength> ;
@@ -1589,20 +1445,20 @@
 
 <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "230" ;
-        s:maxValue  "180" ;
+        s:minValue  "230"^^xsd:decimal ;
+        s:maxValue  "180"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "690" ;
-        s:maxValue  "450" ;
+        s:minValue  "690"^^xsd:decimal ;
+        s:maxValue  "450"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/velbloud-dvouhrby---domaci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "430" ;
-        s:maxValue  "365" ;
+        s:minValue  "430"^^xsd:decimal ;
+        s:maxValue  "365"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/varan-smaragdovy.html>
@@ -1611,10 +1467,8 @@
         sx:originalNameUsage  "Emerald monitor"@en ;
         sx:originalNameUsage  "Varan smaragdový"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "2-5 ve snůšce " ;
         s:weight              <http://jakubvejr.org/liberec/varan-smaragdovy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/varan-smaragdovy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/varan-smaragdovy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/varan-smaragdovy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/varan-smaragdovy.html#pregnancyLength> ;
@@ -1626,8 +1480,8 @@
 
 <http://jakubvejr.org/liberec/varan-smaragdovy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "100" ;
-        s:maxValue  "70" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  " cm s ocasem" .
 
 <http://jakubvejr.org/liberec/varan-smaragdovy.html#weight>
@@ -1642,10 +1496,8 @@
         sx:originalNameUsage  "Blue-spotted Tree Monitor "@en ;
         sx:originalNameUsage  "Varan modrý"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "3 ve snůšce " ;
         s:weight              <http://jakubvejr.org/liberec/varan-modry.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/varan-modry.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/varan-modry.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/varan-modry.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/varan-modry.html#pregnancyLength> ;
@@ -1657,8 +1509,7 @@
 
 <http://jakubvejr.org/liberec/varan-modry.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "110" ;
+        s:maxValue  "110"^^xsd:decimal ;
         s:unitCode  " cm s ocasem " .
 
 <http://jakubvejr.org/liberec/varan-modry.html#weight>
@@ -1673,10 +1524,8 @@
         sx:originalNameUsage  "Beccari's monitor "@en ;
         sx:originalNameUsage  "Varan antracitový"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "2-6 ve snůšce" ;
         s:weight              <http://jakubvejr.org/liberec/varan-antracitovy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/varan-antracitovy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/varan-antracitovy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/varan-antracitovy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/varan-antracitovy.html#pregnancyLength> ;
@@ -1688,8 +1537,7 @@
 
 <http://jakubvejr.org/liberec/varan-antracitovy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "130" ;
+        s:maxValue  "130"^^xsd:decimal ;
         s:unitCode  " cm s ocasem" .
 
 <http://jakubvejr.org/liberec/varan-antracitovy.html#weight>
@@ -1704,10 +1552,8 @@
         sx:originalNameUsage  "Eastern corn snake"@en ;
         sx:originalNameUsage  "Užovka červená"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "12-24 " ;
         s:weight              <http://jakubvejr.org/liberec/uzovka-cervena.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/uzovka-cervena.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/uzovka-cervena.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/uzovka-cervena.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/uzovka-cervena.html#pregnancyLength> ;
@@ -1719,8 +1565,8 @@
 
 <http://jakubvejr.org/liberec/uzovka-cervena.html#height>
         rdf:type    s:Height ;
-        s:minValue  "180" ;
-        s:maxValue  "100" ;
+        s:minValue  "180"^^xsd:decimal ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/uzovka-cervena.html#weight>
@@ -1735,10 +1581,8 @@
         sx:originalNameUsage  "Amur ratsnake"@en ;
         sx:originalNameUsage  "Užovka amurská"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "8-15" ;
         s:weight              <http://jakubvejr.org/liberec/uzovka-amurska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/uzovka-amurska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/uzovka-amurska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/uzovka-amurska.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/uzovka-amurska.html#pregnancyLength> ;
@@ -1750,8 +1594,8 @@
 
 <http://jakubvejr.org/liberec/uzovka-amurska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "170" ;
-        s:maxValue  "150" ;
+        s:minValue  "170"^^xsd:decimal ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/uzovka-amurska.html#weight>
@@ -1766,11 +1610,8 @@
         sx:originalNameUsage  "Bukhara Urial"@en ;
         sx:originalNameUsage  "Urial bucharský"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "190 dní " ;
         s:weight              <http://jakubvejr.org/liberec/urial-bucharsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/urial-bucharsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/urial-bucharsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/urial-bucharsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/urial-bucharsky.html#pregnancyLength> ;
@@ -1782,20 +1623,19 @@
 
 <http://jakubvejr.org/liberec/urial-bucharsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "90" ;
-        s:maxValue  "80" ;
+        s:minValue  "90"^^xsd:decimal ;
+        s:maxValue  "80"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/urial-bucharsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "50" ;
-        s:maxValue  "40" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/urial-bucharsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "190" ;
+        s:maxValue  "190"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html>
@@ -1804,11 +1644,8 @@
         sx:originalNameUsage  "White Tiger"@en ;
         sx:originalNameUsage  "Tygr indický - bílá forma"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-3" ;
-        s:pregnancyTime       "103 dní " ;
         s:weight              <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#diet> ;
         s:activity            "soumračná"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#pregnancyLength> ;
@@ -1820,20 +1657,18 @@
 
 <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "100" ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku " .
 
 <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "200" ;
-        s:maxValue  "150" ;
+        s:minValue  "200"^^xsd:decimal ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/tygr-indicky---bila-forma.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "103" ;
+        s:maxValue  "103"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html>
@@ -1842,10 +1677,8 @@
         sx:originalNameUsage  "Red-crested Turaco"@en ;
         sx:originalNameUsage  "Turako červenokorunkatý"@cs ;
         sx:order              "Turakové (Musophagiformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#pregnancyLength> ;
@@ -1857,14 +1690,12 @@
 
 <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "43" ;
-        s:maxValue  "40" ;
+        s:minValue  "43"^^xsd:decimal ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,33" ;
-        s:maxValue  "0,21" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/turako-cervenokorunkaty.html#pregnancyLength>
@@ -1876,10 +1707,8 @@
         sx:originalNameUsage  "Humboldt Penguin"@en ;
         sx:originalNameUsage  "Tučňák Humboldtův"@cs ;
         sx:order              "Tučňáci (Sphenisciformes)"@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#pregnancyLength> ;
@@ -1891,14 +1720,14 @@
 
 <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "70" ;
-        s:maxValue  "65" ;
+        s:minValue  "70"^^xsd:decimal ;
+        s:maxValue  "65"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "7" ;
-        s:maxValue  "5" ;
+        s:minValue  "7"^^xsd:decimal ;
+        s:maxValue  "5"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/tucnak-humboldtuv.html#pregnancyLength>
@@ -1910,10 +1739,8 @@
         sx:originalNameUsage  "Eastern Yellow-billed Hornbill,"@en ;
         sx:originalNameUsage  "Toko žlutozobý"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "2-3 " ;
         s:weight              <http://jakubvejr.org/liberec/toko-zlutozoby.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/toko-zlutozoby.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/toko-zlutozoby.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/toko-zlutozoby.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/toko-zlutozoby.html#pregnancyLength> ;
@@ -1925,14 +1752,11 @@
 
 <http://jakubvejr.org/liberec/toko-zlutozoby.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "40" ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/toko-zlutozoby.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,28" ;
-        s:maxValue  "0,19" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/toko-zlutozoby.html#pregnancyLength>
@@ -1944,10 +1768,8 @@
         sx:originalNameUsage  "Von der Decken's Hornbill"@en ;
         sx:originalNameUsage  "Toko Deckenův"@cs ;
         sx:order              "Srostloprstí (Coraciiformes)"@cs ;
-        s:numberOfChildren    "2-4" ;
         s:weight              <http://jakubvejr.org/liberec/toko-deckenuv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/toko-deckenuv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/toko-deckenuv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/toko-deckenuv.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/toko-deckenuv.html#pregnancyLength> ;
@@ -1959,14 +1781,11 @@
 
 <http://jakubvejr.org/liberec/toko-deckenuv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "35" ;
+        s:maxValue  "35"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/toko-deckenuv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,21" ;
-        s:maxValue  "0,12" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/toko-deckenuv.html#pregnancyLength>
@@ -1978,11 +1797,8 @@
         sx:originalNameUsage  "Giant Bluetongue Skink "@en ;
         sx:originalNameUsage  "Tilikva obrovská"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "2-25" ;
-        s:pregnancyTime       "120-190 dní" ;
         s:weight              <http://jakubvejr.org/liberec/tilikva-obrovska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/tilikva-obrovska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/tilikva-obrovska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/tilikva-obrovska.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/tilikva-obrovska.html#pregnancyLength> ;
@@ -1994,8 +1810,8 @@
 
 <http://jakubvejr.org/liberec/tilikva-obrovska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "50" ;
-        s:maxValue  "40" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm i s ocasem" .
 
 <http://jakubvejr.org/liberec/tilikva-obrovska.html#weight>
@@ -2003,8 +1819,8 @@
 
 <http://jakubvejr.org/liberec/tilikva-obrovska.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "190" ;
-        s:maxValue  "120" ;
+        s:minValue  "190"^^xsd:decimal ;
+        s:maxValue  "120"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/tapir-jihoamericky.html>
@@ -2013,11 +1829,8 @@
         sx:originalNameUsage  "Brazilian Tapir"@en ;
         sx:originalNameUsage  "Tapír jihoamerický"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1 " ;
-        s:pregnancyTime       "400 dní " ;
         s:weight              <http://jakubvejr.org/liberec/tapir-jihoamericky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/tapir-jihoamericky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/tapir-jihoamericky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/tapir-jihoamericky.html#diet> ;
         s:activity            "denní/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/tapir-jihoamericky.html#pregnancyLength> ;
@@ -2029,20 +1842,19 @@
 
 <http://jakubvejr.org/liberec/tapir-jihoamericky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "200" ;
-        s:maxValue  "170" ;
+        s:minValue  "200"^^xsd:decimal ;
+        s:maxValue  "170"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/tapir-jihoamericky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "250" ;
-        s:maxValue  "225" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "225"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/tapir-jihoamericky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "400" ;
+        s:maxValue  "400"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/tamarin-pinci.html>
@@ -2051,11 +1863,8 @@
         sx:originalNameUsage  "Cotton-headed Tamarin"@en ;
         sx:originalNameUsage  "Tamarín pinčí"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "140 dní" ;
         s:weight              <http://jakubvejr.org/liberec/tamarin-pinci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/tamarin-pinci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/tamarin-pinci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/tamarin-pinci.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/tamarin-pinci.html#pregnancyLength> ;
@@ -2067,20 +1876,16 @@
 
 <http://jakubvejr.org/liberec/tamarin-pinci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "60" ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm dlka tla s ocasem" .
 
 <http://jakubvejr.org/liberec/tamarin-pinci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,45" ;
-        s:maxValue  "0,4" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/tamarin-pinci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "140" ;
+        s:maxValue  "140"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/takin-cinsky.html>
@@ -2089,11 +1894,8 @@
         sx:originalNameUsage  "Golden takin "@en ;
         sx:originalNameUsage  "Takin čínský"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "220-250 dní " ;
         s:weight              <http://jakubvejr.org/liberec/takin-cinsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/takin-cinsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/takin-cinsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/takin-cinsky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/takin-cinsky.html#pregnancyLength> ;
@@ -2105,20 +1907,20 @@
 
 <http://jakubvejr.org/liberec/takin-cinsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "220" ;
-        s:maxValue  "170" ;
+        s:minValue  "220"^^xsd:decimal ;
+        s:maxValue  "170"^^xsd:decimal ;
         s:unitCode  " cm vka v kohoutku" .
 
 <http://jakubvejr.org/liberec/takin-cinsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "350" ;
-        s:maxValue  "300" ;
+        s:minValue  "350"^^xsd:decimal ;
+        s:maxValue  "300"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/takin-cinsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "250" ;
-        s:maxValue  "220" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "220"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/simpanz.html>
@@ -2127,10 +1929,8 @@
         sx:originalNameUsage  "Chimpanzee"@en ;
         sx:originalNameUsage  "Šimpanz"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/simpanz.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/simpanz.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/simpanz.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/simpanz.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/simpanz.html#pregnancyLength> ;
@@ -2142,14 +1942,14 @@
 
 <http://jakubvejr.org/liberec/simpanz.html#height>
         rdf:type    s:Height ;
-        s:minValue  "95" ;
-        s:maxValue  "65" ;
+        s:minValue  "95"^^xsd:decimal ;
+        s:maxValue  "65"^^xsd:decimal ;
         s:unitCode  "  cm " .
 
 <http://jakubvejr.org/liberec/simpanz.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "60" ;
-        s:maxValue  "30" ;
+        s:minValue  "60"^^xsd:decimal ;
+        s:maxValue  "30"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/simpanz.html#pregnancyLength>
@@ -2161,11 +1961,8 @@
         sx:originalNameUsage  "Meerkat"@en ;
         sx:originalNameUsage  "Surikata"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-5" ;
-        s:pregnancyTime       "70-85 dní " ;
         s:weight              <http://jakubvejr.org/liberec/surikata.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/surikata.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/surikata.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/surikata.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/surikata.html#pregnancyLength> ;
@@ -2177,20 +1974,19 @@
 
 <http://jakubvejr.org/liberec/surikata.html#height>
         rdf:type    s:Height ;
-        s:minValue  "60" ;
-        s:maxValue  "42" ;
+        s:minValue  "60"^^xsd:decimal ;
+        s:maxValue  "42"^^xsd:decimal ;
         s:unitCode  " cm dlka tla s ocasem " .
 
 <http://jakubvejr.org/liberec/surikata.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1" ;
-        s:maxValue  "0,62" ;
+        s:minValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/surikata.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "85" ;
-        s:maxValue  "70" ;
+        s:minValue  "85"^^xsd:decimal ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/sup-mrchozravy.html>
@@ -2199,10 +1995,8 @@
         sx:originalNameUsage  "Egyptian Vulture"@en ;
         sx:originalNameUsage  "Sup mrchožravý"@cs ;
         sx:order              "Dravci (Accipitriformes) "@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/sup-mrchozravy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sup-mrchozravy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sup-mrchozravy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sup-mrchozravy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sup-mrchozravy.html#pregnancyLength> ;
@@ -2214,14 +2008,12 @@
 
 <http://jakubvejr.org/liberec/sup-mrchozravy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "70" ;
-        s:maxValue  "58" ;
+        s:minValue  "70"^^xsd:decimal ;
+        s:maxValue  "58"^^xsd:decimal ;
         s:unitCode  " cm vka" .
 
 <http://jakubvejr.org/liberec/sup-mrchozravy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2,2" ;
-        s:maxValue  "1,6" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/sup-mrchozravy.html#pregnancyLength>
@@ -2233,10 +2025,9 @@
         sx:originalNameUsage  "Himalayan Griffon"@en ;
         sx:originalNameUsage  "Sup himálajský"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/sup-himalajsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sup-himalajsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sup-himalajsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sup-himalajsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sup-himalajsky.html#pregnancyLength> ;
@@ -2248,14 +2039,14 @@
 
 <http://jakubvejr.org/liberec/sup-himalajsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "150" ;
-        s:maxValue  "116" ;
+        s:minValue  "150"^^xsd:decimal ;
+        s:maxValue  "116"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/sup-himalajsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "12" ;
-        s:maxValue  "8" ;
+        s:minValue  "12"^^xsd:decimal ;
+        s:maxValue  "8"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/sup-himalajsky.html#pregnancyLength>
@@ -2267,10 +2058,8 @@
         sx:originalNameUsage  "Snowy Owl "@en ;
         sx:originalNameUsage  "Sovice sněžní"@cs ;
         sx:order              "Sovy (Strigiformes)"@cs ;
-        s:numberOfChildren    "3-11" ;
         s:weight              <http://jakubvejr.org/liberec/sovice-snezni.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sovice-snezni.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sovice-snezni.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sovice-snezni.html#diet> ;
         s:activity            "denní/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sovice-snezni.html#pregnancyLength> ;
@@ -2282,14 +2071,12 @@
 
 <http://jakubvejr.org/liberec/sovice-snezni.html#height>
         rdf:type    s:Height ;
-        s:minValue  "70" ;
-        s:maxValue  "55" ;
+        s:minValue  "70"^^xsd:decimal ;
+        s:maxValue  "55"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/sovice-snezni.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2,95" ;
-        s:maxValue  "0,7" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/sovice-snezni.html#pregnancyLength>
@@ -2301,11 +2088,8 @@
         sx:originalNameUsage  "Reindeer"@en ;
         sx:originalNameUsage  "Sob lesní karelský"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "220-250 dní " ;
         s:weight              <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#pregnancyLength> ;
@@ -2317,20 +2101,20 @@
 
 <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "130" ;
-        s:maxValue  "80" ;
+        s:minValue  "130"^^xsd:decimal ;
+        s:maxValue  "80"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "250" ;
-        s:maxValue  "90" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/sob-lesni-karelsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "250" ;
-        s:maxValue  "220" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "220"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/slon-indicky.html>
@@ -2339,11 +2123,9 @@
         sx:originalNameUsage  "Asian elephant"@en ;
         sx:originalNameUsage  "Slon indický"@cs ;
         sx:order              "Chobotnatci (Proboscidea)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "660-680 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/slon-indicky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/slon-indicky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/slon-indicky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/slon-indicky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/slon-indicky.html#pregnancyLength> ;
@@ -2355,20 +2137,19 @@
 
 <http://jakubvejr.org/liberec/slon-indicky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "350" ;
+        s:maxValue  "350"^^xsd:decimal ;
         s:unitCode  " cm dlka " .
 
 <http://jakubvejr.org/liberec/slon-indicky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "5000" ;
-        s:maxValue  "2000" ;
+        s:minValue  "5000"^^xsd:decimal ;
+        s:maxValue  "2000"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/slon-indicky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "680" ;
-        s:maxValue  "660" ;
+        s:minValue  "680"^^xsd:decimal ;
+        s:maxValue  "660"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/satyr-cabotuv.html>
@@ -2377,10 +2158,8 @@
         sx:originalNameUsage  "Cabot's Tragopan"@en ;
         sx:originalNameUsage  "Satyr Cabotův"@cs ;
         sx:order              "Hrabaví (Galliformes)"@cs ;
-        s:numberOfChildren    "2-4" ;
         s:weight              <http://jakubvejr.org/liberec/satyr-cabotuv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/satyr-cabotuv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/satyr-cabotuv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/satyr-cabotuv.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/satyr-cabotuv.html#pregnancyLength> ;
@@ -2392,14 +2171,12 @@
 
 <http://jakubvejr.org/liberec/satyr-cabotuv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "60" ;
-        s:maxValue  "50" ;
+        s:minValue  "60"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/satyr-cabotuv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,4" ;
-        s:maxValue  "0,9" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/satyr-cabotuv.html#pregnancyLength>
@@ -2411,10 +2188,8 @@
         sx:originalNameUsage  "Desert locust "@en ;
         sx:originalNameUsage  "Saranče všežravá"@cs ;
         sx:order              "Rovnokřídlí (Orthoptera)"@cs ;
-        s:numberOfChildren    "40-400 jedna snůška" ;
         s:weight              <http://jakubvejr.org/liberec/sarance-vsezrava.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sarance-vsezrava.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sarance-vsezrava.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sarance-vsezrava.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sarance-vsezrava.html#pregnancyLength> ;
@@ -2426,8 +2201,8 @@
 
 <http://jakubvejr.org/liberec/sarance-vsezrava.html#height>
         rdf:type    s:Height ;
-        s:minValue  "7" ;
-        s:maxValue  "3" ;
+        s:minValue  "7"^^xsd:decimal ;
+        s:maxValue  "3"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/sarance-vsezrava.html#weight>
@@ -2442,10 +2217,9 @@
         sx:originalNameUsage  "Visayan Spotted Deer"@en ;
         sx:originalNameUsage  "Sambar skvrnitý"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/sambar-skvrnity.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/sambar-skvrnity.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/sambar-skvrnity.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/sambar-skvrnity.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/sambar-skvrnity.html#pregnancyLength> ;
@@ -2457,14 +2231,14 @@
 
 <http://jakubvejr.org/liberec/sambar-skvrnity.html#height>
         rdf:type    s:Height ;
-        s:minValue  "80" ;
-        s:maxValue  "70" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/sambar-skvrnity.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "85" ;
-        s:maxValue  "25" ;
+        s:minValue  "85"^^xsd:decimal ;
+        s:maxValue  "25"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/sambar-skvrnity.html#pregnancyLength>
@@ -2476,11 +2250,8 @@
         sx:originalNameUsage  "Carpathian Lynx "@en ;
         sx:originalNameUsage  "Rys karpatský"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "2-4" ;
-        s:pregnancyTime       "70 dní " ;
         s:weight              <http://jakubvejr.org/liberec/rys-karpatsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/rys-karpatsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/rys-karpatsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/rys-karpatsky.html#diet> ;
         s:activity            "soumrak a noc"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/rys-karpatsky.html#pregnancyLength> ;
@@ -2492,20 +2263,18 @@
 
 <http://jakubvejr.org/liberec/rys-karpatsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "70" ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku " .
 
 <http://jakubvejr.org/liberec/rys-karpatsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "25" ;
-        s:maxValue  "20" ;
+        s:minValue  "25"^^xsd:decimal ;
+        s:maxValue  "20"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/rys-karpatsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "70" ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/rosnicka-vceli.html>
@@ -2514,7 +2283,6 @@
         sx:order              "Žáby (Anura) "@cs ;
         s:weight              <http://jakubvejr.org/liberec/rosnicka-vceli.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/rosnicka-vceli.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/rosnicka-vceli.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/rosnicka-vceli.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/rosnicka-vceli.html#pregnancyLength> ;
@@ -2526,14 +2294,14 @@
 
 <http://jakubvejr.org/liberec/rosnicka-vceli.html#height>
         rdf:type    s:Height ;
-        s:minValue  "10" ;
-        s:maxValue  "6" ;
+        s:minValue  "10"^^xsd:decimal ;
+        s:maxValue  "6"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/rosnicka-vceli.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "35" ;
-        s:maxValue  "12" ;
+        s:minValue  "35"^^xsd:decimal ;
+        s:maxValue  "12"^^xsd:decimal ;
         s:unitCode  "g" .
 
 <http://jakubvejr.org/liberec/rosnicka-vceli.html#pregnancyLength>
@@ -2545,10 +2313,8 @@
         sx:originalNameUsage  "Great Grey Owl"@en ;
         sx:originalNameUsage  "Puštík bradatý"@cs ;
         sx:order              "Sovy (Strigiformes)"@cs ;
-        s:numberOfChildren    "2-9 " ;
         s:weight              <http://jakubvejr.org/liberec/pustik-bradaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/pustik-bradaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/pustik-bradaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/pustik-bradaty.html#diet> ;
         s:activity            "soumračná/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/pustik-bradaty.html#pregnancyLength> ;
@@ -2560,14 +2326,12 @@
 
 <http://jakubvejr.org/liberec/pustik-bradaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "69" ;
-        s:maxValue  "59" ;
+        s:minValue  "69"^^xsd:decimal ;
+        s:maxValue  "59"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/pustik-bradaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,7" ;
-        s:maxValue  "0,8" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/pustik-bradaty.html#pregnancyLength>
@@ -2579,10 +2343,8 @@
         sx:originalNameUsage  "Ural Owl"@en ;
         sx:originalNameUsage  "Puštík bělavý"@cs ;
         sx:order              "Sovy (Strigiformes)"@cs ;
-        s:numberOfChildren    "1-6" ;
         s:weight              <http://jakubvejr.org/liberec/pustik-belavy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/pustik-belavy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/pustik-belavy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/pustik-belavy.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/pustik-belavy.html#pregnancyLength> ;
@@ -2594,14 +2356,12 @@
 
 <http://jakubvejr.org/liberec/pustik-belavy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "62" ;
-        s:maxValue  "50" ;
+        s:minValue  "62"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/pustik-belavy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,3" ;
-        s:maxValue  "0,5" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/pustik-belavy.html#pregnancyLength>
@@ -2613,10 +2373,9 @@
         sx:originalNameUsage  "Greater Flamingo"@en ;
         sx:originalNameUsage  "Plameňák růžový"@cs ;
         sx:order              "Plameňáci (Phoenicopteriformes)"@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/plamenak-ruzovy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/plamenak-ruzovy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/plamenak-ruzovy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/plamenak-ruzovy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/plamenak-ruzovy.html#pregnancyLength> ;
@@ -2628,14 +2387,14 @@
 
 <http://jakubvejr.org/liberec/plamenak-ruzovy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "150" ;
-        s:maxValue  "120" ;
+        s:minValue  "150"^^xsd:decimal ;
+        s:maxValue  "120"^^xsd:decimal ;
         s:unitCode  " cm vka" .
 
 <http://jakubvejr.org/liberec/plamenak-ruzovy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "4" ;
-        s:maxValue  "2" ;
+        s:minValue  "4"^^xsd:decimal ;
+        s:maxValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/plamenak-ruzovy.html#pregnancyLength>
@@ -2647,10 +2406,9 @@
         sx:originalNameUsage  "Caribbean Flamingo "@en ;
         sx:originalNameUsage  "Plameňák kubánský"@cs ;
         sx:order              "Plameňáci (Phoenicopteriformes)"@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/plamenak-kubansky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/plamenak-kubansky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/plamenak-kubansky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/plamenak-kubansky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/plamenak-kubansky.html#pregnancyLength> ;
@@ -2662,14 +2420,14 @@
 
 <http://jakubvejr.org/liberec/plamenak-kubansky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "145" ;
-        s:maxValue  "120" ;
+        s:minValue  "145"^^xsd:decimal ;
+        s:maxValue  "120"^^xsd:decimal ;
         s:unitCode  " cm vka" .
 
 <http://jakubvejr.org/liberec/plamenak-kubansky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "4" ;
-        s:maxValue  "2" ;
+        s:minValue  "4"^^xsd:decimal ;
+        s:maxValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/plamenak-kubansky.html#pregnancyLength>
@@ -2681,10 +2439,8 @@
         sx:originalNameUsage  "Spot-billed pelican"@en ;
         sx:originalNameUsage  "Pelikán skvrnozobý"@cs ;
         sx:order              "Veslonozí (Pelecaniformes)"@cs ;
-        s:numberOfChildren    "2-4" ;
         s:weight              <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#pregnancyLength> ;
@@ -2696,14 +2452,13 @@
 
 <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#height>
         rdf:type    s:Height ;
-        s:minValue  "152" ;
-        s:maxValue  "127" ;
+        s:minValue  "152"^^xsd:decimal ;
+        s:maxValue  "127"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "5" ;
-        s:maxValue  "4,1" ;
+        s:minValue  "5"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/pelikan-skvrnozoby.html#pregnancyLength>
@@ -2715,10 +2470,8 @@
         sx:originalNameUsage  "Great White Pelican"@en ;
         sx:originalNameUsage  "Pelikán bílý"@cs ;
         sx:order              "Veslonozí (Pelecaniformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/pelikan-bily.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/pelikan-bily.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/pelikan-bily.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/pelikan-bily.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/pelikan-bily.html#pregnancyLength> ;
@@ -2730,14 +2483,14 @@
 
 <http://jakubvejr.org/liberec/pelikan-bily.html#height>
         rdf:type    s:Height ;
-        s:minValue  "175" ;
-        s:maxValue  "148" ;
+        s:minValue  "175"^^xsd:decimal ;
+        s:maxValue  "148"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/pelikan-bily.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "15" ;
-        s:maxValue  "5" ;
+        s:minValue  "15"^^xsd:decimal ;
+        s:maxValue  "5"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/pelikan-bily.html#pregnancyLength>
@@ -2749,11 +2502,9 @@
         sx:originalNameUsage  "Hamadryas Baboon"@en ;
         sx:originalNameUsage  "Pavián pláštíkový"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "165-184 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/pavian-plastikovy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/pavian-plastikovy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/pavian-plastikovy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/pavian-plastikovy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/pavian-plastikovy.html#pregnancyLength> ;
@@ -2765,20 +2516,19 @@
 
 <http://jakubvejr.org/liberec/pavian-plastikovy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "95,4260" ;
-        s:maxValue  "50" ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm dlka tla  cm ocas" .
 
 <http://jakubvejr.org/liberec/pavian-plastikovy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "21" ;
-        s:maxValue  "10" ;
+        s:minValue  "21"^^xsd:decimal ;
+        s:maxValue  "10"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/pavian-plastikovy.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "184" ;
-        s:maxValue  "165" ;
+        s:minValue  "184"^^xsd:decimal ;
+        s:maxValue  "165"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/papousek-vlnkovany.html>
@@ -2787,10 +2537,8 @@
         sx:originalNameUsage  "Budgerigar"@en ;
         sx:originalNameUsage  "Papoušek vlnkovaný"@cs ;
         sx:order              "Papoušci (Psittaciformes)"@cs ;
-        s:numberOfChildren    "4-6" ;
         s:weight              <http://jakubvejr.org/liberec/papousek-vlnkovany.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/papousek-vlnkovany.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/papousek-vlnkovany.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/papousek-vlnkovany.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/papousek-vlnkovany.html#pregnancyLength> ;
@@ -2802,14 +2550,11 @@
 
 <http://jakubvejr.org/liberec/papousek-vlnkovany.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "18" ;
+        s:maxValue  "18"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/papousek-vlnkovany.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,03" ;
-        s:maxValue  "0,026" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/papousek-vlnkovany.html#pregnancyLength>
@@ -2821,11 +2566,8 @@
         sx:originalNameUsage  "Red Panda"@en ;
         sx:originalNameUsage  "Panda červená"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-4" ;
-        s:pregnancyTime       "90-150 dní " ;
         s:weight              <http://jakubvejr.org/liberec/panda-cervena.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/panda-cervena.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/panda-cervena.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/panda-cervena.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/panda-cervena.html#pregnancyLength> ;
@@ -2837,20 +2579,20 @@
 
 <http://jakubvejr.org/liberec/panda-cervena.html#height>
         rdf:type    s:Height ;
-        s:minValue  "115" ;
-        s:maxValue  "80" ;
+        s:minValue  "115"^^xsd:decimal ;
+        s:maxValue  "80"^^xsd:decimal ;
         s:unitCode  " cm dlka tla i s ocasem" .
 
 <http://jakubvejr.org/liberec/panda-cervena.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "6" ;
-        s:maxValue  "3" ;
+        s:minValue  "6"^^xsd:decimal ;
+        s:maxValue  "3"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/panda-cervena.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "150" ;
-        s:maxValue  "90" ;
+        s:minValue  "150"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html>
@@ -2859,11 +2601,8 @@
         sx:originalNameUsage  "Cameroon sheep"@en ;
         sx:originalNameUsage  "Ovce kamerunská - domácí"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "90-100 dní " ;
         s:weight              <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#pregnancyLength> ;
@@ -2875,20 +2614,20 @@
 
 <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "50" ;
-        s:maxValue  "45" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku " .
 
 <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "35" ;
-        s:maxValue  "25" ;
+        s:minValue  "35"^^xsd:decimal ;
+        s:maxValue  "25"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/ovce-kamerunska---domaci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "100" ;
-        s:maxValue  "90" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/osel-somalsky.html>
@@ -2897,11 +2636,9 @@
         sx:originalNameUsage  "Somali Wild Ass"@en ;
         sx:originalNameUsage  "Osel somálský"@cs ;
         sx:order              "Lichokopytníci (Perissodactyla)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "330-365 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/osel-somalsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/osel-somalsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/osel-somalsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/osel-somalsky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/osel-somalsky.html#pregnancyLength> ;
@@ -2913,20 +2650,19 @@
 
 <http://jakubvejr.org/liberec/osel-somalsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "150" ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/osel-somalsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "370" ;
-        s:maxValue  "320" ;
+        s:minValue  "370"^^xsd:decimal ;
+        s:maxValue  "320"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/osel-somalsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "365" ;
-        s:maxValue  "330" ;
+        s:minValue  "365"^^xsd:decimal ;
+        s:maxValue  "330"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/orlosup-bradaty.html>
@@ -2935,10 +2671,8 @@
         sx:originalNameUsage  "Bearded Vulture"@en ;
         sx:originalNameUsage  "Orlosup bradatý"@cs ;
         sx:order              "Dravci (Accipitriformes) "@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/orlosup-bradaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orlosup-bradaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orlosup-bradaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orlosup-bradaty.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orlosup-bradaty.html#pregnancyLength> ;
@@ -2950,14 +2684,12 @@
 
 <http://jakubvejr.org/liberec/orlosup-bradaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "115" ;
-        s:maxValue  "100" ;
+        s:minValue  "115"^^xsd:decimal ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/orlosup-bradaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "7,1" ;
-        s:maxValue  "4,5" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orlosup-bradaty.html#pregnancyLength>
@@ -2969,10 +2701,9 @@
         sx:originalNameUsage  "Short-toed Snake-eagle"@en ;
         sx:originalNameUsage  "Orlík krátkoprstý"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#pregnancyLength> ;
@@ -2984,14 +2715,12 @@
 
 <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "67" ;
-        s:maxValue  "62" ;
+        s:minValue  "67"^^xsd:decimal ;
+        s:maxValue  "62"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2,3" ;
-        s:maxValue  "1,2" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orlik-kratkoprsty.html#pregnancyLength>
@@ -3003,10 +2732,8 @@
         sx:originalNameUsage  "Steller's Sea Eagle"@en ;
         sx:originalNameUsage  "Orel východní"@cs ;
         sx:order              "Dravci (Accipitriformes) "@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/orel-vychodni.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orel-vychodni.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orel-vychodni.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orel-vychodni.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orel-vychodni.html#pregnancyLength> ;
@@ -3018,14 +2745,13 @@
 
 <http://jakubvejr.org/liberec/orel-vychodni.html#height>
         rdf:type    s:Height ;
-        s:minValue  "94" ;
-        s:maxValue  "85" ;
+        s:minValue  "94"^^xsd:decimal ;
+        s:maxValue  "85"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/orel-vychodni.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "9" ;
-        s:maxValue  "4,9" ;
+        s:minValue  "9"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orel-vychodni.html#pregnancyLength>
@@ -3037,10 +2763,9 @@
         sx:originalNameUsage  "Golden Eagle"@en ;
         sx:originalNameUsage  "Orel skalní"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "2" ;
+        s:numberOfChildren    2 ;
         s:weight              <http://jakubvejr.org/liberec/orel-skalni.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orel-skalni.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orel-skalni.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orel-skalni.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orel-skalni.html#pregnancyLength> ;
@@ -3052,14 +2777,12 @@
 
 <http://jakubvejr.org/liberec/orel-skalni.html#height>
         rdf:type    s:Height ;
-        s:minValue  "90" ;
-        s:maxValue  "75" ;
+        s:minValue  "90"^^xsd:decimal ;
+        s:maxValue  "75"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/orel-skalni.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "6,9" ;
-        s:maxValue  "2,8" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orel-skalni.html#pregnancyLength>
@@ -3071,10 +2794,8 @@
         sx:originalNameUsage  "Booted Eagle"@en ;
         sx:originalNameUsage  "Orel nejmenší"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "2-3" ;
         s:weight              <http://jakubvejr.org/liberec/orel-nejmensi.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orel-nejmensi.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orel-nejmensi.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orel-nejmensi.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orel-nejmensi.html#pregnancyLength> ;
@@ -3086,14 +2807,13 @@
 
 <http://jakubvejr.org/liberec/orel-nejmensi.html#height>
         rdf:type    s:Height ;
-        s:minValue  "52" ;
-        s:maxValue  "45" ;
+        s:minValue  "52"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/orel-nejmensi.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1" ;
-        s:maxValue  "0,75" ;
+        s:minValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orel-nejmensi.html#pregnancyLength>
@@ -3105,10 +2825,8 @@
         sx:originalNameUsage  "Lesser Spotted Eagle "@en ;
         sx:originalNameUsage  "Orel křiklavý"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "1-2" ;
         s:weight              <http://jakubvejr.org/liberec/orel-kriklavy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orel-kriklavy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orel-kriklavy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orel-kriklavy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orel-kriklavy.html#pregnancyLength> ;
@@ -3120,14 +2838,13 @@
 
 <http://jakubvejr.org/liberec/orel-kriklavy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "64" ;
-        s:maxValue  "57" ;
+        s:minValue  "64"^^xsd:decimal ;
+        s:maxValue  "57"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/orel-kriklavy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2" ;
-        s:maxValue  "1,1" ;
+        s:minValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orel-kriklavy.html#pregnancyLength>
@@ -3139,10 +2856,8 @@
         sx:originalNameUsage  "Imperial Eagle"@en ;
         sx:originalNameUsage  "Orel královský"@cs ;
         sx:order              "Dravci (Accipitriformes)"@cs ;
-        s:numberOfChildren    "2-3" ;
         s:weight              <http://jakubvejr.org/liberec/orel-kralovsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/orel-kralovsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/orel-kralovsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/orel-kralovsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/orel-kralovsky.html#pregnancyLength> ;
@@ -3154,14 +2869,12 @@
 
 <http://jakubvejr.org/liberec/orel-kralovsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "84" ;
-        s:maxValue  "72" ;
+        s:minValue  "84"^^xsd:decimal ;
+        s:maxValue  "72"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/orel-kralovsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "4,5" ;
-        s:maxValue  "2,5" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/orel-kralovsky.html#pregnancyLength>
@@ -3173,11 +2886,9 @@
         sx:originalNameUsage  "Nyala"@en ;
         sx:originalNameUsage  "Nyala nížinná"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "220 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/nyala-nizinna.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/nyala-nizinna.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/nyala-nizinna.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/nyala-nizinna.html#diet> ;
         s:activity            "noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/nyala-nizinna.html#pregnancyLength> ;
@@ -3189,20 +2900,18 @@
 
 <http://jakubvejr.org/liberec/nyala-nizinna.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "110" ;
+        s:maxValue  "110"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/nyala-nizinna.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "140" ;
-        s:maxValue  "62" ;
+        s:minValue  "140"^^xsd:decimal ;
+        s:maxValue  "62"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/nyala-nizinna.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "220" ;
+        s:maxValue  "220"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/nosal-cerveny.html>
@@ -3211,11 +2920,8 @@
         sx:originalNameUsage  "South American coati"@en ;
         sx:originalNameUsage  "Nosál červený"@cs ;
         sx:order              "šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-7" ;
-        s:pregnancyTime       "70-77 dní " ;
         s:weight              <http://jakubvejr.org/liberec/nosal-cerveny.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/nosal-cerveny.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/nosal-cerveny.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/nosal-cerveny.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/nosal-cerveny.html#pregnancyLength> ;
@@ -3227,20 +2933,20 @@
 
 <http://jakubvejr.org/liberec/nosal-cerveny.html#height>
         rdf:type    s:Height ;
-        s:minValue  "137" ;
-        s:maxValue  "67" ;
+        s:minValue  "137"^^xsd:decimal ;
+        s:maxValue  "67"^^xsd:decimal ;
         s:unitCode  " cm dlka tla s ocasem" .
 
 <http://jakubvejr.org/liberec/nosal-cerveny.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "8" ;
-        s:maxValue  "3" ;
+        s:minValue  "8"^^xsd:decimal ;
+        s:maxValue  "3"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/nosal-cerveny.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "77" ;
-        s:maxValue  "70" ;
+        s:minValue  "77"^^xsd:decimal ;
+        s:maxValue  "70"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/nestor-kea.html>
@@ -3249,10 +2955,8 @@
         sx:originalNameUsage  "Kea "@en ;
         sx:originalNameUsage  "Nestor kea"@cs ;
         sx:order              "Papoušci (Psittaciformes)"@cs ;
-        s:numberOfChildren    "2-4" ;
         s:weight              <http://jakubvejr.org/liberec/nestor-kea.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/nestor-kea.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/nestor-kea.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/nestor-kea.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/nestor-kea.html#pregnancyLength> ;
@@ -3264,14 +2968,11 @@
 
 <http://jakubvejr.org/liberec/nestor-kea.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "48" ;
+        s:maxValue  "48"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/nestor-kea.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "0,92" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/nestor-kea.html#pregnancyLength>
@@ -3283,10 +2984,8 @@
         sx:originalNameUsage  "Darwin's rhea "@en ;
         sx:originalNameUsage  "Nandu Darwinův"@cs ;
         sx:order              "Nanduové (Rheiformes) "@cs ;
-        s:numberOfChildren    "10-30 " ;
         s:weight              <http://jakubvejr.org/liberec/nandu-darwinuv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/nandu-darwinuv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/nandu-darwinuv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/nandu-darwinuv.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/nandu-darwinuv.html#pregnancyLength> ;
@@ -3298,14 +2997,14 @@
 
 <http://jakubvejr.org/liberec/nandu-darwinuv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "100" ;
-        s:maxValue  "93" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "93"^^xsd:decimal ;
         s:unitCode  " cm vka tla " .
 
 <http://jakubvejr.org/liberec/nandu-darwinuv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "25" ;
-        s:maxValue  "15" ;
+        s:minValue  "25"^^xsd:decimal ;
+        s:maxValue  "15"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/nandu-darwinuv.html#pregnancyLength>
@@ -3317,11 +3016,8 @@
         sx:originalNameUsage  "Bharal "@en ;
         sx:originalNameUsage  "Nahur modrý"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "160 dní " ;
         s:weight              <http://jakubvejr.org/liberec/nahur-modry.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/nahur-modry.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/nahur-modry.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/nahur-modry.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/nahur-modry.html#pregnancyLength> ;
@@ -3333,20 +3029,19 @@
 
 <http://jakubvejr.org/liberec/nahur-modry.html#height>
         rdf:type    s:Height ;
-        s:minValue  "90" ;
-        s:maxValue  "75" ;
+        s:minValue  "90"^^xsd:decimal ;
+        s:maxValue  "75"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/nahur-modry.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "80" ;
-        s:maxValue  "50" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/nahur-modry.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "160" ;
+        s:maxValue  "160"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html>
@@ -3355,11 +3050,8 @@
         sx:originalNameUsage  "House mouse "@en ;
         sx:originalNameUsage  "Myš domácí (laboratorní)"@cs ;
         sx:order              "Hlodavci (Rodentia) "@cs ;
-        s:numberOfChildren    "1-22" ;
-        s:pregnancyTime       "21-23 dní" ;
         s:weight              <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#pregnancyLength> ;
@@ -3371,20 +3063,16 @@
 
 <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#height>
         rdf:type    s:Height ;
-        s:minValue  "10,510" ;
-        s:maxValue  "7,5" ;
         s:unitCode  " cm ocas  cm " .
 
 <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,030" ;
-        s:maxValue  "0,009" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/mys-domaci-%28laboratorni%29.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "23" ;
-        s:maxValue  "21" ;
+        s:minValue  "23"^^xsd:decimal ;
+        s:maxValue  "21"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/muntzak-maly.html>
@@ -3393,11 +3081,9 @@
         sx:originalNameUsage  "Reeves's Muntjac"@en ;
         sx:originalNameUsage  "Muntžak malý"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "180-190 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/muntzak-maly.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/muntzak-maly.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/muntzak-maly.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/muntzak-maly.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/muntzak-maly.html#pregnancyLength> ;
@@ -3409,20 +3095,20 @@
 
 <http://jakubvejr.org/liberec/muntzak-maly.html#height>
         rdf:type    s:Height ;
-        s:minValue  "50" ;
-        s:maxValue  "40" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/muntzak-maly.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "18" ;
-        s:maxValue  "10" ;
+        s:minValue  "18"^^xsd:decimal ;
+        s:maxValue  "10"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/muntzak-maly.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "190" ;
-        s:maxValue  "180" ;
+        s:minValue  "190"^^xsd:decimal ;
+        s:maxValue  "180"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/muntzak-chocholaty.html>
@@ -3431,11 +3117,8 @@
         sx:originalNameUsage  "Tufted Deer"@en ;
         sx:originalNameUsage  "Muntžak chocholatý"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla)"@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "180 dní" ;
         s:weight              <http://jakubvejr.org/liberec/muntzak-chocholaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/muntzak-chocholaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/muntzak-chocholaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/muntzak-chocholaty.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/muntzak-chocholaty.html#pregnancyLength> ;
@@ -3447,20 +3130,19 @@
 
 <http://jakubvejr.org/liberec/muntzak-chocholaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "120" ;
-        s:maxValue  "100" ;
+        s:minValue  "120"^^xsd:decimal ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/muntzak-chocholaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "30" ;
-        s:maxValue  "17" ;
+        s:minValue  "30"^^xsd:decimal ;
+        s:maxValue  "17"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/muntzak-chocholaty.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "180" ;
+        s:maxValue  "180"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/mravenecnik-velky.html>
@@ -3469,11 +3151,9 @@
         sx:originalNameUsage  "Giant Anteater"@en ;
         sx:originalNameUsage  "Mravenečník velký"@cs ;
         sx:order              "Chudozubí (Xenarthra)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "160-184 dní" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/mravenecnik-velky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/mravenecnik-velky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/mravenecnik-velky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/mravenecnik-velky.html#diet> ;
         s:activity            "denní i noční v závislosti na prostředí"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/mravenecnik-velky.html#pregnancyLength> ;
@@ -3485,20 +3165,19 @@
 
 <http://jakubvejr.org/liberec/mravenecnik-velky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "130,4060" ;
-        s:maxValue  "100" ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm dlka tla  cm ocas" .
 
 <http://jakubvejr.org/liberec/mravenecnik-velky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "60" ;
-        s:maxValue  "35" ;
+        s:minValue  "60"^^xsd:decimal ;
+        s:maxValue  "35"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/mravenecnik-velky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "184" ;
-        s:maxValue  "160" ;
+        s:minValue  "184"^^xsd:decimal ;
+        s:maxValue  "160"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/morce-domaci.html>
@@ -3507,11 +3186,8 @@
         sx:originalNameUsage  "Guinea pig"@en ;
         sx:originalNameUsage  "Morče domácí"@cs ;
         sx:order              "Hlodavci (Rodentia)"@cs ;
-        s:numberOfChildren    "1-5" ;
-        s:pregnancyTime       "60-70 dní " ;
         s:weight              <http://jakubvejr.org/liberec/morce-domaci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/morce-domaci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/morce-domaci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/morce-domaci.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/morce-domaci.html#pregnancyLength> ;
@@ -3523,20 +3199,18 @@
 
 <http://jakubvejr.org/liberec/morce-domaci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "40" ;
-        s:maxValue  "25" ;
+        s:minValue  "40"^^xsd:decimal ;
+        s:maxValue  "25"^^xsd:decimal ;
         s:unitCode  " cm dlka tla" .
 
 <http://jakubvejr.org/liberec/morce-domaci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,8" ;
-        s:maxValue  "0,04" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/morce-domaci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "70" ;
-        s:maxValue  "60" ;
+        s:minValue  "70"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/morce-bolivijske.html>
@@ -3545,11 +3219,8 @@
         sx:originalNameUsage  "Muenster yellow-toothed cavy"@en ;
         sx:originalNameUsage  "Morče bolivijské"@cs ;
         sx:order              "Hlodavci (Rodentia)"@cs ;
-        s:numberOfChildren    "1-3" ;
-        s:pregnancyTime       "60-70 dní" ;
         s:weight              <http://jakubvejr.org/liberec/morce-bolivijske.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/morce-bolivijske.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/morce-bolivijske.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/morce-bolivijske.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/morce-bolivijske.html#pregnancyLength> ;
@@ -3561,20 +3232,17 @@
 
 <http://jakubvejr.org/liberec/morce-bolivijske.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "30" ;
+        s:maxValue  "30"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/morce-bolivijske.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,2" ;
-        s:maxValue  "0,700" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/morce-bolivijske.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "70" ;
-        s:maxValue  "60" ;
+        s:minValue  "70"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/mangusta-tmava.html>
@@ -3583,11 +3251,8 @@
         sx:originalNameUsage  "Common Cusimanse"@en ;
         sx:originalNameUsage  "Mangusta tmavá"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "2-4" ;
-        s:pregnancyTime       "60 dní " ;
         s:weight              <http://jakubvejr.org/liberec/mangusta-tmava.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/mangusta-tmava.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/mangusta-tmava.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/mangusta-tmava.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/mangusta-tmava.html#pregnancyLength> ;
@@ -3599,20 +3264,18 @@
 
 <http://jakubvejr.org/liberec/mangusta-tmava.html#height>
         rdf:type    s:Height ;
-        s:minValue  "60" ;
-        s:maxValue  "45" ;
+        s:minValue  "60"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm dlka tla i s ocasem" .
 
 <http://jakubvejr.org/liberec/mangusta-tmava.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,5" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/mangusta-tmava.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "" ;
-        s:maxValue  "60" ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html>
@@ -3621,11 +3284,9 @@
         sx:originalNameUsage  "Golden-bellied mangabey"@en ;
         sx:originalNameUsage  "Mangabej žlutobřichý"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "165-180 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#pregnancyLength> ;
@@ -3637,20 +3298,19 @@
 
 <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "66,5075" ;
-        s:maxValue  "45" ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm dlka tla  cm ocas" .
 
 <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "14" ;
-        s:maxValue  "6" ;
+        s:minValue  "14"^^xsd:decimal ;
+        s:maxValue  "6"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/mangabej-zlutobrichy.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "180" ;
-        s:maxValue  "165" ;
+        s:minValue  "180"^^xsd:decimal ;
+        s:maxValue  "165"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/makak-lvi.html>
@@ -3659,11 +3319,9 @@
         sx:originalNameUsage  "Lion-tailed Macaque"@en ;
         sx:originalNameUsage  "Makak lví"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "162-186 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/makak-lvi.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/makak-lvi.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/makak-lvi.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/makak-lvi.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/makak-lvi.html#pregnancyLength> ;
@@ -3675,20 +3333,19 @@
 
 <http://jakubvejr.org/liberec/makak-lvi.html#height>
         rdf:type    s:Height ;
-        s:minValue  "61,2439" ;
-        s:maxValue  "42" ;
+        s:maxValue  "42"^^xsd:decimal ;
         s:unitCode  " cm dlka tla  cm ocas" .
 
 <http://jakubvejr.org/liberec/makak-lvi.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "10" ;
-        s:maxValue  "2" ;
+        s:minValue  "10"^^xsd:decimal ;
+        s:maxValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/makak-lvi.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "186" ;
-        s:maxValue  "162" ;
+        s:minValue  "186"^^xsd:decimal ;
+        s:maxValue  "162"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/majna-rothschildova.html>
@@ -3697,10 +3354,8 @@
         sx:originalNameUsage  "Bali Myna"@en ;
         sx:originalNameUsage  "Majna Rothschildova"@cs ;
         sx:order              "Pěvci (Passeriformes)"@cs ;
-        s:numberOfChildren    "2-3 " ;
         s:weight              <http://jakubvejr.org/liberec/majna-rothschildova.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/majna-rothschildova.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/majna-rothschildova.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/majna-rothschildova.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/majna-rothschildova.html#pregnancyLength> ;
@@ -3712,14 +3367,11 @@
 
 <http://jakubvejr.org/liberec/majna-rothschildova.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "25" ;
+        s:maxValue  "25"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/majna-rothschildova.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,11" ;
-        s:maxValue  "0,07" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/majna-rothschildova.html#pregnancyLength>
@@ -3731,10 +3383,8 @@
         sx:originalNameUsage  "Common Hill Myna"@en ;
         sx:originalNameUsage  "Loskuták posvátný"@cs ;
         sx:order              "Pěvci (Passeriformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/loskutak-posvatny.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/loskutak-posvatny.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/loskutak-posvatny.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/loskutak-posvatny.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/loskutak-posvatny.html#pregnancyLength> ;
@@ -3746,14 +3396,14 @@
 
 <http://jakubvejr.org/liberec/loskutak-posvatny.html#height>
         rdf:type    s:Height ;
-        s:minValue  "29" ;
-        s:maxValue  "17" ;
+        s:minValue  "29"^^xsd:decimal ;
+        s:maxValue  "17"^^xsd:decimal ;
         s:unitCode  " cm " .
 
 <http://jakubvejr.org/liberec/loskutak-posvatny.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0.3" ;
-        s:maxValue  "0.2" ;
+        s:minValue  0.3 ;
+        s:maxValue  0.2 ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/loskutak-posvatny.html#pregnancyLength>
@@ -3765,11 +3415,8 @@
         sx:originalNameUsage  "Snow Leopard"@en ;
         sx:originalNameUsage  "Levhart sněžný"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "2-3" ;
-        s:pregnancyTime       "90-100 dní " ;
         s:weight              <http://jakubvejr.org/liberec/levhart-snezny.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/levhart-snezny.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/levhart-snezny.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/levhart-snezny.html#diet> ;
         s:activity            "noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/levhart-snezny.html#pregnancyLength> ;
@@ -3781,20 +3428,19 @@
 
 <http://jakubvejr.org/liberec/levhart-snezny.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "60" ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm v kohotku" .
 
 <http://jakubvejr.org/liberec/levhart-snezny.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "55" ;
-        s:maxValue  "30" ;
+        s:minValue  "55"^^xsd:decimal ;
+        s:maxValue  "30"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/levhart-snezny.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "100" ;
-        s:maxValue  "90" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/levhart-cinsky.html>
@@ -3803,11 +3449,8 @@
         sx:originalNameUsage  "North-Chinese leopard "@en ;
         sx:originalNameUsage  "Levhart čínský"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "2-3" ;
-        s:pregnancyTime       "90-112 dní " ;
         s:weight              <http://jakubvejr.org/liberec/levhart-cinsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/levhart-cinsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/levhart-cinsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/levhart-cinsky.html#diet> ;
         s:activity            "denní/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/levhart-cinsky.html#pregnancyLength> ;
@@ -3819,20 +3462,20 @@
 
 <http://jakubvejr.org/liberec/levhart-cinsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "75" ;
-        s:maxValue  "45" ;
+        s:minValue  "75"^^xsd:decimal ;
+        s:maxValue  "45"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku  " .
 
 <http://jakubvejr.org/liberec/levhart-cinsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "80" ;
-        s:maxValue  "50" ;
+        s:minValue  "80"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/levhart-cinsky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "112" ;
-        s:maxValue  "90" ;
+        s:minValue  "112"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/lev-berbersky.html>
@@ -3841,11 +3484,8 @@
         sx:originalNameUsage  "Barbary lion"@en ;
         sx:originalNameUsage  "Lev berberský"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1-4" ;
-        s:pregnancyTime       "102-105 dní " ;
         s:weight              <http://jakubvejr.org/liberec/lev-berbersky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/lev-berbersky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/lev-berbersky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/lev-berbersky.html#diet> ;
         s:activity            "denní/noční"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/lev-berbersky.html#pregnancyLength> ;
@@ -3857,20 +3497,20 @@
 
 <http://jakubvejr.org/liberec/lev-berbersky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "110" ;
-        s:maxValue  "90" ;
+        s:minValue  "110"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/lev-berbersky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "190" ;
-        s:maxValue  "110" ;
+        s:minValue  "190"^^xsd:decimal ;
+        s:maxValue  "110"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/lev-berbersky.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "105" ;
-        s:maxValue  "102" ;
+        s:minValue  "105"^^xsd:decimal ;
+        s:maxValue  "102"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/lemur-cerny.html>
@@ -3879,11 +3519,8 @@
         sx:originalNameUsage  "Black lemur"@en ;
         sx:originalNameUsage  "Lemur černý"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "125-127 dní " ;
         s:weight              <http://jakubvejr.org/liberec/lemur-cerny.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/lemur-cerny.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/lemur-cerny.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/lemur-cerny.html#diet> ;
         s:activity            "denní/noční "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/lemur-cerny.html#pregnancyLength> ;
@@ -3895,20 +3532,18 @@
 
 <http://jakubvejr.org/liberec/lemur-cerny.html#height>
         rdf:type    s:Height ;
-        s:minValue  "45,5165" ;
-        s:maxValue  "39" ;
+        s:maxValue  "39"^^xsd:decimal ;
         s:unitCode  " cm dlka tla  cm ocas" .
 
 <http://jakubvejr.org/liberec/lemur-cerny.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "2" ;
+        s:maxValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/lemur-cerny.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "127" ;
-        s:maxValue  "125" ;
+        s:minValue  "127"^^xsd:decimal ;
+        s:maxValue  "125"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/lachtan-hrivnaty.html>
@@ -3917,10 +3552,9 @@
         sx:originalNameUsage  "South American Sea Lion"@en ;
         sx:originalNameUsage  "Lachtan hřivnatý"@cs ;
         sx:order              "Šelmy (Carnivora) "@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#pregnancyLength> ;
@@ -3932,14 +3566,14 @@
 
 <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "280" ;
-        s:maxValue  "230" ;
+        s:minValue  "280"^^xsd:decimal ;
+        s:maxValue  "230"^^xsd:decimal ;
         s:unitCode  " cm dlka tla " .
 
 <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "250" ;
-        s:maxValue  "140" ;
+        s:minValue  "250"^^xsd:decimal ;
+        s:maxValue  "140"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/lachtan-hrivnaty.html#pregnancyLength>
@@ -3951,11 +3585,8 @@
         sx:originalNameUsage  "Bukharan Markhor"@en ;
         sx:originalNameUsage  "Koza šrouborohá"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-2" ;
-        s:pregnancyTime       "147-154 dní " ;
         s:weight              <http://jakubvejr.org/liberec/koza-srouboroha.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/koza-srouboroha.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/koza-srouboroha.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/koza-srouboroha.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/koza-srouboroha.html#pregnancyLength> ;
@@ -3967,20 +3598,19 @@
 
 <http://jakubvejr.org/liberec/koza-srouboroha.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "110" ;
+        s:maxValue  "110"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/koza-srouboroha.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "100" ;
-        s:maxValue  "90" ;
+        s:minValue  "100"^^xsd:decimal ;
+        s:maxValue  "90"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/koza-srouboroha.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "154" ;
-        s:maxValue  "147" ;
+        s:minValue  "154"^^xsd:decimal ;
+        s:maxValue  "147"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html>
@@ -3989,11 +3619,8 @@
         sx:originalNameUsage  "Domestic goat"@en ;
         sx:originalNameUsage  "Koza kamerunská - domácí"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1-3" ;
-        s:pregnancyTime       "150-170 dní" ;
         s:weight              <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#pregnancyLength> ;
@@ -4005,20 +3632,18 @@
 
 <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "40" ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "" ;
-        s:maxValue  "15" ;
+        s:maxValue  "15"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/koza-kamerunska---domaci.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "170" ;
-        s:maxValue  "150" ;
+        s:minValue  "170"^^xsd:decimal ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/kosman-zakrsly.html>
@@ -4027,11 +3652,8 @@
         sx:originalNameUsage  "Pygmy marmoset"@en ;
         sx:originalNameUsage  "Kosman zakrslý"@cs ;
         sx:order              "Primáti (Primates)"@cs ;
-        s:numberOfChildren    "1-3" ;
-        s:pregnancyTime       "119-142 dní " ;
         s:weight              <http://jakubvejr.org/liberec/kosman-zakrsly.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/kosman-zakrsly.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/kosman-zakrsly.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/kosman-zakrsly.html#diet> ;
         s:activity            "denn��"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/kosman-zakrsly.html#pregnancyLength> ;
@@ -4043,20 +3665,18 @@
 
 <http://jakubvejr.org/liberec/kosman-zakrsly.html#height>
         rdf:type    s:Height ;
-        s:minValue  "38" ;
-        s:maxValue  "19" ;
+        s:minValue  "38"^^xsd:decimal ;
+        s:maxValue  "19"^^xsd:decimal ;
         s:unitCode  " cm dlka tla s ocasem " .
 
 <http://jakubvejr.org/liberec/kosman-zakrsly.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,14" ;
-        s:maxValue  "0,12" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/kosman-zakrsly.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "142" ;
-        s:maxValue  "119" ;
+        s:minValue  "142"^^xsd:decimal ;
+        s:maxValue  "119"^^xsd:decimal ;
         s:unitCode  "dní" .
 
 <http://jakubvejr.org/liberec/korunac-sclateruv.html>
@@ -4065,10 +3685,9 @@
         sx:originalNameUsage  "Scheepmaker's Crowned-pigeon"@en ;
         sx:originalNameUsage  "Korunáč Sclaterův"@cs ;
         sx:order              "Měkkozobí (Columbiformes)"@cs ;
-        s:numberOfChildren    "1" ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/korunac-sclateruv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/korunac-sclateruv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/korunac-sclateruv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/korunac-sclateruv.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/korunac-sclateruv.html#pregnancyLength> ;
@@ -4080,14 +3699,13 @@
 
 <http://jakubvejr.org/liberec/korunac-sclateruv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "79" ;
-        s:maxValue  "71" ;
+        s:minValue  "79"^^xsd:decimal ;
+        s:maxValue  "71"^^xsd:decimal ;
         s:unitCode  " cm dlka tla " .
 
 <http://jakubvejr.org/liberec/korunac-sclateruv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2,3" ;
-        s:maxValue  "2" ;
+        s:maxValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/korunac-sclateruv.html#pregnancyLength>
@@ -4099,10 +3717,8 @@
         sx:originalNameUsage  "Common kingsnake"@en ;
         sx:originalNameUsage  "Korálovka pruhovaná"@cs ;
         sx:order              "Šupinatí (Squamata)"@cs ;
-        s:numberOfChildren    "12 - 20" ;
         s:weight              <http://jakubvejr.org/liberec/koralovka-pruhovana.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/koralovka-pruhovana.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/koralovka-pruhovana.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/koralovka-pruhovana.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/koralovka-pruhovana.html#pregnancyLength> ;
@@ -4114,8 +3730,8 @@
 
 <http://jakubvejr.org/liberec/koralovka-pruhovana.html#height>
         rdf:type    s:Height ;
-        s:minValue  "200" ;
-        s:maxValue  "100" ;
+        s:minValue  "200"^^xsd:decimal ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  "  cm" .
 
 <http://jakubvejr.org/liberec/koralovka-pruhovana.html#weight>
@@ -4130,10 +3746,8 @@
         sx:originalNameUsage  "Common Bulbul"@en ;
         sx:originalNameUsage  "Bulbul zahradní"@cs ;
         sx:order              "Pěvci (Passeriformes)"@cs ;
-        s:numberOfChildren    "2-3 " ;
         s:weight              <http://jakubvejr.org/liberec/bulbul-zahradni.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/bulbul-zahradni.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/bulbul-zahradni.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/bulbul-zahradni.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/bulbul-zahradni.html#pregnancyLength> ;
@@ -4145,14 +3759,12 @@
 
 <http://jakubvejr.org/liberec/bulbul-zahradni.html#height>
         rdf:type    s:Height ;
-        s:minValue  "21" ;
-        s:maxValue  "18" ;
+        s:minValue  "21"^^xsd:decimal ;
+        s:maxValue  "18"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/bulbul-zahradni.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,060" ;
-        s:maxValue  "0,023" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/bulbul-zahradni.html#pregnancyLength>
@@ -4164,10 +3776,8 @@
         sx:originalNameUsage  "Golden Pheasant "@en ;
         sx:originalNameUsage  "Bažant zlatý"@cs ;
         sx:order              "Hrabaví (Galliformes)"@cs ;
-        s:numberOfChildren    "5-12" ;
         s:weight              <http://jakubvejr.org/liberec/bazant-zlaty.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/bazant-zlaty.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/bazant-zlaty.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/bazant-zlaty.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/bazant-zlaty.html#pregnancyLength> ;
@@ -4179,14 +3789,12 @@
 
 <http://jakubvejr.org/liberec/bazant-zlaty.html#height>
         rdf:type    s:Height ;
-        s:minValue  "115" ;
-        s:maxValue  "60" ;
+        s:minValue  "115"^^xsd:decimal ;
+        s:maxValue  "60"^^xsd:decimal ;
         s:unitCode  " cm dlka tla i s ocasem" .
 
 <http://jakubvejr.org/liberec/bazant-zlaty.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,88" ;
-        s:maxValue  "0,55" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/bazant-zlaty.html#pregnancyLength>
@@ -4198,10 +3806,8 @@
         sx:originalNameUsage  "Palawan Peacock-pheasant"@en ;
         sx:originalNameUsage  "Bažant palawanský"@cs ;
         sx:order              "Hrabaví (Galliformes)"@cs ;
-        s:numberOfChildren    "2 " ;
         s:weight              <http://jakubvejr.org/liberec/bazant-palawansky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/bazant-palawansky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/bazant-palawansky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/bazant-palawansky.html#diet> ;
         s:activity            "denní"@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/bazant-palawansky.html#pregnancyLength> ;
@@ -4213,14 +3819,12 @@
 
 <http://jakubvejr.org/liberec/bazant-palawansky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "50" ;
-        s:maxValue  "40" ;
+        s:minValue  "50"^^xsd:decimal ;
+        s:maxValue  "40"^^xsd:decimal ;
         s:unitCode  " cm" .
 
 <http://jakubvejr.org/liberec/bazant-palawansky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "0,44" ;
-        s:maxValue  "0,32" ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/bazant-palawansky.html#pregnancyLength>
@@ -4232,10 +3836,8 @@
         sx:originalNameUsage  "Korean Ring-necked Pheasant  "@en ;
         sx:originalNameUsage  "Bažant obecný korejský"@cs ;
         sx:order              "Hrabaví (Galliformes)"@cs ;
-        s:numberOfChildren    "9-14" ;
         s:weight              <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#pregnancyLength> ;
@@ -4247,14 +3849,13 @@
 
 <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#height>
         rdf:type    s:Height ;
-        s:minValue  "90" ;
-        s:maxValue  "50" ;
+        s:minValue  "90"^^xsd:decimal ;
+        s:maxValue  "50"^^xsd:decimal ;
         s:unitCode  " cm tlo i s ocasem" .
 
 <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "2" ;
-        s:maxValue  "0,55" ;
+        s:minValue  "2"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/bazant-obecny-korejsky.html#pregnancyLength>
@@ -4266,10 +3867,8 @@
         sx:originalNameUsage  "Edwards's Pheasant "@en ;
         sx:originalNameUsage  "Bažant Edwardsův"@cs ;
         sx:order              "Hrabaví (Galliformes)"@cs ;
-        s:numberOfChildren    "4-7" ;
         s:weight              <http://jakubvejr.org/liberec/bazant-edwardsuv.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/bazant-edwardsuv.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/bazant-edwardsuv.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/bazant-edwardsuv.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/bazant-edwardsuv.html#pregnancyLength> ;
@@ -4281,14 +3880,12 @@
 
 <http://jakubvejr.org/liberec/bazant-edwardsuv.html#height>
         rdf:type    s:Height ;
-        s:minValue  "65,2026" ;
-        s:maxValue  "58" ;
+        s:maxValue  "58"^^xsd:decimal ;
         s:unitCode  " cm tlo  cm ocas" .
 
 <http://jakubvejr.org/liberec/bazant-edwardsuv.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,15" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/bazant-edwardsuv.html#pregnancyLength>
@@ -4300,10 +3897,8 @@
         sx:originalNameUsage  "Hyacinth Macaw"@en ;
         sx:originalNameUsage  "Ara hyacintový"@cs ;
         sx:order              "Papoušci (Psittaciformes)"@cs ;
-        s:numberOfChildren    "1-3" ;
         s:weight              <http://jakubvejr.org/liberec/ara-hyacintovy.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/ara-hyacintovy.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/ara-hyacintovy.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/ara-hyacintovy.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/ara-hyacintovy.html#pregnancyLength> ;
@@ -4315,14 +3910,12 @@
 
 <http://jakubvejr.org/liberec/ara-hyacintovy.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "100" ;
+        s:maxValue  "100"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku " .
 
 <http://jakubvejr.org/liberec/ara-hyacintovy.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "1,5" ;
-        s:maxValue  "1" ;
+        s:maxValue  "1"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/ara-hyacintovy.html#pregnancyLength>
@@ -4334,11 +3927,9 @@
         sx:originalNameUsage  "Roan Antelope"@en ;
         sx:originalNameUsage  "Antilopa koňská"@cs ;
         sx:order              "Sudokopytníci (Artiodactyla) "@cs ;
-        s:numberOfChildren    "1" ;
-        s:pregnancyTime       "270-280 dní " ;
+        s:numberOfChildren    1 ;
         s:weight              <http://jakubvejr.org/liberec/antilopa-konska.html#weight> ;
         s:height              <http://jakubvejr.org/liberec/antilopa-konska.html#height> ;
-        s:height              <http://jakubvejr.org/liberec/antilopa-konska.html#pregnancyLength> ;
         s:diet                <http://jakubvejr.org/liberec/antilopa-konska.html#diet> ;
         s:activity            "denní "@cs ;
         my:pregnancyTime      <http://jakubvejr.org/liberec/antilopa-konska.html#pregnancyLength> ;
@@ -4350,18 +3941,17 @@
 
 <http://jakubvejr.org/liberec/antilopa-konska.html#height>
         rdf:type    s:Height ;
-        s:minValue  "" ;
-        s:maxValue  "150" ;
+        s:maxValue  "150"^^xsd:decimal ;
         s:unitCode  " cm v kohoutku" .
 
 <http://jakubvejr.org/liberec/antilopa-konska.html#weight>
         rdf:type    s:Weight ;
-        s:minValue  "300" ;
-        s:maxValue  "270" ;
+        s:minValue  "300"^^xsd:decimal ;
+        s:maxValue  "270"^^xsd:decimal ;
         s:unitCode  "kg" .
 
 <http://jakubvejr.org/liberec/antilopa-konska.html#pregnancyLength>
         rdf:type    s:QuantitativeValue ;
-        s:minValue  "280" ;
-        s:maxValue  "270" ;
+        s:minValue  "280"^^xsd:decimal ;
+        s:maxValue  "270"^^xsd:decimal ;
         s:unitCode  "dní" .

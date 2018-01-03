@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+:Animals rdf:type void:Dataset ;
+        foaf:homepage <http://jakuvejr.org/animals> .
+	dcterms:title "Animals with characteristic" ;
+	dcterms:creator <http://jakuvejr.org/me>
+	void:sparqlEndpoint<http://linked.jakubvejr.org/sparql>;
+	void:dataDump<http://linked.jakubvejr.org/dump/animals.cz.zip> ;
+	dcterms:publisher <http://jakubvejr.org> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Geospecies rdf:type void:Dataset ;
+        foaf:homepage <http://lod.geospecies.org> .
+	dcterms:title "GEOSPECIES" ;
+	void:dataDump<https://old.datahub.io/dataset/geospecies/resource/e4e085a2-7496-4398-a322-defa2fec8e37> ;
+	dcterms:publisher <http://lod.geospecies.org> ;
+	dcterms:modified "2017-12-08"^^xsd:date
+
+:Animals void:subset :Animals2Geospecies  .
+
+:Animals2Geospecies rdf:type void:Linkset ;
+              void:target :Animals ;
+              void:target :Geospecies .
+

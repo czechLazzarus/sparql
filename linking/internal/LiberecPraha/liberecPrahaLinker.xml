@@ -1,0 +1,61 @@
+<Silk>
+        <Prefixes>
+      <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/><Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/><Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+    </Prefixes>
+        <DataSources>
+          <Dataset id="liberec" type="file">
+            <Param name="file" value="liberec.ttl"/><Param name="format" value="Turtle"/><Param name="graph" value=""/>
+          </Dataset><Dataset id="praha" type="file">
+            <Param name="file" value="praha.ttl"/><Param name="format" value="Turtle"/><Param name="graph" value=""/>
+          </Dataset>
+        </DataSources>
+        <Interlinks>
+          <Interlink id="LiberecPraha">
+        <SourceDataset dataSource="liberec" var="a" typeUri="http://lod.taxonconcept.org/ontology/txn.owl#Animal">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </SourceDataset>
+        <TargetDataset dataSource="praha" var="b" typeUri="http://lod.taxonconcept.org/ontology/txn.owl#Animal">
+        <RestrictTo>
+          
+        </RestrictTo>
+      </TargetDataset>
+        <LinkageRule linkType="owl:sameAs">
+        <Compare id="levenshteinDistance1" required="false" weight="1" metric="levenshteinDistance" threshold="1.2" indexing="true">
+            <TransformInput id="removeBlanks1" function="removeBlanks">
+            <TransformInput id="removeParentheses2" function="removeParentheses">
+            <TransformInput id="lowerCase2" function="lowerCase">
+            <Input id="sourcePath1" path="/&lt;http://lod.taxonconcept.org/ontology/txn.owl#originalNameUsage&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><TransformInput id="removeBlanks2" function="removeBlanks">
+            <TransformInput id="removeParentheses1" function="removeParentheses">
+            <TransformInput id="lowerCase1" function="lowerCase">
+            <Input id="targetPath1" path="/&lt;http://schema.org/name&gt;"/>
+            
+          </TransformInput>
+            
+          </TransformInput>
+            
+          </TransformInput><Param name="minChar" value="0"/><Param name="maxChar" value="z"/>
+          </Compare>
+        <Filter/>
+      </LinkageRule>
+        <Outputs>
+          <Output id="outputLiberecPraha"/>
+        </Outputs>
+      </Interlink>
+        </Interlinks>
+        <Transforms>
+          
+        </Transforms>
+        <Outputs>
+          <Dataset id="outputLiberecPraha" type="file">
+            <Param name="file" value="outputLiberecPraha.nt"/><Param name="format" value="N-Triples"/><Param name="graph" value=""/>
+          </Dataset>
+        </Outputs>
+      </Silk>
